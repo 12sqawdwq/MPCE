@@ -440,11 +440,11 @@ export const PanoramaBoard: React.FC<Props> = ({
           <div className="hero-left">
             <div className="hero-eyebrow">
               <Compass size={15} />
-              <span>MPCE 数学物理与计算工程 · 五层架构全景看板</span>
+              <span>MPCE · 知识看板</span>
             </div>
-            <h1>宏观数学 → 数学方法 → 物理模型 → 计算方法 → 工程应用</h1>
+            <h1>从数学基础到工程应用</h1>
             <p className="hero-sub">
-              悬停或点击任意卡片，即可追溯它向上直到宏观数学、向下直到工程场景的完整依赖链；点击卡片右上角徽标可随时更新掌握状态。
+              鼠标移到卡片上可查看上下游依赖，点击打开对应笔记与推导，点击右上角标签记录掌握状态。
             </p>
           </div>
         )}

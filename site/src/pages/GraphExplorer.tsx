@@ -50,8 +50,8 @@ export const GraphExplorer: React.FC = () => {
     <div className="graph-page">
       <div className="graph-header">
         <div>
-          <h1>跨领域知识图谱节点浏览器（67 节点）</h1>
-          <p>点击任意先修或关联节点 ID 可直接过滤追踪上下游关系，或跳转对应分层文档。</p>
+          <h1>知识图谱（67 个节点）</h1>
+          <p>按层级筛选或搜索知识点，点击先修与关联标签可直接查看上下游关系，或跳转到对应笔记。</p>
         </div>
         <button className="btn-secondary-sm" onClick={() => navigate('/wiki/KNOWLEDGE_GRAPH.md')}>
           <BookOpen size={14} /> 查看图谱总览文档
