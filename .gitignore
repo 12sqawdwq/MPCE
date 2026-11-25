@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated experiment artifacts (large binaries/outputs)
+*.npy
+*.npz
+*.h5
+*.vtk
+*.vtu
+# Keep curated small figures if committed intentionally, ignore temp outputs
+05_experiments/**/output/
+
+# OS & Editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Secrets & Environment
+.env
+.env.*
+*.pem
+*.key
+secrets/
