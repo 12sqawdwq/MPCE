@@ -22,6 +22,7 @@ import {
   EDGES,
   LAYER_BY_ID,
   LAYERS,
+  LayerId,
   MasteryStatus,
   PILLAR_TEXT,
   STATUS_META,
@@ -50,24 +51,74 @@ const graphRoute = (kgId: string) => `/graph?q=${encodeURIComponent(kgId)}`
 
 const UP_COLOR = '#4f46e5'
 const DOWN_COLOR = '#ea580c'
-const IDLE_COLOR = '#64748b'
+
+/** Number of card columns in every layer band. */
+const GRID_COLS = 4
 
 interface Anchor {
+  /** Horizontal centre of the card. */
   x: number
+  left: number
+  width: number
   top: number
   bottom: number
+  layer: LayerId
+}
+interface Band {
+  top: number
+  bottom: number
+  /** Horizontal extent of the card grid (excludes the layer label). */
+  left: number
+  right: number
 }
 interface Geometry {
   w: number
   h: number
   anchors: Record<string, Anchor>
+  bands: Partial<Record<LayerId, Band>>
 }
 
-const curve = (a: Anchor, b: Anchor) => {
-  const y1 = a.bottom
+/**
+ * Card-to-card connector. Layers may hold two card rows, so the curve leaves
+ * the source card, drops straight to the bottom of its band, makes a smooth
+ * Bezier across the inter-band gap, then runs straight into the target card.
+ * The vertical runs pass behind cards (the overlay sits below them), so only
+ * the short stubs between card rows and the gap crossing are visible.
+ */
+const curve = (a: Anchor, ax: number, b: Anchor, bx: number, geom: Geometry) => {
+  const yA = geom.bands[a.layer]?.bottom ?? a.bottom
+  const yB = geom.bands[b.layer]?.top ?? b.top
   const y2 = b.top - 2 // leave room for the arrow tip
-  const dy = (y2 - y1) * 0.55
-  return `M${a.x},${y1} C${a.x},${y1 + dy} ${b.x},${y2 - dy} ${b.x},${y2}`
+  const dy = (yB - yA) * 0.6
+  return `M${ax},${a.bottom} L${ax},${yA} C${ax},${yA + dy} ${bx},${yB - dy} ${bx},${yB} L${bx},${y2}`
+}
+
+/**
+ * Port position i of n along a card edge: a lone edge uses the centre, several
+ * fan out across the middle 56% so curves and arrowheads do not stack.
+ */
+const portX = (a: Anchor, i: number, n: number) => (n <= 1 ? a.x : a.left + a.width * (0.22 + (0.56 * i) / (n - 1)))
+
+/**
+ * Layer titles use `word-break: keep-all`, so they never split mid-word; the
+ * only break opportunity offered is before 与 (e.g. 物理驱动的数值计算 / 与工程方法).
+ */
+const layerTitle = (t: string) =>
+  t.split('与').map((part, i) => (
+    <React.Fragment key={i}>
+      {i > 0 && <wbr />}
+      {i > 0 ? `与${part}` : part}
+    </React.Fragment>
+  ))
+
+/** Small downward chevron centred on (x, y). */
+const chevron = (x: number, y: number, w = 9, h = 5) => `M${x - w},${y - h} L${x},${y + h} L${x + w},${y - h}`
+
+/** Edge counts per adjacent layer pair, e.g. `L1>L2` -> 15. */
+const GAP_EDGE_COUNTS: Record<string, number> = {}
+for (const [a, b] of EDGES) {
+  const k = `${CARD_BY_ID[a].layer}>${CARD_BY_ID[b].layer}`
+  GAP_EDGE_COUNTS[k] = (GAP_EDGE_COUNTS[k] ?? 0) + 1
 }
 
 export const PanoramaBoard: React.FC<Props> = ({
@@ -86,6 +137,7 @@ export const PanoramaBoard: React.FC<Props> = ({
   const fileRef = useRef<HTMLInputElement>(null)
   const stackRef = useRef<HTMLDivElement>(null)
   const cardRefs = useRef<Record<string, HTMLDivElement | null>>({})
+  const bandRefs = useRef<Partial<Record<LayerId, HTMLDivElement | null>>>({})
 
   const [statusFilter, setStatusFilter] = useState<MasteryStatus | 'all'>('all')
   const [hoverId, setHoverId] = useState<string | null>(null)
@@ -128,11 +180,8 @@ export const PanoramaBoard: React.FC<Props> = ({
     const stack = stackRef.current
     if (!stack) return
     const base = stack.getBoundingClientRect()
-    const anchors: Record<string, Anchor> = {}
-    for (const c of ALL_CARDS) {
-      const el = cardRefs.current[c.id]
-      if (!el) continue
-      // offset* ignores CSS transforms, so hover lift does not skew anchors.
+    // offset* ignores CSS transforms, so hover lift does not skew anchors.
+    const offsetIn = (el: HTMLElement) => {
       let x = 0
       let y = 0
       let node: HTMLElement | null = el
@@ -147,10 +196,33 @@ export const PanoramaBoard: React.FC<Props> = ({
         x = r.left - base.left
         y = r.top - base.top
       }
-      anchors[c.id] = { x: x + el.offsetWidth / 2, top: y, bottom: y + el.offsetHeight }
+      return { x, y }
+    }
+    const anchors: Record<string, Anchor> = {}
+    for (const c of ALL_CARDS) {
+      const el = cardRefs.current[c.id]
+      if (!el) continue
+      const { x, y } = offsetIn(el)
+      anchors[c.id] = {
+        x: x + el.offsetWidth / 2,
+        left: x,
+        width: el.offsetWidth,
+        top: y,
+        bottom: y + el.offsetHeight,
+        layer: c.layer,
+      }
+    }
+    const bands: Partial<Record<LayerId, Band>> = {}
+    for (const l of LAYERS) {
+      const grid = bandRefs.current[l.id]
+      const band = grid?.parentElement
+      if (!grid || !band) continue
+      const g = offsetIn(grid)
+      const b = offsetIn(band)
+      bands[l.id] = { top: b.y, bottom: b.y + band.offsetHeight, left: g.x, right: g.x + grid.offsetWidth }
     }
     setGeom((prev) => {
-      const next = { w: stack.offsetWidth, h: stack.offsetHeight, anchors }
+      const next = { w: stack.offsetWidth, h: stack.offsetHeight, anchors, bands }
       return prev && JSON.stringify(prev) === JSON.stringify(next) ? prev : next
     })
   }, [])
@@ -216,23 +288,55 @@ export const PanoramaBoard: React.FC<Props> = ({
   // ---------------------------------------------------------------------------
   // Connector paths
   // ---------------------------------------------------------------------------
+  // At rest the board shows only band-to-band flow chevrons; card-to-card
+  // Bezier curves are drawn just for the traced lineage (hover / pin / filter),
+  // so ~90 edges between 34 cards never turn into a hairball.
   const paths = useMemo(() => {
-    if (!geom) return []
-    return EDGES.flatMap(([a, b]) => {
+    if (!geom || !lineage) return []
+    const visible = EDGES.flatMap(([a, b]) => {
+      const k = edgeKey(a, b)
+      const kind = lineage.upEdges.has(k) ? ('up' as const) : lineage.downEdges.has(k) ? ('down' as const) : null
       const pa = geom.anchors[a]
       const pb = geom.anchors[b]
-      if (!pa || !pb) return []
-      const k = edgeKey(a, b)
-      const kind: 'up' | 'down' | 'idle' | 'off' = !lineage
-        ? 'idle'
-        : lineage.upEdges.has(k)
-          ? 'up'
-          : lineage.downEdges.has(k)
-            ? 'down'
-            : 'off'
-      return [{ k, d: curve(pa, pb), kind }]
+      return kind && pa && pb ? [{ a, b, k, kind, pa, pb }] : []
+    })
+    // Assign ports left-to-right by the x of the card at the other end, so
+    // neighbouring curves do not cross right at the card edge.
+    const outs: Record<string, typeof visible> = {}
+    const ins: Record<string, typeof visible> = {}
+    for (const e of visible) {
+      ;(outs[e.a] ??= []).push(e)
+      ;(ins[e.b] ??= []).push(e)
+    }
+    for (const list of Object.values(outs)) list.sort((p, q) => p.pb.x - q.pb.x || p.pb.top - q.pb.top)
+    for (const list of Object.values(ins)) list.sort((p, q) => p.pa.x - q.pa.x || p.pa.top - q.pa.top)
+    return visible.map((e) => {
+      const ax = portX(e.pa, outs[e.a].indexOf(e), outs[e.a].length)
+      const bx = portX(e.pb, ins[e.b].indexOf(e), ins[e.b].length)
+      return { k: e.k, kind: e.kind, d: curve(e.pa, ax, e.pb, bx, geom) }
     })
   }, [geom, lineage])
+
+  const flowMarks = useMemo(() => {
+    if (!geom) return []
+    return LAYERS.slice(0, -1).flatMap((upper, i) => {
+      const lower = LAYERS[i + 1]
+      const a = geom.bands[upper.id]
+      const b = geom.bands[lower.id]
+      if (!a || !b) return []
+      const colW = (a.right - a.left) / GRID_COLS
+      return [
+        {
+          key: `${upper.id}>${lower.id}`,
+          y: (a.bottom + b.top) / 2,
+          xs: Array.from({ length: GRID_COLS }, (_, c) => a.left + colW * (c + 0.5)),
+          labelX: (a.left + a.right) / 2,
+          color: upper.color,
+          label: `${upper.id} → ${lower.id} · ${GAP_EDGE_COUNTS[`${upper.id}>${lower.id}`] ?? 0} 条依赖`,
+        },
+      ]
+    })
+  }, [geom])
 
   const focusCard = focusId ? CARD_BY_ID[focusId] : null
   const l5Cards = LAYER_BY_ID.L5.cards
@@ -307,7 +411,7 @@ export const PanoramaBoard: React.FC<Props> = ({
 
   const linkChips = (ids: string[], dir: 'up' | 'down') =>
     ids.length === 0 ? (
-      <div className="drawer-empty">{dir === 'up' ? '顶层：宏观数学分类，无上游前置' : '底层：工程应用场景，无下游'}</div>
+      <div className="drawer-empty">{dir === 'up' ? '顶层：宏观数学基础，无上游前置' : '底层：工程应用场景，无下游'}</div>
     ) : (
       <div className="lineage-chip-row">
         {ids.map((id) => {
@@ -467,7 +571,7 @@ export const PanoramaBoard: React.FC<Props> = ({
             </span>
           </>
         ) : (
-          <span>五层自上而下：宏观数学 → 具体数学方法 → 物理模型 → 计算与工程方法 → 应用场景。悬停任一卡片查看其完整依赖链。</span>
+          <span>五层 34 张卡片覆盖知识图谱全部 67 个节点：宏观数学 → 具体数学方法 → 物理模型 → 数值计算与工程方法 → 应用场景。悬停或点击任一卡片显示其完整依赖曲线。</span>
         )}
       </div>
 
@@ -494,7 +598,6 @@ export const PanoramaBoard: React.FC<Props> = ({
                     [
                       ['up', UP_COLOR],
                       ['down', DOWN_COLOR],
-                      ['idle', IDLE_COLOR],
                     ] as const
                   ).map(([id, color]) => (
                     <marker
@@ -503,8 +606,8 @@ export const PanoramaBoard: React.FC<Props> = ({
                       viewBox="0 0 10 10"
                       refX="8"
                       refY="5"
-                      markerWidth={id === 'idle' ? 6 : 8}
-                      markerHeight={id === 'idle' ? 6 : 8}
+                      markerWidth={8}
+                      markerHeight={8}
                       markerUnits="userSpaceOnUse"
                       orient="auto"
                     >
@@ -512,27 +615,22 @@ export const PanoramaBoard: React.FC<Props> = ({
                     </marker>
                   ))}
                 </defs>
-                {/* inactive first so active edges paint on top */}
-                {paths
-                  .filter((p) => p.kind === 'idle' || p.kind === 'off')
-                  .map((p) => (
-                    <path
-                      key={p.k}
-                      d={p.d}
-                      className={`edge edge-${p.kind}`}
-                      markerEnd={p.kind === 'idle' ? 'url(#mpce-arrow-idle)' : undefined}
-                    />
+                {/* Band-to-band flow indicators: always present, faded while tracing. */}
+                <g className={`flow-marks${lineage ? ' is-tracing' : ''}`}>
+                  {flowMarks.map((f) => (
+                    <g key={f.key} style={{ color: f.color }}>
+                      {f.xs.map((x, i) => (
+                        <path key={i} className="flow-chevron" d={chevron(x, f.y)} />
+                      ))}
+                      <text className="flow-label" x={f.labelX} y={f.y} dominantBaseline="central" textAnchor="middle">
+                        {f.label}
+                      </text>
+                    </g>
                   ))}
-                {paths
-                  .filter((p) => p.kind === 'up' || p.kind === 'down')
-                  .map((p) => (
-                    <path
-                      key={p.k}
-                      d={p.d}
-                      className={`edge edge-${p.kind}`}
-                      markerEnd={`url(#mpce-arrow-${p.kind})`}
-                    />
-                  ))}
+                </g>
+                {paths.map((p) => (
+                  <path key={p.k} d={p.d} className={`edge edge-${p.kind}`} markerEnd={`url(#mpce-arrow-${p.kind})`} />
+                ))}
               </svg>
             )}
 
@@ -545,10 +643,16 @@ export const PanoramaBoard: React.FC<Props> = ({
               >
                 <div className="layer-label" style={{ backgroundColor: layer.color }}>
                   <span className="layer-index">{layer.id}</span>
-                  <span className="layer-title">{layer.title}</span>
+                  <span className="layer-title">{layerTitle(layer.title)}</span>
                   <span className="layer-sub">{layer.subtitle}</span>
                 </div>
-                <div className="layer-cards" style={{ gridTemplateColumns: `repeat(${layer.cards.length}, minmax(0, 1fr))` }}>
+                <div
+                  className="layer-cards"
+                  ref={(el) => {
+                    bandRefs.current[layer.id] = el
+                  }}
+                  style={{ gridTemplateColumns: `repeat(${GRID_COLS}, minmax(0, 1fr))` }}
+                >
                   {layer.cards.map((card) => renderCard(card, layer.color))}
                 </div>
               </section>

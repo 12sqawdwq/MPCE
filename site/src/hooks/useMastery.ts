@@ -6,16 +6,25 @@ const CURRENT_KEY = 'mpce_current_card_v1'
 
 const ORDER: MasteryStatus[] = ['not_started', 'in_progress', 'completed', 'needs_review']
 
-// Card IDs from the old 6x4 swimlane board. The math / physics / compute
-// columns map 1:1 onto layers L2 / L3 / L4; old engineering cells spanned
-// several domains and are dropped.
+// Card IDs from earlier board revisions, mapped onto the 34-card taxonomy.
+// 1) the old 6x4 swimlane board (math / physics / compute columns);
+// 2) the first 5-layer board (4 / 6 / 6 / 6 / 7 cards).
+// Old engineering swimlane cells spanned several domains and are dropped.
 const LEGACY_IDS: Record<string, string> = {
-  'la-math': 'l2-eigen', 'la-phys': 'l3-quantum', 'la-comp': 'l4-eigensolve',
-  'vc-math': 'l2-vec', 'vc-phys': 'l3-transport', 'vc-comp': 'l4-fvm',
-  'fa-math': 'l2-fourier', 'fa-phys': 'l3-wave', 'fa-comp': 'l4-fft',
-  'ode-math': 'l2-ode', 'ode-phys': 'l3-mech', 'ode-comp': 'l4-integrator',
-  'var-math': 'l2-var', 'var-phys': 'l3-energy', 'var-comp': 'l4-fem',
-  'pr-math': 'l2-prob', 'pr-phys': 'l3-statphys', 'pr-comp': 'l4-uq',
+  // 6x4 swimlane board
+  'la-math': 'l2-la', 'la-phys': 'l3-qm', 'la-comp': 'l4-eigen',
+  'vc-math': 'l2-vc', 'vc-phys': 'l3-fl-tr', 'vc-comp': 'l4-mesh',
+  'fa-math': 'l2-fa', 'fa-phys': 'l3-em', 'fa-comp': 'l4-spectral',
+  'ode-math': 'l2-ode', 'ode-phys': 'l3-cm', 'ode-comp': 'l4-ode-int',
+  'var-math': 'l2-var-opt', 'var-phys': 'l3-el', 'var-comp': 'l4-mesh',
+  'pr-math': 'l2-prob', 'pr-phys': 'l3-td-sm', 'pr-comp': 'l4-mc-inv',
+  // first 5-layer board
+  'l1-dynamics': 'l1-opt', 'l1-prob': 'l1-prob-na',
+  'l2-eigen': 'l2-la', 'l2-vec': 'l2-vc', 'l2-fourier': 'l2-fa', 'l2-var': 'l2-var-opt',
+  'l3-quantum': 'l3-qm', 'l3-transport': 'l3-fl-tr', 'l3-wave': 'l3-em',
+  'l3-mech': 'l3-cm', 'l3-energy': 'l3-el', 'l3-statphys': 'l3-td-sm',
+  'l4-eigensolve': 'l4-eigen', 'l4-fvm': 'l4-mesh', 'l4-fft': 'l4-spectral',
+  'l4-integrator': 'l4-ode-int', 'l4-fem': 'l4-mesh', 'l4-uq': 'l4-mc-inv',
 }
 
 const resolveId = (id: unknown): string | null => {
