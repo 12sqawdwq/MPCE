@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/data/boardconfig.ts","./src/hooks/usemastery.ts","./src/pages/graphexplorer.tsx","./src/pages/panoramaboard.tsx","./src/pages/wikipage.tsx","./src/utils/markdown.ts"],"version":"5.9.3"}
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/data/boardconfig.ts","./src/hooks/usemastery.ts","./src/pages/embedboard.tsx","./src/pages/graphexplorer.tsx","./src/pages/panoramaboard.tsx","./src/pages/wikipage.tsx","./src/utils/markdown.ts"],"version":"5.9.3"}

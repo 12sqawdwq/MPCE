@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import { BookOpen, Search } from 'lucide-react'
 import wikiDataRaw from '../data/wiki-data.json'
+import { renderInlineMath } from '../utils/markdown'
 
 interface KgNode {
   id: string
@@ -98,7 +99,12 @@ export const GraphExplorer: React.FC = () => {
               </div>
               <div className="kg-node-zh">{n.zh}</div>
               <div className="kg-node-en">{n.en}</div>
-              {n.definition && <p className="kg-node-def">{n.definition}</p>}
+              {n.definition && (
+                <p
+                  className="kg-node-def"
+                  dangerouslySetInnerHTML={{ __html: renderInlineMath(n.definition) }}
+                />
+              )}
 
               {n.prerequisites.length > 0 && (
                 <div className="kg-rel-row">

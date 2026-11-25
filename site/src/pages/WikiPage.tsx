@@ -241,7 +241,7 @@ export const WikiPage: React.FC<Props> = ({ getStatus, setStatus, setCurrentCard
                     </select>
                     <button
                       className="btn-ghost-xs"
-                      onClick={() => navigate(`/graph?q=${encodeURIComponent(c.kgIds[0] || '')}`)}
+                      onClick={() => navigate(`/graph?q=${encodeURIComponent(c.kgNodes[0] || '')}`)}
                     >
                       <Network size={12} /> 图谱
                     </button>

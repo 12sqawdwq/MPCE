@@ -153,107 +153,121 @@ html, body {
 .filter-pill.active { background: #0f172a; color: #fff; border-color: #0f172a; }
 .filter-hint { margin-left: auto; font-size: 12px; color: #64748b; }
 
-/* Panorama Swimlane Frame (matching Image 2) */
+/* Panorama: 5-layer top-to-bottom architecture */
 .panorama-scroll { overflow-x: auto; padding-bottom: 8px; }
 .panorama-frame {
-  min-width: 1120px;
+  min-width: 1180px;
   background: #ffffff;
   border: 1px solid var(--border-subtle);
   border-radius: 16px;
   padding: 18px;
   display: grid;
-  grid-template-columns: 1fr 48px;
+  grid-template-columns: minmax(0, 1fr) 48px;
   gap: 14px;
   box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
 }
-.col-header-row {
-  display: grid;
-  grid-template-columns: 152px 1fr;
-  gap: 14px;
-  margin-bottom: 12px;
-}
-.col-header-left {
-  display: flex; align-items: center; justify-content: center;
-  height: 32px; border-radius: 7px;
-  background: #f1f5f9; border: 1px solid #cbd5e1;
-  font-size: 12px; font-weight: 700; color: #334155;
-}
-.col-header-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 26px;
-  padding: 0 12px;
-}
-.col-header-pill {
-  display: flex; align-items: center; justify-content: center;
-  height: 32px; border-radius: 7px; border: 1.2px solid;
-  font-size: 12px; font-weight: 700;
-}
 
-.swimlane-stack { display: flex; flex-direction: column; gap: 12px; }
-.swimlane-band {
+.layer-stack {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 46px; /* breathing room for the connector curves */
+}
+.connector-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 1;
+}
+.edge { fill: none; transition: stroke-opacity 0.18s, stroke-width 0.18s; }
+.edge-idle { stroke: #64748b; stroke-width: 1.2; stroke-opacity: 0.16; }
+.edge-off { stroke: #94a3b8; stroke-width: 1; stroke-opacity: 0.05; }
+.edge-up { stroke: #4f46e5; stroke-width: 2.1; stroke-opacity: 0.9; }
+.edge-down { stroke: #ea580c; stroke-width: 2.1; stroke-opacity: 0.9; }
+
+.layer-band {
   display: grid;
-  grid-template-columns: 152px 1fr;
+  grid-template-columns: 148px minmax(0, 1fr);
   border: 1.5px solid;
   border-radius: 12px;
   overflow: hidden;
-  transition: opacity 0.18s;
 }
-.swimlane-band.dimmed { opacity: 0.45; }
-.swimlane-hdr {
+.layer-label {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  gap: 2px;
+  padding: 10px;
   color: #fff;
   text-align: center;
 }
-.swimlane-hdr-title { font-size: 15px; font-weight: 700; line-height: 1.3; }
-.swimlane-hdr-sub { font-size: 11px; opacity: 0.9; margin-top: 3px; }
-
-.swimlane-cards {
-  display: grid;
-  grid-template-columns: 1fr 22px 1fr 22px 1fr 22px 1fr;
-  align-items: center;
-  padding: 10px 12px;
+.layer-index {
+  font-size: 10px; font-weight: 800; letter-spacing: 0.08em;
+  padding: 1px 7px; border-radius: 999px; background: rgba(255, 255, 255, 0.22);
 }
-.card-arrow { text-align: center; font-size: 16px; font-weight: 700; color: #475569; user-select: none; }
+.layer-title { font-size: 14px; font-weight: 700; line-height: 1.3; margin-top: 3px; }
+.layer-sub { font-size: 10.5px; opacity: 0.88; line-height: 1.3; }
+
+.layer-cards {
+  display: grid;
+  gap: 12px;
+  padding: 12px 14px;
+  align-items: stretch;
+}
 
 .board-card {
+  --accent: #64748b;
+  position: relative;
+  z-index: 2;
   background: #ffffff;
-  border: 1.4px solid;
-  border-radius: 9px;
-  padding: 9px 11px;
+  border: 1.3px solid color-mix(in srgb, var(--accent) 45%, #e2e8f0);
+  border-radius: 10px;
+  padding: 8px 10px;
   cursor: pointer;
-  transition: transform 0.14s, box-shadow 0.14s, opacity 0.18s;
-  min-height: 92px;
+  transition: transform 0.14s, box-shadow 0.16s, opacity 0.18s, border-color 0.16s;
+  min-height: 88px;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  outline: none;
 }
-.board-card:hover { transform: translateY(-2px); box-shadow: 0 6px 14px rgba(15, 23, 42, 0.08); }
-.board-card.is-current { box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.2); }
-.board-card.filtered-out { opacity: 0.25; }
+.board-card:hover { transform: translateY(-2px); box-shadow: 0 6px 14px rgba(15, 23, 42, 0.09); }
+.board-card:focus-visible { box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 35%, transparent); }
+.board-card.is-current { border-color: #dc2626; box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.18); }
+.board-card.is-focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent), 0 10px 22px rgba(15, 23, 42, 0.14);
+  transform: translateY(-2px);
+}
+.board-card.is-up { border-color: #4f46e5; box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.18), 0 4px 12px rgba(15, 23, 42, 0.07); }
+.board-card.is-down { border-color: #ea580c; box-shadow: 0 0 0 2px rgba(234, 88, 12, 0.18), 0 4px 12px rgba(15, 23, 42, 0.07); }
+.board-card.is-dim { opacity: 0.32; }
+.board-card.is-dim:hover { opacity: 0.75; }
 
 .card-top-row { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin-bottom: 4px; }
-.card-phase { font-size: 10px; font-weight: 700; color: #64748b; }
+.card-phase { font-size: 10px; font-weight: 700; color: #64748b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .status-badge {
+  flex-shrink: 0;
   font-size: 10px; font-weight: 700; padding: 1px 7px;
   border-radius: 999px; border: 1px solid; cursor: pointer;
 }
-.card-title { font-size: 13px; font-weight: 700; color: #0f172a; line-height: 1.35; }
-.card-sub { font-size: 11px; color: #475569; margin-top: 2px; font-family: var(--font-mono); }
-.card-footer-row { display: flex; align-items: center; justify-content: space-between; margin-top: 6px; }
-.content-dot { font-size: 10px; color: #94a3b8; }
-.content-dot.ready { color: #0f766e; font-weight: 600; }
+.card-title { font-size: 12.5px; font-weight: 700; color: #0f172a; line-height: 1.35; }
+.card-sub { font-size: 10.5px; color: #475569; margin-top: 2px; font-family: var(--font-mono); line-height: 1.4; }
+.card-footer-row { display: flex; align-items: center; justify-content: space-between; gap: 4px; margin-top: 6px; }
+.content-tags { display: inline-flex; gap: 4px; }
+.content-tag { font-size: 9.5px; color: #94a3b8; }
+.content-tag.deriv, .content-tag.exp { font-weight: 700; padding: 0 5px; border-radius: 4px; }
+.content-tag.deriv { color: #1d4ed8; background: #eff6ff; }
+.content-tag.exp { color: #0f766e; background: #f0fdfa; }
 .here-chip {
-  font-size: 10px; font-weight: 700; color: #b91c1c;
+  font-size: 10px; font-weight: 700; color: #b91c1c; white-space: nowrap;
   background: #fef2f2; border: 1px solid #fecaca; padding: 1px 6px; border-radius: 4px;
 }
 
 .vertical-pillar {
-  margin-top: 44px;
   background: #fef2f2;
   border: 1.5px solid #dc2626;
   border-radius: 10px;
@@ -265,6 +279,41 @@ html, body {
   color: #b91c1c;
   font-size: 16px;
   font-weight: 700;
+}
+
+/* Tracing bar */
+.trace-bar { margin-top: -4px; }
+.trace-bar .filter-title { display: inline-flex; align-items: center; gap: 4px; }
+.filter-pill.domain.active { background: #15803d; border-color: #15803d; }
+.trace-legend { margin-left: auto; display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: #475569; }
+.legend-swatch { display: inline-block; width: 16px; height: 3px; border-radius: 2px; margin-left: 4px; }
+.trace-status {
+  --accent: #2563eb;
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+  margin-bottom: 10px; padding: 7px 12px;
+  border-left: 3px solid var(--accent); border-radius: 6px;
+  background: color-mix(in srgb, var(--accent) 7%, #ffffff);
+  font-size: 12px; color: #334155;
+}
+.trace-status span { display: inline-flex; align-items: center; gap: 3px; }
+.trace-pinned { margin-left: auto; color: #64748b; }
+
+/* Drawer lineage chips */
+.drawer-label { display: flex; align-items: center; gap: 5px; }
+.drawer-empty { font-size: 12px; color: #94a3b8; }
+.lineage-chip-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.lineage-chip {
+  --accent: #2563eb;
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 10px; border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, #e2e8f0);
+  background: color-mix(in srgb, var(--accent) 6%, #ffffff);
+  font-size: 12px; font-weight: 600; color: #1e293b; cursor: pointer; text-align: left;
+}
+.lineage-chip:hover { background: color-mix(in srgb, var(--accent) 14%, #ffffff); }
+.lineage-chip-layer {
+  font-size: 10px; font-weight: 800; color: #fff; background: var(--accent);
+  padding: 0 5px; border-radius: 4px;
 }
 
 /* Modal Drawer */
@@ -456,3 +505,32 @@ html, body {
   border: 1px solid #cbd5e1; background: #f8fafc; color: #334155; cursor: pointer;
 }
 .kg-mini-chip:hover { background: #eff6ff; color: #2563eb; border-color: #93c5fd; }
+
+/* Drawer links rendered as anchors (so they can target the top window) */
+a.primary-entry-btn, a.related-item, a.kg-chip { text-decoration: none; }
+a.primary-entry-btn:hover { background: #1e293b; }
+
+/* Embed mode (#/embed): chrome-less board inside an iframe on ziyu.mnilab.cn.
+   The board palette is light-only, so pin the scheme and present it as a clean
+   white figure; the host page supplies the border and radius in both themes. */
+html.mpce-embed { color-scheme: light; }
+html.mpce-embed, html.mpce-embed body { background: #ffffff; overflow-y: hidden; }
+.embed-shell { display: flow-root; }
+.board-page.is-embedded { max-width: none; padding: 14px 16px 10px; }
+.board-page.is-embedded .hero-strip { grid-template-columns: 1fr; margin-bottom: 12px; }
+.board-page.is-embedded .hero-progress-card { box-shadow: none; padding: 10px 14px; }
+.board-page.is-embedded .filter-bar { margin-bottom: 10px; }
+.board-page.is-embedded .panorama-frame { border: none; box-shadow: none; padding: 4px 0 0; }
+.mpce-embed .modal-backdrop { align-items: flex-start; background: rgba(15, 23, 42, 0.22); }
+.mpce-embed .card-drawer {
+  height: auto;
+  max-height: min(620px, calc(100vh - 16px));
+  margin-right: 8px;
+  border-radius: 12px;
+}
+.trace-status { min-height: 32px; }
+.trace-status.idle { color: #64748b; }
+.board-page.is-embedded .panorama-frame { min-width: 1060px; }
+.board-page.is-embedded .layer-band { grid-template-columns: 124px minmax(0, 1fr); }
+.board-page.is-embedded .layer-title { font-size: 13px; }
+.board-page.is-embedded .layer-cards { gap: 10px; padding: 10px 12px; }

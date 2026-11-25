@@ -1,155 +1,243 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1380 748" width="1380" height="748" role="img" aria-label="MPCE 全景图：数学链路驱动的物理方法、计算求解与工程实践场景">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1380 732" width="1380" height="732" role="img" aria-label="MPCE 五层架构全景：宏观数学 → 具体数学方法 → 物理模型 → 计算与工程方法 → 七大工程应用场景">
   <defs>
-    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto">
-      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    <marker id="arr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
     </marker>
     <style>
       text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
-      .ht { font-size: 16px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
-      .hs { font-size: 11px; fill: #ffffff; fill-opacity: 0.9; text-anchor: middle; }
-      .cid { font-size: 11px; font-weight: 700; text-anchor: middle; }
-      .ct { font-size: 13px; font-weight: 700; fill: #111827; text-anchor: middle; }
-      .cs { font-size: 11px; fill: #475569; text-anchor: middle; }
-      .lb { font-size: 11px; fill: #475569; text-anchor: middle; }
-      .card { fill: #ffffff; stroke-width: 1.3; }
-      .flow { stroke: #475569; stroke-width: 1.7; fill: none; marker-end: url(#arr); }
+      .lid { font-size: 10px; font-weight: 800; fill: #ffffff; text-anchor: middle; letter-spacing: 0.08em; }
+      .lt { font-size: 14px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .ls { font-size: 10.5px; fill: #ffffff; fill-opacity: 0.88; text-anchor: middle; }
+      .ct { font-size: 12.5px; font-weight: 700; fill: #0f172a; text-anchor: middle; }
+      .cs { font-size: 10.5px; fill: #475569; text-anchor: middle; }
+      .edge { fill: none; stroke: #64748b; stroke-width: 1.1; stroke-opacity: 0.5; marker-end: url(#arr); }
+      .pt { font-size: 16px; font-weight: 700; fill: #b91c1c; text-anchor: middle; }
     </style>
   </defs>
-  <rect width="1380" height="748" fill="#ffffff"/>
-  <rect x="20" y="14" width="165" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
-  <text x="102.5" y="34" font-size="13" font-weight="700" fill="#334155" text-anchor="middle">核心数学主线</text>
-  <rect x="201.0" y="14" width="247.8" height="30" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.2"/>
-  <text x="324.9" y="34" font-size="13" font-weight="700" fill="#2563eb" text-anchor="middle">1. 数学原理</text>
-  <rect x="474.8" y="14" width="247.8" height="30" rx="6" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.2"/>
-  <text x="598.6" y="34" font-size="13" font-weight="700" fill="#7c3aed" text-anchor="middle">2. 物理机制与控制方程</text>
-  <rect x="748.5" y="14" width="247.8" height="30" rx="6" fill="#f0fdfa" stroke="#1f7a7a" stroke-width="1.2"/>
-  <text x="872.4" y="34" font-size="13" font-weight="700" fill="#1f7a7a" text-anchor="middle">3. 数值与计算方法</text>
-  <rect x="1022.2" y="14" width="247.8" height="30" rx="6" fill="#f0fdf4" stroke="#2e7d32" stroke-width="1.2"/>
-  <text x="1146.1" y="34" font-size="13" font-weight="700" fill="#2e7d32" text-anchor="middle">4. 工程实践场景</text>
-  <rect x="20" y="56" width="1266" height="98" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
-  <rect x="20" y="56" width="165" height="98" rx="10" fill="#2563eb"/>
-  <text class="ht" x="102.5" y="101.0">线性代数与谱</text>
-  <text class="hs" x="102.5" y="121.0">Linear Algebra</text>
-  <rect class="card" x="201.0" y="68" width="247.8" height="74" rx="8" stroke="#2563eb"/>
-  <text class="ct" x="324.9" y="100">特征值 · 谱定理 · SVD</text>
-  <text class="cs" x="324.9" y="122">Ax = λx · A = UΣVᵀ</text>
-  <line class="flow" x1="450.8" y1="105.0" x2="471.8" y2="105.0"/>
-  <rect class="card" x="474.8" y="68" width="247.8" height="74" rx="8" stroke="#2563eb"/>
-  <text class="ct" x="598.6" y="100">定态薛定谔 · 结构模态</text>
-  <text class="cs" x="598.6" y="122">Ĥψ = Eψ · Kx = ω²Mx</text>
-  <line class="flow" x1="724.5" y1="105.0" x2="745.5" y2="105.0"/>
-  <rect class="card" x="748.5" y="68" width="247.8" height="74" rx="8" stroke="#2563eb"/>
-  <text class="ct" x="872.4" y="100">Lanczos / LOBPCG · 截断 SVD</text>
-  <text class="cs" x="872.4" y="122">稀疏特征求解 · 低秩逼近</text>
-  <line class="flow" x1="998.2" y1="105.0" x2="1019.2" y2="105.0"/>
-  <rect class="card" x="1022.2" y="68" width="247.8" height="74" rx="8" stroke="#2563eb"/>
-  <text class="ct" x="1146.1" y="100">DFT 能带 · 结构振动 · PCA</text>
-  <text class="cs" x="1146.1" y="122">材料 · 制造 · AI</text>
-  <rect x="20" y="170" width="1266" height="98" rx="12" fill="#f0fdfa" stroke="#14b8a6" stroke-width="1.5"/>
-  <rect x="20" y="170" width="165" height="98" rx="10" fill="#1f7a7a"/>
-  <text class="ht" x="102.5" y="215.0">向量微积分</text>
-  <text class="hs" x="102.5" y="235.0">Vector Calculus</text>
-  <rect class="card" x="201.0" y="182" width="247.8" height="74" rx="8" stroke="#0d9488"/>
-  <text class="ct" x="324.9" y="214">散度 · 旋度 · Gauss / Stokes</text>
-  <text class="cs" x="324.9" y="236">∇·F · ∇×F · 积分定理</text>
-  <line class="flow" x1="450.8" y1="219.0" x2="471.8" y2="219.0"/>
-  <rect class="card" x="474.8" y="182" width="247.8" height="74" rx="8" stroke="#0d9488"/>
-  <text class="ct" x="598.6" y="214">Navier–Stokes · 传热 · 漂移-扩散</text>
-  <text class="cs" x="598.6" y="236">∂ₜu + ∇·F = s · Maxwell</text>
-  <line class="flow" x1="724.5" y1="219.0" x2="745.5" y2="219.0"/>
-  <rect class="card" x="748.5" y="182" width="247.8" height="74" rx="8" stroke="#0d9488"/>
-  <text class="ct" x="872.4" y="214">有限体积 FVM · SG 通量</text>
-  <text class="cs" x="872.4" y="236">守恒离散 · 迎风 / 隐式格式</text>
-  <line class="flow" x1="998.2" y1="219.0" x2="1019.2" y2="219.0"/>
-  <rect class="card" x="1022.2" y="182" width="247.8" height="74" rx="8" stroke="#0d9488"/>
-  <text class="ct" x="1146.1" y="214">TCAD 半导体器件 · CFD 仿真</text>
-  <text class="cs" x="1146.1" y="236">半导体 · 先进制造 · HPC</text>
-  <rect x="20" y="284" width="1266" height="98" rx="12" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.5"/>
-  <rect x="20" y="284" width="165" height="98" rx="10" fill="#7c3aed"/>
-  <text class="ht" x="102.5" y="329.0">傅里叶与谱分析</text>
-  <text class="hs" x="102.5" y="349.0">Fourier Analysis</text>
-  <rect class="card" x="201.0" y="296" width="247.8" height="74" rx="8" stroke="#7c3aed"/>
-  <text class="ct" x="324.9" y="328">Fourier 变换 · 卷积 · 采样</text>
-  <text class="cs" x="324.9" y="350">k 空间 · Parseval 定理</text>
-  <line class="flow" x1="450.8" y1="333.0" x2="471.8" y2="333.0"/>
-  <rect class="card" x="474.8" y="296" width="247.8" height="74" rx="8" stroke="#7c3aed"/>
-  <text class="ct" x="598.6" y="328">电磁波传播 · 晶体布洛赫波</text>
-  <text class="cs" x="598.6" y="350">色散关系 · 倒格子空间</text>
-  <line class="flow" x1="724.5" y1="333.0" x2="745.5" y2="333.0"/>
-  <rect class="card" x="748.5" y="296" width="247.8" height="74" rx="8" stroke="#7c3aed"/>
-  <text class="ct" x="872.4" y="328">FFT · 谱方法 · 神经算子 FNO</text>
-  <text class="cs" x="872.4" y="350">O(N log N) · 频域算子</text>
-  <line class="flow" x1="998.2" y1="333.0" x2="1019.2" y2="333.0"/>
-  <rect class="card" x="1022.2" y="296" width="247.8" height="74" rx="8" stroke="#7c3aed"/>
-  <text class="ct" x="1146.1" y="328">MRI / CT 图像重建 · 光学光刻</text>
-  <text class="cs" x="1146.1" y="350">医学成像 · 半导体 · 材料</text>
-  <rect x="20" y="398" width="1266" height="98" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
-  <rect x="20" y="398" width="165" height="98" rx="10" fill="#2e7d32"/>
-  <text class="ht" x="102.5" y="443.0">微分方程与动力</text>
-  <text class="hs" x="102.5" y="463.0">ODE / Dynamics</text>
-  <rect class="card" x="201.0" y="410" width="247.8" height="74" rx="8" stroke="#16a34a"/>
-  <text class="ct" x="324.9" y="442">ODE 线性组 · Lyapunov 稳定</text>
-  <text class="cs" x="324.9" y="464">ẋ = Ax · 相平面 · 分岔</text>
-  <line class="flow" x1="450.8" y1="447.0" x2="471.8" y2="447.0"/>
-  <rect class="card" x="474.8" y="410" width="247.8" height="74" rx="8" stroke="#16a34a"/>
-  <text class="ct" x="598.6" y="442">Lagrange / Hamilton 力学</text>
-  <text class="cs" x="598.6" y="464">M(q)q̈ + Cq̇ + g = τ</text>
-  <line class="flow" x1="724.5" y1="447.0" x2="745.5" y2="447.0"/>
-  <rect class="card" x="748.5" y="410" width="247.8" height="74" rx="8" stroke="#16a34a"/>
-  <text class="ct" x="872.4" y="442">RK4 · 辛积分 · Kalman 滤波</text>
-  <text class="cs" x="872.4" y="464">保能量积分 · 状态估计</text>
-  <line class="flow" x1="998.2" y1="447.0" x2="1019.2" y2="447.0"/>
-  <rect class="card" x="1022.2" y="410" width="247.8" height="74" rx="8" stroke="#16a34a"/>
-  <text class="ct" x="1146.1" y="442">机械臂控制 · SLAM · 分子动力学</text>
-  <text class="cs" x="1146.1" y="464">机器人 · 计算材料</text>
-  <rect x="20" y="512" width="1266" height="98" rx="12" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5"/>
-  <rect x="20" y="512" width="165" height="98" rx="10" fill="#d97706"/>
-  <text class="ht" x="102.5" y="557.0">变分原理与优化</text>
-  <text class="hs" x="102.5" y="577.0">Variational &amp; Opt.</text>
-  <rect class="card" x="201.0" y="524" width="247.8" height="74" rx="8" stroke="#d97706"/>
-  <text class="ct" x="324.9" y="556">变分法 · 弱形式 · 凸优化</text>
-  <text class="cs" x="324.9" y="578">δS = 0 · KKT · 对偶理论</text>
-  <line class="flow" x1="450.8" y1="561.0" x2="471.8" y2="561.0"/>
-  <rect class="card" x="474.8" y="524" width="247.8" height="74" rx="8" stroke="#d97706"/>
-  <text class="ct" x="598.6" y="556">最小势能 · 线弹性 · 能量泛函</text>
-  <text class="cs" x="598.6" y="578">a(u,v) = ℓ(v) · E[n] → min</text>
-  <line class="flow" x1="724.5" y1="561.0" x2="745.5" y2="561.0"/>
-  <rect class="card" x="748.5" y="524" width="247.8" height="74" rx="8" stroke="#d97706"/>
-  <text class="ct" x="872.4" y="556">有限元 FEM · LQR/MPC · PINNs</text>
-  <text class="cs" x="872.4" y="578">Galerkin 组装 · 自动微分</text>
-  <line class="flow" x1="998.2" y1="561.0" x2="1019.2" y2="561.0"/>
-  <rect class="card" x="1022.2" y="524" width="247.8" height="74" rx="8" stroke="#d97706"/>
-  <text class="ct" x="1146.1" y="556">热-力耦合制造 · 轨迹/拓扑优化</text>
-  <text class="cs" x="1146.1" y="578">先进制造 · 机器人 · AI</text>
-  <rect x="20" y="626" width="1266" height="98" rx="12" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
-  <rect x="20" y="626" width="165" height="98" rx="10" fill="#64748b"/>
-  <text class="ht" x="102.5" y="671.0">概率统计与反演</text>
-  <text class="hs" x="102.5" y="691.0">Probability &amp; UQ</text>
-  <rect class="card" x="201.0" y="638" width="247.8" height="74" rx="8" stroke="#475569"/>
-  <text class="ct" x="324.9" y="670">概率论 · 贝叶斯推断 · SDE</text>
-  <text class="cs" x="324.9" y="692">后验分布 · 马尔可夫过程</text>
-  <line class="flow" x1="450.8" y1="675.0" x2="471.8" y2="675.0"/>
-  <rect class="card" x="474.8" y="638" width="247.8" height="74" rx="8" stroke="#475569"/>
-  <text class="ct" x="598.6" y="670">玻尔兹曼 · 费米–狄拉克统计</text>
-  <text class="cs" x="598.6" y="692">配分函数 · 载流子与噪声</text>
-  <line class="flow" x1="724.5" y1="675.0" x2="745.5" y2="675.0"/>
-  <rect class="card" x="748.5" y="638" width="247.8" height="74" rx="8" stroke="#475569"/>
-  <text class="ct" x="872.4" y="670">MCMC · Tikhonov 正则 · GPU 求解</text>
-  <text class="cs" x="872.4" y="692">采样 · 反演 · 预条件 CG</text>
-  <line class="flow" x1="998.2" y1="675.0" x2="1019.2" y2="675.0"/>
-  <rect class="card" x="1022.2" y="638" width="247.8" height="74" rx="8" stroke="#475569"/>
-  <text class="ct" x="1146.1" y="670">生成模型 · 医学反演 · 良率 UQ</text>
-  <text class="cs" x="1146.1" y="692">AI · 医学 · 半导体 · HPC</text>
-  <rect x="1304" y="56" width="56" height="668" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
-  <text x="1332.0" y="206.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">数</text>
-  <text x="1332.0" y="244.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">学</text>
-  <text x="1332.0" y="282.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">驱</text>
-  <text x="1332.0" y="320.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">动</text>
-  <text x="1332.0" y="358.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">物</text>
-  <text x="1332.0" y="396.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">理</text>
-  <text x="1332.0" y="434.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">与</text>
-  <text x="1332.0" y="472.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">工</text>
-  <text x="1332.0" y="510.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">程</text>
-  <text x="1332.0" y="548.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">实</text>
-  <text x="1332.0" y="586.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">践</text>
+  <rect width="1380" height="732" fill="#ffffff"/>
+  <g id="L1">
+    <rect x="20" y="20" width="1272" height="100" rx="10" fill="#f1f5f9"/>
+    <path d="M30,20 H170 V120 H30 A10,10 0 0 1 20,110 V30 A10,10 0 0 1 30,20 z" fill="#334155"/>
+    <rect x="20" y="20" width="1272" height="100" rx="10" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect x="81.0" y="42.5" width="28" height="16" rx="8" fill="#ffffff" fill-opacity="0.22"/>
+    <text class="lid" x="95.0" y="54.0">L1</text>
+    <text class="lt" x="95.0" y="80.0">宏观数学分类</text>
+    <text class="ls" x="95.0" y="95.0">Macro Math</text>
+  </g>
+  <g id="L2">
+    <rect x="20" y="168" width="1272" height="100" rx="10" fill="#eff6ff"/>
+    <path d="M30,168 H170 V268 H30 A10,10 0 0 1 20,258 V178 A10,10 0 0 1 30,168 z" fill="#2563EB"/>
+    <rect x="20" y="168" width="1272" height="100" rx="10" fill="none" stroke="#93c5fd" stroke-width="1.5"/>
+    <rect x="81.0" y="190.5" width="28" height="16" rx="8" fill="#ffffff" fill-opacity="0.22"/>
+    <text class="lid" x="95.0" y="202.0">L2</text>
+    <text class="lt" x="95.0" y="228.0">具体数学方法</text>
+    <text class="ls" x="95.0" y="243.0">Math Methods</text>
+  </g>
+  <g id="L3">
+    <rect x="20" y="316" width="1272" height="100" rx="10" fill="#f5f3ff"/>
+    <path d="M30,316 H170 V416 H30 A10,10 0 0 1 20,406 V326 A10,10 0 0 1 30,316 z" fill="#7C3AED"/>
+    <rect x="20" y="316" width="1272" height="100" rx="10" fill="none" stroke="#c4b5fd" stroke-width="1.5"/>
+    <rect x="81.0" y="338.5" width="28" height="16" rx="8" fill="#ffffff" fill-opacity="0.22"/>
+    <text class="lid" x="95.0" y="350.0">L3</text>
+    <text class="lt" x="95.0" y="376.0">对应物理方法与方程</text>
+    <text class="ls" x="95.0" y="391.0">Physical Models</text>
+  </g>
+  <g id="L4">
+    <rect x="20" y="464" width="1272" height="100" rx="10" fill="#f0fdfa"/>
+    <path d="M30,464 H170 V564 H30 A10,10 0 0 1 20,554 V474 A10,10 0 0 1 30,464 z" fill="#0F766E"/>
+    <rect x="20" y="464" width="1272" height="100" rx="10" fill="none" stroke="#5eead4" stroke-width="1.5"/>
+    <rect x="81.0" y="471.0" width="28" height="16" rx="8" fill="#ffffff" fill-opacity="0.22"/>
+    <text class="lid" x="95.0" y="482.5">L4</text>
+    <text class="lt" x="95.0" y="508.5">物理驱动的</text>
+    <text class="lt" x="95.0" y="526.5">工程与计算方法</text>
+    <text class="ls" x="95.0" y="541.5">Computational &amp;</text>
+    <text class="ls" x="95.0" y="554.5">Engineering Methods</text>
+  </g>
+  <g id="L5">
+    <rect x="20" y="612" width="1272" height="100" rx="10" fill="#f0fdf4"/>
+    <path d="M30,612 H170 V712 H30 A10,10 0 0 1 20,702 V622 A10,10 0 0 1 30,612 z" fill="#15803D"/>
+    <rect x="20" y="612" width="1272" height="100" rx="10" fill="none" stroke="#86efac" stroke-width="1.5"/>
+    <rect x="81.0" y="634.5" width="28" height="16" rx="8" fill="#ffffff" fill-opacity="0.22"/>
+    <text class="lid" x="95.0" y="646.0">L5</text>
+    <text class="lt" x="95.0" y="672.0">工程实践应用场景</text>
+    <text class="ls" x="95.0" y="687.0">Application Scenarios</text>
+  </g>
+  <g id="edges">
+    <path class="edge" d="M316.2,109 C316.2,146.7 270.2,139.8 270.2,177.5"/>
+    <path class="edge" d="M316.2,109 C316.2,146.7 1007.5,139.8 1007.5,177.5"/>
+    <path class="edge" d="M592.8,109 C592.8,146.7 454.5,139.8 454.5,177.5"/>
+    <path class="edge" d="M592.8,109 C592.8,146.7 638.8,139.8 638.8,177.5"/>
+    <path class="edge" d="M869.2,109 C869.2,146.7 823.2,139.8 823.2,177.5"/>
+    <path class="edge" d="M869.2,109 C869.2,146.7 1007.5,139.8 1007.5,177.5"/>
+    <path class="edge" d="M1145.8,109 C1145.8,146.7 1191.8,139.8 1191.8,177.5"/>
+    <path class="edge" d="M270.2,257 C270.2,294.7 270.2,287.8 270.2,325.5"/>
+    <path class="edge" d="M270.2,257 C270.2,294.7 638.8,287.8 638.8,325.5"/>
+    <path class="edge" d="M454.5,257 C454.5,294.7 454.5,287.8 454.5,325.5"/>
+    <path class="edge" d="M454.5,257 C454.5,294.7 638.8,287.8 638.8,325.5"/>
+    <path class="edge" d="M638.8,257 C638.8,294.7 638.8,287.8 638.8,325.5"/>
+    <path class="edge" d="M638.8,257 C638.8,294.7 270.2,287.8 270.2,325.5"/>
+    <path class="edge" d="M823.2,257 C823.2,294.7 823.2,287.8 823.2,325.5"/>
+    <path class="edge" d="M823.2,257 C823.2,294.7 454.5,287.8 454.5,325.5"/>
+    <path class="edge" d="M1007.5,257 C1007.5,294.7 1007.5,287.8 1007.5,325.5"/>
+    <path class="edge" d="M1007.5,257 C1007.5,294.7 823.2,287.8 823.2,325.5"/>
+    <path class="edge" d="M1191.8,257 C1191.8,294.7 1191.8,287.8 1191.8,325.5"/>
+    <path class="edge" d="M270.2,405 C270.2,442.7 270.2,435.8 270.2,473.5"/>
+    <path class="edge" d="M270.2,405 C270.2,442.7 638.8,435.8 638.8,473.5"/>
+    <path class="edge" d="M454.5,405 C454.5,442.7 454.5,435.8 454.5,473.5"/>
+    <path class="edge" d="M454.5,405 C454.5,442.7 1007.5,435.8 1007.5,473.5"/>
+    <path class="edge" d="M638.8,405 C638.8,442.7 638.8,435.8 638.8,473.5"/>
+    <path class="edge" d="M638.8,405 C638.8,442.7 454.5,435.8 454.5,473.5"/>
+    <path class="edge" d="M823.2,405 C823.2,442.7 823.2,435.8 823.2,473.5"/>
+    <path class="edge" d="M823.2,405 C823.2,442.7 1007.5,435.8 1007.5,473.5"/>
+    <path class="edge" d="M1007.5,405 C1007.5,442.7 1007.5,435.8 1007.5,473.5"/>
+    <path class="edge" d="M1007.5,405 C1007.5,442.7 270.2,435.8 270.2,473.5"/>
+    <path class="edge" d="M1191.8,405 C1191.8,442.7 1191.8,435.8 1191.8,473.5"/>
+    <path class="edge" d="M1191.8,405 C1191.8,442.7 454.5,435.8 454.5,473.5"/>
+    <path class="edge" d="M270.2,553 C270.2,590.7 889.0,583.8 889.0,621.5"/>
+    <path class="edge" d="M270.2,553 C270.2,590.7 415.0,583.8 415.0,621.5"/>
+    <path class="edge" d="M270.2,553 C270.2,590.7 731.0,583.8 731.0,621.5"/>
+    <path class="edge" d="M270.2,553 C270.2,590.7 1205.0,583.8 1205.0,621.5"/>
+    <path class="edge" d="M454.5,553 C454.5,590.7 257.0,583.8 257.0,621.5"/>
+    <path class="edge" d="M454.5,553 C454.5,590.7 731.0,583.8 731.0,621.5"/>
+    <path class="edge" d="M454.5,553 C454.5,590.7 1205.0,583.8 1205.0,621.5"/>
+    <path class="edge" d="M638.8,553 C638.8,590.7 1047.0,583.8 1047.0,621.5"/>
+    <path class="edge" d="M638.8,553 C638.8,590.7 257.0,583.8 257.0,621.5"/>
+    <path class="edge" d="M638.8,553 C638.8,590.7 415.0,583.8 415.0,621.5"/>
+    <path class="edge" d="M638.8,553 C638.8,590.7 889.0,583.8 889.0,621.5"/>
+    <path class="edge" d="M823.2,553 C823.2,590.7 573.0,583.8 573.0,621.5"/>
+    <path class="edge" d="M823.2,553 C823.2,590.7 889.0,583.8 889.0,621.5"/>
+    <path class="edge" d="M1007.5,553 C1007.5,590.7 731.0,583.8 731.0,621.5"/>
+    <path class="edge" d="M1007.5,553 C1007.5,590.7 573.0,583.8 573.0,621.5"/>
+    <path class="edge" d="M1007.5,553 C1007.5,590.7 415.0,583.8 415.0,621.5"/>
+    <path class="edge" d="M1191.8,553 C1191.8,590.7 415.0,583.8 415.0,621.5"/>
+    <path class="edge" d="M1191.8,553 C1191.8,590.7 1047.0,583.8 1047.0,621.5"/>
+    <path class="edge" d="M1191.8,553 C1191.8,590.7 257.0,583.8 257.0,621.5"/>
+    <path class="edge" d="M1191.8,553 C1191.8,590.7 1205.0,583.8 1205.0,621.5"/>
+  </g>
+  <g id="L1-cards">
+    <rect x="184.0" y="31" width="264.5" height="78" rx="9" fill="#ffffff" stroke="#334155" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="316.2" y="66.0">代数与线性结构</text>
+    <text class="cs" x="316.2" y="83.0">线性空间 · 算子 · 张量</text>
+    <rect x="460.5" y="31" width="264.5" height="78" rx="9" fill="#ffffff" stroke="#334155" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="592.8" y="66.0">分析与微分场论</text>
+    <text class="cs" x="592.8" y="83.0">微积分 · 矢量场 · 调和分析</text>
+    <rect x="737.0" y="31" width="264.5" height="78" rx="9" fill="#ffffff" stroke="#334155" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="869.2" y="66.0">微分方程与变分优化</text>
+    <text class="cs" x="869.2" y="83.0">ODE/PDE · 变分法 · 最优化</text>
+    <rect x="1013.5" y="31" width="264.5" height="78" rx="9" fill="#ffffff" stroke="#334155" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="1145.8" y="66.0">概率与统计推断</text>
+    <text class="cs" x="1145.8" y="83.0">随机过程 · 贝叶斯 · 信息论</text>
+  </g>
+  <g id="L2-cards">
+    <rect x="184.0" y="179" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#2563EB" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="270.2" y="214.0">特征值 · 谱定理 · SVD</text>
+    <text class="cs" x="270.2" y="231.0">Ax = λx · A = UΣVᵀ</text>
+    <rect x="368.3" y="179" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#2563EB" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="454.5" y="206.0">散度 · 旋度</text>
+    <text class="ct" x="454.5" y="222.0">Gauss / Stokes</text>
+    <text class="cs" x="454.5" y="239.0">∇·F · ∇×F · 积分定理</text>
+    <rect x="552.7" y="179" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#2563EB" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="638.8" y="206.0">Fourier 变换 · 卷积</text>
+    <text class="ct" x="638.8" y="222.0">谱分析</text>
+    <text class="cs" x="638.8" y="239.0">k 空间 · Parseval 定理</text>
+    <rect x="737.0" y="179" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#2563EB" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="823.2" y="206.0">ODE 线性组</text>
+    <text class="ct" x="823.2" y="222.0">Lyapunov 稳定</text>
+    <text class="cs" x="823.2" y="239.0">ẋ = Ax · 相平面 · 分岔</text>
+    <rect x="921.3" y="179" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#2563EB" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="1007.5" y="214.0">变分法 · 弱形式 · 凸优化</text>
+    <text class="cs" x="1007.5" y="231.0">δS = 0 · KKT · 对偶</text>
+    <rect x="1105.7" y="179" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#2563EB" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="1191.8" y="214.0">贝叶斯推断 · SDE · 逆问题</text>
+    <text class="cs" x="1191.8" y="231.0">后验分布 · 马尔可夫过程</text>
+  </g>
+  <g id="L3-cards">
+    <rect x="184.0" y="327" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#7C3AED" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="270.2" y="362.0">定态薛定谔 · 结构模态</text>
+    <text class="cs" x="270.2" y="379.0">Ĥψ = Eψ · Kx = ω²Mx</text>
+    <rect x="368.3" y="327" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#7C3AED" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="454.5" y="354.0">Navier-Stokes · 传热</text>
+    <text class="ct" x="454.5" y="370.0">漂移-扩散</text>
+    <text class="cs" x="454.5" y="387.0">∂ₜu + ∇·F = s · Maxwell</text>
+    <rect x="552.7" y="327" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#7C3AED" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="638.8" y="362.0">电磁波传播 · 晶体布洛赫波</text>
+    <text class="cs" x="638.8" y="379.0">色散关系 · 倒格子空间</text>
+    <rect x="737.0" y="327" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#7C3AED" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="823.2" y="354.0">Lagrange / Hamilton</text>
+    <text class="ct" x="823.2" y="370.0">力学</text>
+    <text class="cs" x="823.2" y="387.0">M(q)q̈ + Cq̇ + g = τ</text>
+    <rect x="921.3" y="327" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#7C3AED" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="1007.5" y="354.0">最小势能 · 线弹性</text>
+    <text class="ct" x="1007.5" y="370.0">能量泛函</text>
+    <text class="cs" x="1007.5" y="387.0">a(u,v) = ℓ(v) · E[n] → min</text>
+    <rect x="1105.7" y="327" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#7C3AED" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="1191.8" y="354.0">玻尔兹曼</text>
+    <text class="ct" x="1191.8" y="370.0">费米-狄拉克统计</text>
+    <text class="cs" x="1191.8" y="387.0">配分函数 · 载流子与噪声</text>
+  </g>
+  <g id="L4-cards">
+    <rect x="184.0" y="475" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#0F766E" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="270.2" y="502.0">Lanczos / LOBPCG</text>
+    <text class="ct" x="270.2" y="518.0">截断 SVD</text>
+    <text class="cs" x="270.2" y="535.0">稀疏特征求解 · 低秩逼近</text>
+    <rect x="368.3" y="475" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#0F766E" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="454.5" y="510.0">有限差分 / 体积 · SG 通量</text>
+    <text class="cs" x="454.5" y="527.0">守恒离散 · 迎风 / 隐式格式</text>
+    <rect x="552.7" y="475" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#0F766E" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="638.8" y="502.0">FFT · 谱方法</text>
+    <text class="ct" x="638.8" y="518.0">神经算子 FNO</text>
+    <text class="cs" x="638.8" y="535.0">O(N log N) · 频域算子</text>
+    <rect x="737.0" y="475" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#0F766E" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="823.2" y="502.0">RK4 · 辛积分</text>
+    <text class="ct" x="823.2" y="518.0">Kalman 滤波</text>
+    <text class="cs" x="823.2" y="535.0">保能量积分 · 状态估计</text>
+    <rect x="921.3" y="475" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#0F766E" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="1007.5" y="502.0">有限元 FEM · LQR/MPC</text>
+    <text class="ct" x="1007.5" y="518.0">PINNs</text>
+    <text class="cs" x="1007.5" y="535.0">Galerkin 组装 · 自动微分</text>
+    <rect x="1105.7" y="475" width="172.3" height="78" rx="9" fill="#ffffff" stroke="#0F766E" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="1191.8" y="502.0">MCMC · Tikhonov 正则</text>
+    <text class="ct" x="1191.8" y="518.0">GPU 求解</text>
+    <text class="cs" x="1191.8" y="535.0">采样 · 反演 · 预条件 CG</text>
+  </g>
+  <g id="L5-cards">
+    <rect x="184.0" y="623" width="146.0" height="78" rx="9" fill="#ffffff" stroke="#15803D" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="257.0" y="651.0">半导体与集成电路</text>
+    <text class="cs" x="257.0" y="668.0">TCAD 器件 · 光学光刻</text>
+    <text class="cs" x="257.0" y="682.0">良率 UQ</text>
+    <rect x="342.0" y="623" width="146.0" height="78" rx="9" fill="#ffffff" stroke="#15803D" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="415.0" y="651.0">人工智能与科学计算</text>
+    <text class="cs" x="415.0" y="668.0">PCA/低秩 · 神经算子</text>
+    <text class="cs" x="415.0" y="682.0">生成模型</text>
+    <rect x="500.0" y="623" width="146.0" height="78" rx="9" fill="#ffffff" stroke="#15803D" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="573.0" y="651.0">机器人与具身智能</text>
+    <text class="cs" x="573.0" y="668.0">机械臂控制 · SLAM</text>
+    <text class="cs" x="573.0" y="682.0">轨迹优化</text>
+    <rect x="658.0" y="623" width="146.0" height="78" rx="9" fill="#ffffff" stroke="#15803D" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="731.0" y="651.0">先进制造与多物理场</text>
+    <text class="cs" x="731.0" y="668.0">CFD 仿真 · 热-力耦合</text>
+    <text class="cs" x="731.0" y="682.0">拓扑优化</text>
+    <rect x="816.0" y="623" width="146.0" height="78" rx="9" fill="#ffffff" stroke="#15803D" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="889.0" y="658.0">计算物理与材料科学</text>
+    <text class="cs" x="889.0" y="675.0">DFT 能带 · 分子动力学 MD</text>
+    <rect x="974.0" y="623" width="146.0" height="78" rx="9" fill="#ffffff" stroke="#15803D" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="1047.0" y="658.0">医学成像与生物医学</text>
+    <text class="cs" x="1047.0" y="675.0">MRI/CT 重建 · 医学反演</text>
+    <rect x="1132.0" y="623" width="146.0" height="78" rx="9" fill="#ffffff" stroke="#15803D" stroke-opacity="0.55" stroke-width="1.3"/>
+    <text class="ct" x="1205.0" y="651.0">体系结构与高性能计算</text>
+    <text class="cs" x="1205.0" y="668.0">稀疏求解 · GPU 并行</text>
+    <text class="cs" x="1205.0" y="682.0">预条件</text>
+  </g>
+  <rect x="1306" y="20" width="54" height="692" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <text class="pt" x="1333.0" y="212.0">数</text>
+  <text class="pt" x="1333.0" y="244.0">学</text>
+  <text class="pt" x="1333.0" y="276.0">驱</text>
+  <text class="pt" x="1333.0" y="308.0">动</text>
+  <text class="pt" x="1333.0" y="340.0">物</text>
+  <text class="pt" x="1333.0" y="372.0">理</text>
+  <text class="pt" x="1333.0" y="404.0">与</text>
+  <text class="pt" x="1333.0" y="436.0">工</text>
+  <text class="pt" x="1333.0" y="468.0">程</text>
+  <text class="pt" x="1333.0" y="500.0">实</text>
+  <text class="pt" x="1333.0" y="532.0">践</text>
 </svg>

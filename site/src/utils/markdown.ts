@@ -108,3 +108,43 @@ export function renderMarkdownWithMath(rawMd: string, currentDocPath: string): s
   html = html.replace(/@@MATHBLOCK_(\d+)@@/g, (_m, i) => mathBlocks[Number(i)])
   return html
 }
+
+/**
+ * Render plain text containing inline ($...$) or display ($$...$$) LaTeX
+ * into HTML using KaTeX, escaping non-math HTML characters safely.
+ */
+export function renderInlineMath(raw: string): string {
+  if (!raw) return ''
+  const mathTokens: string[] = []
+
+  // Extract $$...$$ first, then $...$
+  let text = raw.replace(/\$\$([\s\S]+?)\$\$/g, (_m, expr) => {
+    let html: string
+    try {
+      html = katex.renderToString(expr.trim(), { displayMode: false, throwOnError: false })
+    } catch {
+      html = `<code>${expr}</code>`
+    }
+    const idx = mathTokens.push(html) - 1
+    return `@@IMATH_${idx}@@`
+  })
+
+  text = text.replace(/(?<!\\)\$([^\n$]+?)(?<!\\)\$/g, (_m, expr) => {
+    let html: string
+    try {
+      html = katex.renderToString(expr.trim(), { displayMode: false, throwOnError: false })
+    } catch {
+      html = `<code>${expr}</code>`
+    }
+    const idx = mathTokens.push(html) - 1
+    return `@@IMATH_${idx}@@`
+  })
+
+  // Escape remaining plain text
+  text = text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+
+  return text.replace(/@@IMATH_(\d+)@@/g, (_m, i) => mathTokens[Number(i)])
+}
