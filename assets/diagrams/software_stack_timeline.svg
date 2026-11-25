@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1612 956" width="1612" height="956" role="img" aria-labelledby="t" style="font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+<title id="t">Software stack adoption timeline by month</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.8 L10,5 L0,9.2 z" fill="#475569"/></marker></defs>
+<rect x="0" y="0" width="1612" height="956" fill="#ffffff"/>
+<rect x="230.0" y="35.0" width="68" height="22" rx="11" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+<text x="264.0" y="50.5" font-size="12" fill="#475569" font-weight="700" text-anchor="middle">M1</text>
+<rect x="434.0" y="35.0" width="68" height="22" rx="11" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+<text x="468.0" y="50.5" font-size="12" fill="#475569" font-weight="700" text-anchor="middle">M2–3</text>
+<rect x="638.0" y="35.0" width="68" height="22" rx="11" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+<text x="672.0" y="50.5" font-size="12" fill="#475569" font-weight="700" text-anchor="middle">M10–12</text>
+<rect x="842.0" y="35.0" width="68" height="22" rx="11" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+<text x="876.0" y="50.5" font-size="12" fill="#475569" font-weight="700" text-anchor="middle">M14</text>
+<rect x="1046.0" y="35.0" width="68" height="22" rx="11" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1080.0" y="50.5" font-size="12" fill="#475569" font-weight="700" text-anchor="middle">M16–17</text>
+<rect x="1250.0" y="35.0" width="68" height="22" rx="11" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1284.0" y="50.5" font-size="12" fill="#475569" font-weight="700" text-anchor="middle">M18–19</text>
+<rect x="1454.0" y="35.0" width="68" height="22" rx="11" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+<text x="1488.0" y="50.5" font-size="12" fill="#475569" font-weight="700" text-anchor="middle">M20–21</text>
+<text x="94.0" y="50.5" font-size="12" fill="#475569" font-weight="700" text-anchor="middle">Month</text>
+<rect x="24" y="64.0" width="1564" height="122.0" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<path d="M34,64.0 H164 V186.0 H34 A10,10 0 0 1 24,176.0 V74.0 A10,10 0 0 1 34,64.0 Z" fill="#2563eb"/>
+<text x="94.0" y="120.5" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Python Core</text>
+<text x="94.0" y="142.5" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">numerics</text>
+<rect x="24" y="226.0" width="1564" height="105.5" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+<path d="M34,226.0 H164 V331.5 H34 A10,10 0 0 1 24,321.5 V236.0 A10,10 0 0 1 34,226.0 Z" fill="#7c3aed"/>
+<text x="94.0" y="283.2" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Visualization</text>
+<rect x="24" y="371.5" width="1564" height="105.5" rx="12" fill="#f0fdf4" stroke="#2e7d32" stroke-width="1.5"/>
+<path d="M34,371.5 H164 V477.0 H34 A10,10 0 0 1 24,467.0 V381.5 A10,10 0 0 1 34,371.5 Z" fill="#2e7d32"/>
+<text x="94.0" y="419.8" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Continuum</text>
+<text x="94.0" y="441.8" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">FEM · CFD</text>
+<rect x="24" y="517.0" width="1564" height="124.5" rx="12" fill="#f0fdfa" stroke="#1f7a7a" stroke-width="1.5"/>
+<path d="M34,517.0 H164 V641.5 H34 A10,10 0 0 1 24,631.5 V527.0 A10,10 0 0 1 34,517.0 Z" fill="#1f7a7a"/>
+<text x="94.0" y="574.8" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Atomistic</text>
+<text x="94.0" y="596.8" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">MD · DFT</text>
+<rect x="24" y="681.5" width="1564" height="105.5" rx="12" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<path d="M34,681.5 H164 V787.0 H34 A10,10 0 0 1 24,777.0 V691.5 A10,10 0 0 1 34,681.5 Z" fill="#d97706"/>
+<text x="94.0" y="719.2" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Machine</text>
+<text x="94.0" y="740.2" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Learning</text>
+<text x="94.0" y="762.2" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">autodiff</text>
+<rect x="24" y="827.0" width="1564" height="105.5" rx="12" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+<path d="M34,827.0 H164 V932.5 H34 A10,10 0 0 1 24,922.5 V837.0 A10,10 0 0 1 34,827.0 Z" fill="#dc2626"/>
+<text x="94.0" y="875.2" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">GPU</text>
+<text x="94.0" y="897.2" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">acceleration</text>
+<path d="M344.0,125.0 L388.0,125.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M548.0,125.0 L592.0,125.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M706.0,166.0 L706.0,200.5 L876.0,200.5 L876.0,246.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M638.0,166.0 L638.0,211.5 L672.0,211.5 L672.0,661.5 L1080.0,661.5 L1080.0,701.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1160.0,734.2 L1204.0,734.2" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M893.0,311.5 L893.0,351.5 L1080.0,351.5 L1080.0,391.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1160.0,424.2 L1408.0,424.2" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M859.0,311.5 L859.0,351.5 L876.0,351.5 L876.0,497.0 L1284.0,497.0 L1284.0,537.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1364.0,579.2 L1408.0,579.2" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M672.0,166.0 L672.0,200.5 L682.0,200.5 L682.0,807.0 L1488.0,807.0 L1488.0,847.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="184.0" y="84.0" width="160.0" height="82.0" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="264.0" y="111.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Python</text>
+<text x="264.0" y="132.5" font-size="12.5" fill="#475569" text-anchor="middle">NumPy · Matplotlib</text>
+<text x="264.0" y="149.0" font-size="12.5" fill="#475569" text-anchor="middle">M1</text>
+<rect x="388.0" y="84.0" width="160.0" height="82.0" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="468.0" y="119.8" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">SymPy · SciPy</text>
+<text x="468.0" y="140.8" font-size="12.5" fill="#475569" text-anchor="middle">M2–3</text>
+<rect x="592.0" y="84.0" width="160.0" height="82.0" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="672.0" y="119.8" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">scipy.sparse</text>
+<text x="672.0" y="140.8" font-size="12.5" fill="#475569" text-anchor="middle">Numba · M10–12</text>
+<rect x="796.0" y="246.0" width="160.0" height="65.5" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.3"/>
+<text x="876.0" y="273.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">ParaView</text>
+<text x="876.0" y="294.5" font-size="12.5" fill="#475569" text-anchor="middle">PyVista · M14</text>
+<rect x="1000.0" y="391.5" width="160.0" height="65.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="1080.0" y="419.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">FEniCSx</text>
+<text x="1080.0" y="440.0" font-size="12.5" fill="#475569" text-anchor="middle">Gmsh · M17</text>
+<rect x="1408.0" y="391.5" width="160.0" height="65.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="1488.0" y="419.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">OpenFOAM</text>
+<text x="1488.0" y="440.0" font-size="12.5" fill="#475569" text-anchor="middle">M20</text>
+<rect x="1204.0" y="537.0" width="160.0" height="84.5" rx="8" fill="#ffffff" stroke="#1f7a7a" stroke-width="1.3"/>
+<text x="1284.0" y="574.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">LAMMPS</text>
+<text x="1284.0" y="595.0" font-size="12.5" fill="#475569" text-anchor="middle">M19</text>
+<rect x="1408.0" y="537.0" width="160.0" height="84.5" rx="8" fill="#ffffff" stroke="#1f7a7a" stroke-width="1.3"/>
+<text x="1488.0" y="564.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Quantum</text>
+<text x="1488.0" y="583.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">ESPRESSO</text>
+<text x="1488.0" y="604.5" font-size="12.5" fill="#475569" text-anchor="middle">M20</text>
+<rect x="1000.0" y="701.5" width="160.0" height="65.5" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="1.3"/>
+<text x="1080.0" y="729.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">PyTorch</text>
+<text x="1080.0" y="750.0" font-size="12.5" fill="#475569" text-anchor="middle">M16</text>
+<rect x="1204.0" y="701.5" width="160.0" height="65.5" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="1.3"/>
+<text x="1284.0" y="729.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">JAX</text>
+<text x="1284.0" y="750.0" font-size="12.5" fill="#475569" text-anchor="middle">M18</text>
+<rect x="1408.0" y="847.0" width="160.0" height="65.5" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.3"/>
+<text x="1488.0" y="874.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">CuPy / CUDA</text>
+<text x="1488.0" y="895.5" font-size="12.5" fill="#475569" text-anchor="middle">M21</text>
+</svg>

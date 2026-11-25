@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 280" width="1100" height="280" role="img" aria-label="单主题学习流程：理解 → 推导 → 计算 → 应用，发现薄弱点后回到理解">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <style>
+      text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .ht { font-size: 18px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .hs { font-size: 12px; fill: #ffffff; fill-opacity: 0.9; text-anchor: middle; }
+      .ct { font-size: 15px; font-weight: 700; fill: #111827; text-anchor: middle; }
+      .cs { font-size: 12px; fill: #475569; text-anchor: middle; }
+      .tag { font-size: 11px; font-weight: 700; text-anchor: middle; }
+      .lb { font-size: 12px; fill: #475569; }
+      .card { fill: #ffffff; stroke-width: 1.3; }
+      .flow { stroke: #475569; stroke-width: 1.8; fill: none; marker-end: url(#arr); }
+    </style>
+  </defs>
+  <rect width="1100" height="280" fill="#ffffff"/>
+
+  <!-- Band -->
+  <rect x="20" y="30" width="1060" height="150" rx="12" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+  <rect x="20" y="30" width="140" height="150" rx="10" fill="#64748b"/>
+  <text class="ht" x="90" y="100">学习流程</text>
+  <text class="hs" x="90" y="120">Study Flow</text>
+
+  <!-- 1 Understand (Blue) -->
+  <rect class="card" x="185" y="50" width="180" height="110" rx="8" stroke="#2563eb"/>
+  <text class="ct" x="275" y="80">① Understand 理解</text>
+  <text class="cs" x="275" y="104">物理直觉与数学对象</text>
+  <text class="cs" x="275" y="122">定义 · 假设 · 图像</text>
+  <text class="tag" x="275" y="146" fill="#2563eb">≈ 20% 时间</text>
+
+  <!-- 2 Derive (Purple) -->
+  <rect class="card" x="415" y="50" width="180" height="110" rx="8" stroke="#7c3aed"/>
+  <text class="ct" x="505" y="80">② Derive 推导</text>
+  <text class="cs" x="505" y="104">从公理 / 守恒律出发</text>
+  <text class="cs" x="505" y="122">每一步标注依据</text>
+  <text class="tag" x="505" y="146" fill="#7c3aed">≈ 35% 时间</text>
+
+  <!-- 3 Compute (Teal) -->
+  <rect class="card" x="645" y="50" width="180" height="110" rx="8" stroke="#1f7a7a"/>
+  <text class="ct" x="735" y="80">③ Compute 计算</text>
+  <text class="cs" x="735" y="104">数值实验与误差验证</text>
+  <text class="cs" x="735" y="122">解析解 · 收敛阶 · 守恒量</text>
+  <text class="tag" x="735" y="146" fill="#1f7a7a">≈ 30% 时间</text>
+
+  <!-- 4 Apply (Green) -->
+  <rect class="card" x="875" y="50" width="180" height="110" rx="8" stroke="#2e7d32"/>
+  <text class="ct" x="965" y="80">④ Apply 应用</text>
+  <text class="cs" x="965" y="104">映射到 7 大工程领域</text>
+  <text class="cs" x="965" y="122">指出模型何时失效</text>
+  <text class="tag" x="965" y="146" fill="#2e7d32">≈ 15% 时间</text>
+
+  <!-- forward arrows -->
+  <line class="flow" x1="365" y1="105" x2="414" y2="105"/>
+  <line class="flow" x1="595" y1="105" x2="644" y2="105"/>
+  <line class="flow" x1="825" y1="105" x2="874" y2="105"/>
+
+  <!-- return arrow -->
+  <path class="flow" d="M965,160 V222 H275 V161"/>
+  <rect x="530" y="211" width="180" height="22" fill="#ffffff"/>
+  <text class="lb" x="620" y="227" text-anchor="middle" style="font-weight:700; fill:#b91c1c">发现薄弱点 · 回看概念</text>
+  <text class="lb" x="620" y="256" text-anchor="middle">每个主题产出：手推文档 + 可复现数值实验 + 工程适用边界</text>
+</svg>

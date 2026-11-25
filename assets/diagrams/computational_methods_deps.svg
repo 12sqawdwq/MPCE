@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1454 796" width="1454" height="796" role="img" aria-labelledby="t" style="font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+<title id="t">03 Computational methods: dependency map</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.8 L10,5 L0,9.2 z" fill="#475569"/></marker></defs>
+<rect x="0" y="0" width="1454" height="796" fill="#ffffff"/>
+<rect x="24" y="24.0" width="1406" height="105.5" rx="12" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+<path d="M34,24.0 H164 V129.5 H34 A10,10 0 0 1 24,119.5 V34.0 A10,10 0 0 1 34,24.0 Z" fill="#64748b"/>
+<text x="94.0" y="72.2" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Inputs</text>
+<text x="94.0" y="94.2" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">from 01 · 02</text>
+<rect x="24" y="169.5" width="1406" height="105.5" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<path d="M34,169.5 H164 V275.0 H34 A10,10 0 0 1 24,265.0 V179.5 A10,10 0 0 1 34,169.5 Z" fill="#2563eb"/>
+<text x="94.0" y="217.8" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Core Methods</text>
+<text x="94.0" y="239.8" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">grids · particles</text>
+<rect x="24" y="345.0" width="1406" height="105.5" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+<path d="M34,345.0 H164 V450.5 H34 A10,10 0 0 1 24,440.5 V355.0 A10,10 0 0 1 34,345.0 Z" fill="#7c3aed"/>
+<text x="94.0" y="382.8" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Solvers &amp;</text>
+<text x="94.0" y="403.8" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Scale</text>
+<text x="94.0" y="425.8" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">FEM · solvers · HPC</text>
+<rect x="24" y="520.5" width="1406" height="105.5" rx="12" fill="#f0fdf4" stroke="#2e7d32" stroke-width="1.5"/>
+<path d="M34,520.5 H164 V626.0 H34 A10,10 0 0 1 24,616.0 V530.5 A10,10 0 0 1 34,520.5 Z" fill="#2e7d32"/>
+<text x="94.0" y="567.2" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Advanced</text>
+<text x="94.0" y="588.2" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Methods</text>
+<rect x="24" y="666.0" width="1406" height="105.5" rx="12" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+<path d="M34,666.0 H164 V771.5 H34 A10,10 0 0 1 24,761.5 V676.0 A10,10 0 0 1 34,666.0 Z" fill="#dc2626"/>
+<text x="94.0" y="714.2" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Engineering</text>
+<text x="94.0" y="736.2" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">module 04</text>
+<path d="M543.0,109.5 L543.0,189.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M577.0,109.5 L577.0,155.0 L797.0,155.0 L797.0,189.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M560.0,255.0 L560.0,310.0 L680.0,310.0 L680.0,474.5 L577.0,474.5 L577.0,540.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M797.0,109.5 L797.0,144.0 L670.0,144.0 L670.0,463.5 L543.0,463.5 L543.0,540.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M289.0,109.5 L289.0,288.0 L272.0,288.0 L272.0,365.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M492.0,255.0 L492.0,288.0 L306.0,288.0 L306.0,365.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M509.0,109.5 L509.0,144.0 L416.0,144.0 L416.0,332.0 L543.0,332.0 L543.0,365.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M394.0,397.8 L438.0,397.8" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M509.0,430.5 L509.0,540.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1051.0,109.5 L1051.0,189.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1305.0,109.5 L1305.0,144.0 L1178.0,144.0 L1178.0,463.5 L1085.0,463.5 L1085.0,540.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M577.0,430.5 L577.0,496.5 L1017.0,496.5 L1017.0,540.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M797.0,255.0 L797.0,463.5 L1051.0,463.5 L1051.0,540.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M526.0,255.0 L526.0,321.0 L660.0,321.0 L660.0,485.5 L814.0,485.5 L814.0,540.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M543.0,430.5 L543.0,507.5 L780.0,507.5 L780.0,540.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M594.0,255.0 L594.0,299.0 L1034.0,299.0 L1034.0,365.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1068.0,255.0 L1068.0,365.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M543.0,606.0 L543.0,686.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M289.0,430.5 L289.0,686.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1034.0,255.0 L1034.0,288.0 L924.0,288.0 L924.0,646.0 L1034.0,646.0 L1034.0,686.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1068.0,606.0 L1068.0,686.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="184.0" y="44.0" width="210.0" height="65.5" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.3"/>
+<text x="289.0" y="71.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Weak Forms</text>
+<text x="289.0" y="92.5" font-size="12.5" fill="#475569" text-anchor="middle">calculus of variations</text>
+<rect x="438.0" y="44.0" width="210.0" height="65.5" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.3"/>
+<text x="543.0" y="71.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">01 Numerical Analysis</text>
+<text x="543.0" y="92.5" font-size="12.5" fill="#475569" text-anchor="middle">stability · NLA · FDM intro</text>
+<rect x="692.0" y="44.0" width="210.0" height="65.5" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.3"/>
+<text x="797.0" y="71.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">01 PDE</text>
+<text x="797.0" y="92.5" font-size="12.5" fill="#475569" text-anchor="middle">characteristics · shocks</text>
+<rect x="946.0" y="44.0" width="210.0" height="65.5" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.3"/>
+<text x="1051.0" y="71.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">02 Statistical Physics</text>
+<text x="1051.0" y="92.5" font-size="12.5" fill="#475569" text-anchor="middle">ensembles</text>
+<rect x="1200.0" y="44.0" width="210.0" height="65.5" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.3"/>
+<text x="1305.0" y="71.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">02 QM &amp; Solid State</text>
+<text x="1305.0" y="92.5" font-size="12.5" fill="#475569" text-anchor="middle">eigenproblems · bands</text>
+<rect x="438.0" y="189.5" width="210.0" height="65.5" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="543.0" y="217.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Finite Differences</text>
+<text x="543.0" y="238.0" font-size="12.5" fill="#475569" text-anchor="middle">multi-D · time stepping</text>
+<rect x="692.0" y="189.5" width="210.0" height="65.5" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="797.0" y="217.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Spectral Methods</text>
+<text x="797.0" y="238.0" font-size="12.5" fill="#475569" text-anchor="middle">Fourier · Chebyshev</text>
+<rect x="946.0" y="189.5" width="210.0" height="65.5" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="1051.0" y="217.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">MD &amp; Monte Carlo</text>
+<text x="1051.0" y="238.0" font-size="12.5" fill="#475569" text-anchor="middle">particle methods</text>
+<rect x="184.0" y="365.0" width="210.0" height="65.5" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.3"/>
+<text x="289.0" y="392.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Finite Elements</text>
+<text x="289.0" y="413.5" font-size="12.5" fill="#475569" text-anchor="middle">Galerkin · isoparametric</text>
+<rect x="438.0" y="365.0" width="210.0" height="65.5" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.3"/>
+<text x="543.0" y="392.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Solvers &amp; Optimization</text>
+<text x="543.0" y="413.5" font-size="12.5" fill="#475569" text-anchor="middle">sparse · preconditioning</text>
+<rect x="946.0" y="365.0" width="210.0" height="65.5" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.3"/>
+<text x="1051.0" y="392.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">HPC &amp; GPU</text>
+<text x="1051.0" y="413.5" font-size="12.5" fill="#475569" text-anchor="middle">parallel · accelerators</text>
+<rect x="438.0" y="540.5" width="210.0" height="65.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="543.0" y="568.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Finite Volumes</text>
+<text x="543.0" y="589.0" font-size="12.5" fill="#475569" text-anchor="middle">conservation laws · Riemann</text>
+<rect x="692.0" y="540.5" width="210.0" height="65.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="797.0" y="568.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">SciML</text>
+<text x="797.0" y="589.0" font-size="12.5" fill="#475569" text-anchor="middle">PINNs · operators · DMD</text>
+<rect x="946.0" y="540.5" width="210.0" height="65.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="1051.0" y="568.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Electronic Structure</text>
+<text x="1051.0" y="589.0" font-size="12.5" fill="#475569" text-anchor="middle">DFT</text>
+<rect x="184.0" y="686.0" width="210.0" height="65.5" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.3"/>
+<text x="289.0" y="713.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">04 Structures, Heat</text>
+<text x="289.0" y="734.5" font-size="12.5" fill="#475569" text-anchor="middle">FEM applications</text>
+<rect x="438.0" y="686.0" width="210.0" height="65.5" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.3"/>
+<text x="543.0" y="713.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">04 CFD, Devices</text>
+<text x="543.0" y="734.5" font-size="12.5" fill="#475569" text-anchor="middle">FVM applications</text>
+<rect x="946.0" y="686.0" width="210.0" height="65.5" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.3"/>
+<text x="1051.0" y="713.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">04 Materials</text>
+<text x="1051.0" y="734.5" font-size="12.5" fill="#475569" text-anchor="middle">atomistic → continuum</text>
+</svg>

@@ -18,26 +18,7 @@
 
 ## 2. 依赖关系 Dependencies
 
-```mermaid
-flowchart TD
-    MLA["Math: eigen, SVD"] --> CM["Classical Mechanics: Lagrangian, Hamiltonian"]
-    MDE["Math: ODE, dynamical systems"] --> CM
-    CM --> WV["Oscillations and Waves: normal modes"]
-    MPDE["Math: PDE, Fourier, Sturm-Liouville"] --> WV
-    MVC["Math: vector calculus, Green's functions"] --> EM["Electromagnetism: Maxwell, Laplace/Poisson"]
-    WV --> EM
-    CM --> QM["Quantum Mechanics: Schrodinger eigenproblem"]
-    MPDE --> QM
-    MPR["Math: probability, MCMC"] --> SP["Statistical Physics: ensembles, Fermi-Dirac"]
-    CM --> SP
-    QM --> SS["Solid State: Bloch, bands, phonons"]
-    SP --> SS
-    EM --> SS
-    SS --> ENG["04 Devices, materials simulation"]
-    EM --> ENG
-    SP --> COMP["03 MD, Monte Carlo"]
-    QM --> COMP2["03 Eigensolvers, DFT"]
-```
+![物理核心模块依赖图](../assets/diagrams/physics_core_dependencies.svg)
 
 ## 3. 各模块核心内容 Core Content per Module
 

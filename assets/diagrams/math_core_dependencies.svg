@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1304 1024" width="1304" height="1024" role="img" aria-labelledby="t" style="font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+<title id="t">01 Mathematics: core dependency map</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.8 L10,5 L0,9.2 z" fill="#475569"/></marker></defs>
+<rect x="0" y="0" width="1304" height="1024" fill="#ffffff"/>
+<rect x="24" y="24.0" width="1256" height="122.0" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<path d="M34,24.0 H164 V146.0 H34 A10,10 0 0 1 24,136.0 V34.0 A10,10 0 0 1 34,24.0 Z" fill="#2563eb"/>
+<text x="94.0" y="80.5" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Foundations</text>
+<text x="94.0" y="102.5" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">entry points</text>
+<rect x="24" y="186.0" width="1256" height="122.0" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+<path d="M34,186.0 H164 V308.0 H34 A10,10 0 0 1 24,298.0 V196.0 A10,10 0 0 1 34,186.0 Z" fill="#7c3aed"/>
+<text x="94.0" y="242.5" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Core Tools</text>
+<text x="94.0" y="264.5" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">spectral · multivar</text>
+<rect x="24" y="378.0" width="1256" height="122.0" rx="12" fill="#f0fdf4" stroke="#2e7d32" stroke-width="1.5"/>
+<path d="M34,378.0 H164 V500.0 H34 A10,10 0 0 1 24,490.0 V388.0 A10,10 0 0 1 34,378.0 Z" fill="#2e7d32"/>
+<text x="94.0" y="434.5" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Structures</text>
+<text x="94.0" y="456.5" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">systems &amp; inference</text>
+<rect x="24" y="570.0" width="1256" height="122.0" rx="12" fill="#f0fdfa" stroke="#1f7a7a" stroke-width="1.5"/>
+<path d="M34,570.0 H164 V692.0 H34 A10,10 0 0 1 24,682.0 V580.0 A10,10 0 0 1 34,570.0 Z" fill="#1f7a7a"/>
+<text x="94.0" y="625.0" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Dynamics &amp;</text>
+<text x="94.0" y="646.0" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Transforms</text>
+<rect x="24" y="732.0" width="1256" height="122.0" rx="12" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<path d="M34,732.0 H164 V854.0 H34 A10,10 0 0 1 24,844.0 V742.0 A10,10 0 0 1 34,732.0 Z" fill="#d97706"/>
+<text x="94.0" y="788.5" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">PDE &amp; Beyond</text>
+<text x="94.0" y="810.5" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">fields &amp; discretization</text>
+<rect x="24" y="894.0" width="1256" height="105.5" rx="12" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+<path d="M34,894.0 H164 V999.5 H34 A10,10 0 0 1 24,989.5 V904.0 A10,10 0 0 1 34,894.0 Z" fill="#dc2626"/>
+<text x="94.0" y="942.2" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Next Modules</text>
+<text x="94.0" y="964.2" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">downstream</text>
+<path d="M285.0,126.0 L285.0,206.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M599.0,288.0 L599.0,398.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M319.0,126.0 L319.0,166.0 L582.0,166.0 L582.0,206.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M879.0,126.0 L879.0,166.0 L862.0,166.0 L862.0,321.0 L879.0,321.0 L879.0,398.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M319.0,288.0 L319.0,343.0 L845.0,343.0 L845.0,398.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1142.0,126.0 L1142.0,321.0 L1159.0,321.0 L1159.0,398.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M353.0,288.0 L353.0,332.0 L1125.0,332.0 L1125.0,398.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M251.0,288.0 L251.0,365.0 L285.0,365.0 L285.0,398.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M565.0,288.0 L565.0,321.0 L319.0,321.0 L319.0,398.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M268.0,480.0 L268.0,590.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M336.0,480.0 L336.0,546.0 L862.0,546.0 L862.0,590.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1024.0,631.0 L980.0,631.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M582.0,480.0 L582.0,535.0 L732.0,535.0 L732.0,706.5 L845.0,706.5 L845.0,752.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M879.0,672.0 L879.0,752.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M980.0,793.0 L1024.0,793.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M285.0,288.0 L285.0,354.0 L442.0,354.0 L442.0,717.5 L1142.0,717.5 L1142.0,752.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M845.0,126.0 L845.0,166.0 L722.0,166.0 L722.0,513.0 L599.0,513.0 L599.0,590.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M302.0,480.0 L302.0,557.0 L565.0,557.0 L565.0,590.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M565.0,672.0 L565.0,752.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M744.0,793.0 L700.0,793.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M862.0,480.0 L862.0,524.0 L712.0,524.0 L712.0,706.5 L599.0,706.5 L599.0,752.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1176.0,834.0 L1176.0,914.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M302.0,672.0 L302.0,879.5 L1108.0,879.5 L1108.0,914.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1159.0,480.0 L1159.0,546.0 L1002.0,546.0 L1002.0,868.5 L1142.0,868.5 L1142.0,914.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M565.0,834.0 L565.0,914.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1125.0,480.0 L1125.0,535.0 L742.0,535.0 L742.0,868.5 L599.0,868.5 L599.0,914.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="184.0" y="44.0" width="236.0" height="82.0" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="302.0" y="79.8" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Linear Algebra I</text>
+<text x="302.0" y="100.8" font-size="12.5" fill="#475569" text-anchor="middle">Ax = b · subspaces · orthogonality</text>
+<rect x="744.0" y="44.0" width="236.0" height="82.0" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="862.0" y="71.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Numerical Foundations</text>
+<text x="862.0" y="92.5" font-size="12.5" fill="#475569" text-anchor="middle">floating point · conditioning</text>
+<text x="862.0" y="109.0" font-size="12.5" fill="#475569" text-anchor="middle">Python / NumPy</text>
+<rect x="1024.0" y="44.0" width="236.0" height="82.0" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="1142.0" y="71.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Probability I</text>
+<text x="1142.0" y="92.5" font-size="12.5" fill="#475569" text-anchor="middle">random variables · expectation</text>
+<text x="1142.0" y="109.0" font-size="12.5" fill="#475569" text-anchor="middle">limit theorems</text>
+<rect x="184.0" y="206.0" width="236.0" height="82.0" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.3"/>
+<text x="302.0" y="241.8" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Linear Algebra II</text>
+<text x="302.0" y="262.8" font-size="12.5" fill="#475569" text-anchor="middle">eigen · SVD · positive definite</text>
+<rect x="464.0" y="206.0" width="236.0" height="82.0" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.3"/>
+<text x="582.0" y="233.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Multivariable Calculus</text>
+<text x="582.0" y="254.5" font-size="12.5" fill="#475569" text-anchor="middle">gradient · Jacobian</text>
+<text x="582.0" y="271.0" font-size="12.5" fill="#475569" text-anchor="middle">multiple integrals</text>
+<rect x="184.0" y="398.0" width="236.0" height="82.0" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="302.0" y="433.8" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">ODE &amp; Linear Systems</text>
+<text x="302.0" y="454.8" font-size="12.5" fill="#475569" text-anchor="middle">x′ = Ax · Laplace transform</text>
+<rect x="464.0" y="398.0" width="236.0" height="82.0" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="582.0" y="425.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Vector Calculus</text>
+<text x="582.0" y="446.5" font-size="12.5" fill="#475569" text-anchor="middle">div · grad · curl</text>
+<text x="582.0" y="463.0" font-size="12.5" fill="#475569" text-anchor="middle">Gauss / Stokes</text>
+<rect x="744.0" y="398.0" width="236.0" height="82.0" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="862.0" y="433.8" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Numerical Linear Algebra</text>
+<text x="862.0" y="454.8" font-size="12.5" fill="#475569" text-anchor="middle">QR · eigen-algorithms · Krylov</text>
+<rect x="1024.0" y="398.0" width="236.0" height="82.0" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="1142.0" y="425.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Probability II</text>
+<text x="1142.0" y="446.5" font-size="12.5" fill="#475569" text-anchor="middle">estimation · Bayes</text>
+<text x="1142.0" y="463.0" font-size="12.5" fill="#475569" text-anchor="middle">Markov chains · MCMC</text>
+<rect x="184.0" y="590.0" width="236.0" height="82.0" rx="8" fill="#ffffff" stroke="#1f7a7a" stroke-width="1.3"/>
+<text x="302.0" y="617.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Dynamical Systems</text>
+<text x="302.0" y="638.5" font-size="12.5" fill="#475569" text-anchor="middle">phase plane · bifurcation</text>
+<text x="302.0" y="655.0" font-size="12.5" fill="#475569" text-anchor="middle">chaos</text>
+<rect x="464.0" y="590.0" width="236.0" height="82.0" rx="8" fill="#ffffff" stroke="#1f7a7a" stroke-width="1.3"/>
+<text x="582.0" y="625.8" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Numerical ODE</text>
+<text x="582.0" y="646.8" font-size="12.5" fill="#475569" text-anchor="middle">RK · multistep · stiffness</text>
+<rect x="744.0" y="590.0" width="236.0" height="82.0" rx="8" fill="#ffffff" stroke="#1f7a7a" stroke-width="1.3"/>
+<text x="862.0" y="625.8" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Fourier Analysis</text>
+<text x="862.0" y="646.8" font-size="12.5" fill="#475569" text-anchor="middle">Fourier series &amp; transform</text>
+<rect x="1024.0" y="590.0" width="236.0" height="82.0" rx="8" fill="#ffffff" stroke="#1f7a7a" stroke-width="1.3"/>
+<text x="1142.0" y="617.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Complex Analysis</text>
+<text x="1142.0" y="638.5" font-size="12.5" fill="#475569" text-anchor="middle">analytic functions · residues</text>
+<text x="1142.0" y="655.0" font-size="12.5" fill="#475569" text-anchor="middle">conformal maps</text>
+<rect x="464.0" y="752.0" width="236.0" height="82.0" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="1.3"/>
+<text x="582.0" y="779.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Finite Differences for PDE</text>
+<text x="582.0" y="800.5" font-size="12.5" fill="#475569" text-anchor="middle">consistency · stability</text>
+<text x="582.0" y="817.0" font-size="12.5" fill="#475569" text-anchor="middle">convergence</text>
+<rect x="744.0" y="752.0" width="236.0" height="82.0" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="1.3"/>
+<text x="862.0" y="779.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">PDE</text>
+<text x="862.0" y="800.5" font-size="12.5" fill="#475569" text-anchor="middle">heat · wave · Laplace</text>
+<text x="862.0" y="817.0" font-size="12.5" fill="#475569" text-anchor="middle">separation of variables</text>
+<rect x="1024.0" y="752.0" width="236.0" height="82.0" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="1.3"/>
+<text x="1142.0" y="787.8" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Sturm–Liouville</text>
+<text x="1142.0" y="808.8" font-size="12.5" fill="#475569" text-anchor="middle">Green's functions</text>
+<rect x="464.0" y="914.0" width="236.0" height="65.5" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.3"/>
+<text x="582.0" y="941.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">03 Computational Methods</text>
+<text x="582.0" y="962.5" font-size="12.5" fill="#475569" text-anchor="middle">numerical PDE · solvers</text>
+<rect x="1024.0" y="914.0" width="236.0" height="65.5" rx="8" fill="#ffffff" stroke="#dc2626" stroke-width="1.3"/>
+<text x="1142.0" y="941.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">02 Physics Core</text>
+<text x="1142.0" y="962.5" font-size="12.5" fill="#475569" text-anchor="middle">mechanics · fields · quantum</text>
+</svg>

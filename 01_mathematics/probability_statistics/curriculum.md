@@ -69,32 +69,7 @@ Exactly matched to Harvard Stat 110 lectures. Story proofs build real intuition,
 
 **Entry:** single-variable calculus (series, integration); for Part B: LA-4/LA-6 and VC-4.
 
-```mermaid
-flowchart LR
-    R1["PR-1 Counting"] --> R2["PR-2 Conditional, Bayes"]
-    R2 --> R3["PR-3 Discrete RVs"]
-    R3 --> R4["PR-4 Expectation"]
-    R4 --> R5["PR-5 Continuous RVs"]
-    R5 --> R6["PR-6 Moments, MGF"]
-    R5 --> R7["PR-7 Joint, multivariate normal"]
-    LA6["LA-6 Eigen, PD matrices"] --> R7
-    VC4["VC-4 Jacobian"] --> R8["PR-8 Transformations"]
-    R7 --> R8
-    R6 --> R9["PR-9 LLN, CLT"]
-    R7 --> R10["PR-10 Conditional expectation"]
-    R9 --> R11["PR-11 MLE"]
-    R11 --> R12["PR-12 Bootstrap"]
-    R11 --> R13["PR-13 Testing"]
-    R11 --> R14["PR-14 Bayesian"]
-    LA4["LA-4 Least squares"] --> R15["PR-15 Regression"]
-    R11 --> R15
-    R3 --> R16["PR-16 Markov chains"]
-    LA6 --> R16
-    R16 --> R17["PR-17 MCMC"]
-    R14 --> R17
-    R5 --> R18["PR-18 Poisson process"]
-    R9 --> R19["PR-19 Random walk, Brownian motion"]
-```
+![概率与统计章节依赖图](../../assets/diagrams/curr_probability.svg)
 
 **Cross-module:**
 - PR-19 ↔ differential_equations PDE-9 (heat kernel = Gaussian; diffusion constant D = σ²/(2Δt)).

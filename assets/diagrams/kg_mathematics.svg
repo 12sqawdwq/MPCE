@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 720" width="1320" height="720" role="img" aria-label="数学层知识图谱（21 个节点）">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <style>
+      text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .ht { font-size: 16px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .hs { font-size: 11px; fill: #ffffff; fill-opacity: 0.9; text-anchor: middle; }
+      .cid { font-size: 11px; font-weight: 700; text-anchor: middle; }
+      .ct { font-size: 13px; font-weight: 700; fill: #111827; text-anchor: middle; }
+      .cs { font-size: 11px; fill: #475569; text-anchor: middle; }
+      .lb { font-size: 11px; fill: #475569; text-anchor: middle; }
+      .card { fill: #ffffff; stroke-width: 1.3; }
+      .flow { stroke: #475569; stroke-width: 1.7; fill: none; marker-end: url(#arr); }
+    </style>
+  </defs>
+  <rect width="1320" height="720" fill="#ffffff"/>
+  <rect x="20" y="22" width="1280" height="96" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="20" y="22" width="165" height="96" rx="10" fill="#2563eb"/>
+  <text class="ht" x="102.5" y="66.0">线性代数</text>
+  <text class="hs" x="102.5" y="86.0">MATH-LA · 3 节点</text>
+  <rect class="card" x="201.0" y="34" width="351.7" height="72" rx="8" stroke="#2563eb"/>
+  <text class="cid" x="376.8" y="56" fill="#2563eb">MATH-LA-01</text>
+  <text class="ct" x="376.8" y="78">向量空间与内积</text>
+  <text class="cs" x="376.8" y="98">Linear Maps &amp; Inner Prod.</text>
+  <rect class="card" x="566.7" y="34" width="351.7" height="72" rx="8" stroke="#2563eb"/>
+  <text class="cid" x="742.5" y="56" fill="#2563eb">MATH-LA-02</text>
+  <text class="ct" x="742.5" y="78">特征值与谱定理</text>
+  <text class="cs" x="742.5" y="98">Eigen &amp; Spectral Thm</text>
+  <rect class="card" x="932.3" y="34" width="351.7" height="72" rx="8" stroke="#2563eb"/>
+  <text class="cid" x="1108.2" y="56" fill="#2563eb">MATH-LA-03</text>
+  <text class="ct" x="1108.2" y="78">矩阵分解与 SVD</text>
+  <text class="cs" x="1108.2" y="98">LU · QR · SVD · 伪逆</text>
+  <line class="flow" x1="726.5" y1="118" x2="726.5" y2="136"/>
+  <rect x="20" y="138" width="1280" height="96" rx="12" fill="#f0fdfa" stroke="#14b8a6" stroke-width="1.5"/>
+  <rect x="20" y="138" width="165" height="96" rx="10" fill="#1f7a7a"/>
+  <text class="ht" x="102.5" y="182.0">向量微积分</text>
+  <text class="hs" x="102.5" y="202.0">MATH-VC · 2 节点</text>
+  <rect class="card" x="201.0" y="150" width="534.5" height="72" rx="8" stroke="#0d9488"/>
+  <text class="cid" x="468.2" y="172" fill="#1f7a7a">MATH-VC-01</text>
+  <text class="ct" x="468.2" y="194">梯度、散度与旋度</text>
+  <text class="cs" x="468.2" y="214">Grad · Div · Curl</text>
+  <rect class="card" x="749.5" y="150" width="534.5" height="72" rx="8" stroke="#0d9488"/>
+  <text class="cid" x="1016.8" y="172" fill="#1f7a7a">MATH-VC-02</text>
+  <text class="ct" x="1016.8" y="194">三大积分定理</text>
+  <text class="cs" x="1016.8" y="214">Gauss · Stokes · Green</text>
+  <line class="flow" x1="726.5" y1="234" x2="726.5" y2="252"/>
+  <rect x="20" y="254" width="1280" height="96" rx="12" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <rect x="20" y="254" width="165" height="96" rx="10" fill="#7c3aed"/>
+  <text class="ht" x="102.5" y="298.0">微分方程</text>
+  <text class="hs" x="102.5" y="318.0">MATH-DE · 3 节点</text>
+  <rect class="card" x="201.0" y="266" width="351.7" height="72" rx="8" stroke="#7c3aed"/>
+  <text class="cid" x="376.8" y="288" fill="#7c3aed">MATH-DE-01</text>
+  <text class="ct" x="376.8" y="310">常微分方程与线性组</text>
+  <text class="cs" x="376.8" y="330">ODE &amp; Matrix Exp.</text>
+  <rect class="card" x="566.7" y="266" width="351.7" height="72" rx="8" stroke="#7c3aed"/>
+  <text class="cid" x="742.5" y="288" fill="#7c3aed">MATH-DE-02</text>
+  <text class="ct" x="742.5" y="310">动力系统与稳定性</text>
+  <text class="cs" x="742.5" y="330">Phase Plane · Lyapunov</text>
+  <rect class="card" x="932.3" y="266" width="351.7" height="72" rx="8" stroke="#7c3aed"/>
+  <text class="cid" x="1108.2" y="288" fill="#7c3aed">MATH-DE-03</text>
+  <text class="ct" x="1108.2" y="310">偏微分方程</text>
+  <text class="cs" x="1108.2" y="330">Heat · Wave · Laplace</text>
+  <line class="flow" x1="726.5" y1="350" x2="726.5" y2="368"/>
+  <rect x="20" y="370" width="1280" height="96" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+  <rect x="20" y="370" width="165" height="96" rx="10" fill="#2e7d32"/>
+  <text class="ht" x="102.5" y="414.0">谱分析与变分</text>
+  <text class="hs" x="102.5" y="434.0">MATH-FA / VAR · 5 节点</text>
+  <rect class="card" x="201.0" y="382" width="205.4" height="72" rx="8" stroke="#16a34a"/>
+  <text class="cid" x="303.7" y="404" fill="#2e7d32">MATH-FA-01</text>
+  <text class="ct" x="303.7" y="426">傅里叶分析与变换</text>
+  <text class="cs" x="303.7" y="446">Fourier &amp; Convolution</text>
+  <rect class="card" x="420.4" y="382" width="205.4" height="72" rx="8" stroke="#16a34a"/>
+  <text class="cid" x="523.1" y="404" fill="#2e7d32">MATH-FA-02</text>
+  <text class="ct" x="523.1" y="426">格林函数</text>
+  <text class="cs" x="523.1" y="446">Green&#x27;s Functions</text>
+  <rect class="card" x="639.8" y="382" width="205.4" height="72" rx="8" stroke="#16a34a"/>
+  <text class="cid" x="742.5" y="404" fill="#2e7d32">MATH-FA-03</text>
+  <text class="ct" x="742.5" y="426">Sturm–Liouville</text>
+  <text class="cs" x="742.5" y="446">本征函数展开</text>
+  <rect class="card" x="859.2" y="382" width="205.4" height="72" rx="8" stroke="#16a34a"/>
+  <text class="cid" x="961.9" y="404" fill="#2e7d32">MATH-FA-04</text>
+  <text class="ct" x="961.9" y="426">Hilbert / Sobolev 弱形式</text>
+  <text class="cs" x="961.9" y="446">Weak Formulations</text>
+  <rect class="card" x="1078.6" y="382" width="205.4" height="72" rx="8" stroke="#16a34a"/>
+  <text class="cid" x="1181.3" y="404" fill="#2e7d32">MATH-VAR-01</text>
+  <text class="ct" x="1181.3" y="426">变分法</text>
+  <text class="cs" x="1181.3" y="446">Euler–Lagrange</text>
+  <line class="flow" x1="726.5" y1="466" x2="726.5" y2="484"/>
+  <rect x="20" y="486" width="1280" height="96" rx="12" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="20" y="486" width="165" height="96" rx="10" fill="#d97706"/>
+  <text class="ht" x="102.5" y="530.0">概率与优化</text>
+  <text class="hs" x="102.5" y="550.0">MATH-PR / OPT · 5 节点</text>
+  <rect class="card" x="201.0" y="498" width="205.4" height="72" rx="8" stroke="#d97706"/>
+  <text class="cid" x="303.7" y="520" fill="#d97706">MATH-PR-01</text>
+  <text class="ct" x="303.7" y="542">概率论与随机变量</text>
+  <text class="cs" x="303.7" y="562">Distributions · CLT</text>
+  <rect class="card" x="420.4" y="498" width="205.4" height="72" rx="8" stroke="#d97706"/>
+  <text class="cid" x="523.1" y="520" fill="#d97706">MATH-PR-02</text>
+  <text class="ct" x="523.1" y="542">贝叶斯推断与估计</text>
+  <text class="cs" x="523.1" y="562">MLE · Posterior</text>
+  <rect class="card" x="639.8" y="498" width="205.4" height="72" rx="8" stroke="#d97706"/>
+  <text class="cid" x="742.5" y="520" fill="#d97706">MATH-PR-03</text>
+  <text class="ct" x="742.5" y="542">随机过程与 SDE</text>
+  <text class="cs" x="742.5" y="562">Markov · Diffusion</text>
+  <rect class="card" x="859.2" y="498" width="205.4" height="72" rx="8" stroke="#d97706"/>
+  <text class="cid" x="961.9" y="520" fill="#d97706">MATH-OPT-01</text>
+  <text class="ct" x="961.9" y="542">凸优化与对偶</text>
+  <text class="cs" x="961.9" y="562">KKT · Duality</text>
+  <rect class="card" x="1078.6" y="498" width="205.4" height="72" rx="8" stroke="#d97706"/>
+  <text class="cid" x="1181.3" y="520" fill="#d97706">MATH-OPT-02</text>
+  <text class="ct" x="1181.3" y="542">非凸与随机梯度</text>
+  <text class="cs" x="1181.3" y="562">SGD · Adam</text>
+  <line class="flow" x1="726.5" y1="582" x2="726.5" y2="600"/>
+  <rect x="20" y="602" width="1280" height="96" rx="12" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="20" y="602" width="165" height="96" rx="10" fill="#64748b"/>
+  <text class="ht" x="102.5" y="646.0">数值分析</text>
+  <text class="hs" x="102.5" y="666.0">MATH-NA · 3 节点</text>
+  <rect class="card" x="201.0" y="614" width="351.7" height="72" rx="8" stroke="#475569"/>
+  <text class="cid" x="376.8" y="636" fill="#64748b">MATH-NA-01</text>
+  <text class="ct" x="376.8" y="658">浮点、条件数与稳定性</text>
+  <text class="cs" x="376.8" y="678">IEEE 754 · Backward Err.</text>
+  <rect class="card" x="566.7" y="614" width="351.7" height="72" rx="8" stroke="#475569"/>
+  <text class="cid" x="742.5" y="636" fill="#64748b">MATH-NA-02</text>
+  <text class="ct" x="742.5" y="658">插值、逼近与积分</text>
+  <text class="cs" x="742.5" y="678">Quadrature · Splines</text>
+  <rect class="card" x="932.3" y="614" width="351.7" height="72" rx="8" stroke="#475569"/>
+  <text class="cid" x="1108.2" y="636" fill="#64748b">MATH-NA-03</text>
+  <text class="ct" x="1108.2" y="658">离散相容与收敛性</text>
+  <text class="cs" x="1108.2" y="678">Lax Equivalence</text>
+</svg>

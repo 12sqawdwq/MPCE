@@ -6,19 +6,13 @@
 
 ## 1. 单个主题的四阶段流程
 
-```mermaid
-graph TD
-    S["选定主题<br/>检查 prerequisite_map 硬先修"] --> U
-    subgraph LOOP["四维学习闭环"]
-        U["1 · Understand 理解"] --> D["2 · Derive 推导"]
-        D --> C["3 · Compute 计算"]
-        C --> A["4 · Apply 应用"]
-    end
-    A --> R{"白纸复现<br/>是否通过?"}
-    R -->|"否"| D
-    R -->|"是"| M["ROADMAP 中更新<br/>个人掌握状态 = Completed"]
-    M --> SR["加入间隔复习队列<br/>第 1 / 4 / 12 周"]
-```
+![四维学习闭环：Understand → Derive → Compute → Apply](../assets/diagrams/learning_loop.svg)
+
+闭环的入口与出口：
+
+1. **入口**：选定主题，先在 [`prerequisite_map.md`](prerequisite_map.md) 中检查硬先修是否均为 `Completed`。
+2. **出口检查**：完成 Apply 后做一次白纸复现；**未通过 → 回到 Derive**。
+3. **通过**：在 [`ROADMAP.md`](../ROADMAP.md) 中把个人掌握状态更新为 `Completed`，并加入间隔复习队列（第 1 / 4 / 12 周）。
 
 ### 1.1 Understand（理解）— 约占主题时间 20%
 
@@ -132,29 +126,7 @@ graph TD
 
 ## 4. 双智能体更新流程（Dual-Agent Update Workflow）
 
-```mermaid
-sequenceDiagram
-    participant L as 学习者 Learner
-    participant G as Gemini 编排
-    participant C as Claude 研究与实现
-    participant R as Gemini 审查与润色
-    participant Git as Git 仓库
-
-    L->>G: 提出任务（主题 / 实验 / 修订）
-    G->>G: 拆解任务，检查 CONTRIBUTING 七问
-    G->>C: 下发任务说明（范围、ROADMAP ID、验收标准）
-    C->>C: 文献研究、完整推导、代码实现
-    C->>R: 提交草稿（含 NEEDS VERIFICATION 标记）
-    R->>R: 技术审查：推导正确性、代码可复现性
-    alt 发现技术问题
-        R->>C: 返回问题清单
-        C->>R: 修订后重新提交
-    end
-    R->>R: 编辑润色：术语一致性、双语规范、排版
-    R->>L: 交付审查后版本
-    L->>L: 验证：运行实验、抽查推导、核对引用
-    L->>Git: 批准后提交（内容状态更新）
-```
+![双智能体协作泳道图：学习者 / Gemini 编排 / Claude / Gemini 审查润色 / Git](../assets/diagrams/dual_agent_workflow.svg)
 
 ### 4.1 各阶段职责与产出
 

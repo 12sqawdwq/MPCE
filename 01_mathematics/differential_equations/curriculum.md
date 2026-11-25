@@ -84,37 +84,7 @@
 
 **Entry:** LA-1 to LA-7 (eigen-decomposition essential before DE-6), VC-3 to VC-5 (for PDE derivation), CA-5 (for transform inversion; can run concurrently).
 
-```mermaid
-flowchart TD
-    D1["DE-1 First-order"] --> D2["DE-2 Second-order linear, resonance"]
-    D2 --> D4["DE-4 Series solutions"]
-    D2 --> D5["DE-5 Laplace transform"]
-    LA6["LA-6 Eigenvalues"] --> D6["DE-6 Linear systems x' = Ax"]
-    D2 --> D6
-    D6 --> D7["DE-7 Nonlinear stability"]
-    D6 --> S2["DS-2 Phase plane"]
-    D1 --> S1["DS-1 1-D flows, bifurcations"]
-    S1 --> S2
-    S2 --> S3["DS-3 Limit cycles"]
-    S3 --> S4["DS-4 Hopf"]
-    S2 --> S5["DS-5 Lorenz, chaos"]
-    VC5["VC-5 Divergence theorem"] --> P1["PDE-1 Heat eq. derivation"]
-    P1 --> P2["PDE-2 Separation of variables"]
-    P2 --> P3["PDE-3 Fourier series"]
-    P3 --> P4["PDE-4 Wave equation"]
-    P3 --> P5["PDE-5 Sturm-Liouville"]
-    LA6 --> P5
-    D4 --> P6["PDE-6 Bessel, Legendre"]
-    P5 --> P6
-    P5 --> P7["PDE-7 Nonhomogeneous"]
-    P7 --> P8["PDE-8 Green's functions, static"]
-    P3 --> P9["PDE-9 Fourier transform"]
-    CA5["CA-5 Residues"] --> P9
-    P9 --> P10["PDE-10 Green's functions, heat and wave"]
-    P8 --> P10
-    P4 --> P11["PDE-11 Characteristics"]
-    D5 --> P12["PDE-12 Laplace transform for PDE"]
-```
+![微分方程与数学物理章节依赖图](../../assets/diagrams/curr_differential_equations.svg)
 
 **Cross-module:**
 - DE-6 ↔ linear_algebra (e^{At}); DE-5 ↔ calculus CA-5 (Bromwich inversion).

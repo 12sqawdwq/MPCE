@@ -17,35 +17,7 @@
 
 ## 2. 依赖关系 Dependency Diagram
 
-```mermaid
-flowchart TD
-    LA1["Linear Algebra I: Ax=b, subspaces, orthogonality"] --> LA2["Linear Algebra II: eigen, SVD, positive definite"]
-    VC1["Multivariable Calculus: gradient, Jacobian, multiple integrals"] --> VC2["Vector Calculus: div, grad, curl, Gauss/Stokes"]
-    LA1 --> VC1
-    NC1["Numerical Foundations: floating point, conditioning, Python/NumPy"] --> NLA["Numerical Linear Algebra: QR, eigen-algorithms, Krylov"]
-    LA2 --> NLA
-    P1["Probability I: random variables, expectation, limit theorems"] --> P2["Probability II: estimation, Bayes, Markov chains, MCMC"]
-    LA2 --> P2
-    LA2 --> ODE["ODE and Linear Systems: x' = Ax, Laplace transform"]
-    VC1 --> ODE
-    ODE --> DYN["Dynamical Systems: phase plane, bifurcation, chaos"]
-    ODE --> FOU["Fourier Series and Transform"]
-    CA["Complex Analysis: analytic functions, residues, conformal maps"] --> FOU
-    VC2 --> PDE["PDE: heat, wave, Laplace; separation of variables"]
-    FOU --> PDE
-    PDE --> SL["Sturm-Liouville and Green's Functions"]
-    LA2 --> SL
-    NC1 --> NODE["Numerical ODE: RK, multistep, stiffness"]
-    ODE --> NODE
-    NODE --> FDM["Finite Differences for PDE: consistency, stability, convergence"]
-    PDE --> FDM
-    NLA --> FDM
-    SL --> PHYS["02 Physics Core"]
-    DYN --> PHYS
-    P2 --> PHYS
-    FDM --> COMP["03 Computational Methods"]
-    P2 --> COMP
-```
+![数学核心模块依赖图](../assets/diagrams/math_core_dependencies.svg)
 
 ## 3. 月度安排 Month-by-Month Sketch
 

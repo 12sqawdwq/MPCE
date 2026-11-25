@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 596" width="1320" height="596" role="img" aria-label="工程应用层知识图谱（7 大领域 · 15 个节点）">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <style>
+      text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .ht { font-size: 16px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .hs { font-size: 11px; fill: #ffffff; fill-opacity: 0.9; text-anchor: middle; }
+      .cid { font-size: 11px; font-weight: 700; text-anchor: middle; }
+      .ct { font-size: 13px; font-weight: 700; fill: #111827; text-anchor: middle; }
+      .cs { font-size: 11px; fill: #475569; text-anchor: middle; }
+      .lb { font-size: 11px; fill: #475569; text-anchor: middle; }
+      .card { fill: #ffffff; stroke-width: 1.3; }
+      .flow { stroke: #475569; stroke-width: 1.7; fill: none; marker-end: url(#arr); }
+    </style>
+  </defs>
+  <rect width="1320" height="596" fill="#ffffff"/>
+  <rect x="20" y="22" width="1206" height="96" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="20" y="22" width="165" height="96" rx="10" fill="#2563eb"/>
+  <text class="ht" x="102.5" y="66.0">AI 与数据科学</text>
+  <text class="hs" x="102.5" y="86.0">ENG-AI · 2 节点</text>
+  <rect class="card" x="201.0" y="34" width="497.5" height="72" rx="8" stroke="#2563eb"/>
+  <text class="cid" x="449.8" y="56" fill="#2563eb">ENG-AI-01</text>
+  <text class="ct" x="449.8" y="78">人工智能与数据科学</text>
+  <text class="cs" x="449.8" y="98">Probabilistic ML · SciML</text>
+  <rect class="card" x="712.5" y="34" width="497.5" height="72" rx="8" stroke="#2563eb"/>
+  <text class="cid" x="961.2" y="56" fill="#2563eb">ENG-AI-02</text>
+  <text class="ct" x="961.2" y="78">降维与低秩建模</text>
+  <text class="cs" x="961.2" y="98">PCA · POD · ROM</text>
+  <line class="flow" x1="689.5" y1="118" x2="689.5" y2="134"/>
+  <rect x="20" y="136" width="1206" height="96" rx="12" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <rect x="20" y="136" width="165" height="96" rx="10" fill="#7c3aed"/>
+  <text class="ht" x="102.5" y="180.0">半导体与集成电路</text>
+  <text class="hs" x="102.5" y="200.0">ENG-SEMI · 2 节点</text>
+  <rect class="card" x="201.0" y="148" width="497.5" height="72" rx="8" stroke="#7c3aed"/>
+  <text class="cid" x="449.8" y="170" fill="#7c3aed">ENG-SEMI-01</text>
+  <text class="ct" x="449.8" y="192">半导体与集成电路</text>
+  <text class="cs" x="449.8" y="212">Device Physics · IC</text>
+  <rect class="card" x="712.5" y="148" width="497.5" height="72" rx="8" stroke="#7c3aed"/>
+  <text class="cid" x="961.2" y="170" fill="#7c3aed">ENG-SEMI-02</text>
+  <text class="ct" x="961.2" y="192">TCAD 器件与工艺建模</text>
+  <text class="cs" x="961.2" y="212">Drift-Diffusion · MOSFET</text>
+  <line class="flow" x1="689.5" y1="232" x2="689.5" y2="248"/>
+  <rect x="20" y="250" width="1206" height="96" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+  <rect x="20" y="250" width="165" height="96" rx="10" fill="#2e7d32"/>
+  <text class="ht" x="102.5" y="294.0">机器人与具身智能</text>
+  <text class="hs" x="102.5" y="314.0">ENG-ROB · 3 节点</text>
+  <rect class="card" x="201.0" y="262" width="327.0" height="72" rx="8" stroke="#16a34a"/>
+  <text class="cid" x="364.5" y="284" fill="#2e7d32">ENG-ROB-01</text>
+  <text class="ct" x="364.5" y="306">机器人学</text>
+  <text class="cs" x="364.5" y="326">Embodied Intelligence</text>
+  <rect class="card" x="542.0" y="262" width="327.0" height="72" rx="8" stroke="#16a34a"/>
+  <text class="cid" x="705.5" y="284" fill="#2e7d32">ENG-ROB-02</text>
+  <text class="ct" x="705.5" y="306">机械臂动力学与控制</text>
+  <text class="cs" x="705.5" y="326">Rigid Body · LQR / MPC</text>
+  <rect class="card" x="883.0" y="262" width="327.0" height="72" rx="8" stroke="#16a34a"/>
+  <text class="cid" x="1046.5" y="284" fill="#2e7d32">ENG-ROB-03</text>
+  <text class="ct" x="1046.5" y="306">状态估计与 SLAM</text>
+  <text class="cs" x="1046.5" y="326">Kalman · Sensor Fusion</text>
+  <line class="flow" x1="689.5" y1="346" x2="689.5" y2="362"/>
+  <rect x="20" y="364" width="1206" height="96" rx="12" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="20" y="364" width="165" height="96" rx="10" fill="#d97706"/>
+  <text class="ht" x="102.5" y="408.0">制造与计算材料</text>
+  <text class="hs" x="102.5" y="428.0">ENG-MFG / MAT · 4 节点</text>
+  <rect class="card" x="201.0" y="376" width="241.8" height="72" rx="8" stroke="#d97706"/>
+  <text class="cid" x="321.9" y="398" fill="#d97706">ENG-MFG-01</text>
+  <text class="ct" x="321.9" y="420">先进制造</text>
+  <text class="cs" x="321.9" y="440">Process &amp; Topology Opt.</text>
+  <rect class="card" x="456.8" y="376" width="241.8" height="72" rx="8" stroke="#d97706"/>
+  <text class="cid" x="577.6" y="398" fill="#d97706">ENG-MFG-02</text>
+  <text class="ct" x="577.6" y="420">多物理场热–力耦合</text>
+  <text class="cs" x="577.6" y="440">Thermoelastic FEM</text>
+  <rect class="card" x="712.5" y="376" width="241.8" height="72" rx="8" stroke="#d97706"/>
+  <text class="cid" x="833.4" y="398" fill="#d97706">ENG-MAT-01</text>
+  <text class="ct" x="833.4" y="420">材料科学与计算物理</text>
+  <text class="cs" x="833.4" y="440">Multiscale Materials</text>
+  <rect class="card" x="968.2" y="376" width="241.8" height="72" rx="8" stroke="#d97706"/>
+  <text class="cid" x="1089.1" y="398" fill="#d97706">ENG-MAT-02</text>
+  <text class="ct" x="1089.1" y="420">DFT 与分子动力学</text>
+  <text class="cs" x="1089.1" y="440">QE · LAMMPS</text>
+  <line class="flow" x1="689.5" y1="460" x2="689.5" y2="476"/>
+  <rect x="20" y="478" width="1206" height="96" rx="12" fill="#f0fdfa" stroke="#14b8a6" stroke-width="1.5"/>
+  <rect x="20" y="478" width="165" height="96" rx="10" fill="#1f7a7a"/>
+  <text class="ht" x="102.5" y="522.0">HPC 与医学成像</text>
+  <text class="hs" x="102.5" y="542.0">ENG-HPC / MED · 4 节点</text>
+  <rect class="card" x="201.0" y="490" width="241.8" height="72" rx="8" stroke="#0d9488"/>
+  <text class="cid" x="321.9" y="512" fill="#1f7a7a">ENG-HPC-01</text>
+  <text class="ct" x="321.9" y="534">高性能计算与体系结构</text>
+  <text class="cs" x="321.9" y="554">GPU · Memory Hierarchy</text>
+  <rect class="card" x="456.8" y="490" width="241.8" height="72" rx="8" stroke="#0d9488"/>
+  <text class="cid" x="577.6" y="512" fill="#1f7a7a">ENG-HPC-02</text>
+  <text class="ct" x="577.6" y="534">大规模 PDE 仿真与代理</text>
+  <text class="cs" x="577.6" y="554">Exascale · Surrogates</text>
+  <rect class="card" x="712.5" y="490" width="241.8" height="72" rx="8" stroke="#0d9488"/>
+  <text class="cid" x="833.4" y="512" fill="#1f7a7a">ENG-MED-01</text>
+  <text class="ct" x="833.4" y="534">医学成像与生物医学</text>
+  <text class="cs" x="833.4" y="554">Biomedical Modeling</text>
+  <rect class="card" x="968.2" y="490" width="241.8" height="72" rx="8" stroke="#0d9488"/>
+  <text class="cid" x="1089.1" y="512" fill="#1f7a7a">ENG-MED-02</text>
+  <text class="ct" x="1089.1" y="534">医学图像重建</text>
+  <text class="cs" x="1089.1" y="554">CT · MRI k-Space</text>
+  <rect x="1244" y="22" width="56" height="552" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1272.0" y="168.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">共</text>
+  <text x="1272.0" y="202.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">享</text>
+  <text x="1272.0" y="236.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">底</text>
+  <text x="1272.0" y="270.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">层</text>
+  <text x="1272.0" y="304.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">数</text>
+  <text x="1272.0" y="338.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">学</text>
+  <text x="1272.0" y="372.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">与</text>
+  <text x="1272.0" y="406.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">物</text>
+  <text x="1272.0" y="440.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">理</text>
+</svg>

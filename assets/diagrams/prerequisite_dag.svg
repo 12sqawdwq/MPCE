@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 830" width="1300" height="830" role="img" aria-label="MPCE 全局先修依赖：Phase I–VII 分层，每个主题标注其先修">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <style>
+      text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .ht { font-size: 17px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .hs { font-size: 12px; fill: #ffffff; fill-opacity: 0.9; text-anchor: middle; }
+      .ct { font-size: 14px; font-weight: 700; fill: #111827; text-anchor: middle; }
+      .cs { font-size: 12px; fill: #475569; text-anchor: middle; }
+      .lb { font-size: 12px; fill: #475569; }
+      .card { fill: #ffffff; stroke-width: 1.3; }
+      .bn { fill: #ffffff; stroke: #dc2626; stroke-width: 2.2; }
+      .flow { stroke: #475569; stroke-width: 1.8; fill: none; marker-end: url(#arr); }
+    </style>
+  </defs>
+  <rect width="1300" height="830" fill="#ffffff"/>
+
+  <!-- ===== Phase I (Blue) ===== -->
+  <rect x="20" y="30" width="1180" height="84" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="20" y="30" width="140" height="84" rx="10" fill="#2563eb"/>
+  <text class="ht" x="90" y="68">Phase I</text><text class="hs" x="90" y="88">数学基础</text>
+  <g stroke="#2563eb">
+    <rect class="bn" x="176" y="45" width="158" height="54" rx="8"/>
+    <rect class="card" x="346" y="45" width="158" height="54" rx="8"/>
+    <rect class="card" x="516" y="45" width="158" height="54" rx="8"/>
+    <rect class="bn" x="686" y="45" width="158" height="54" rx="8"/>
+    <rect class="bn" x="856" y="45" width="158" height="54" rx="8"/>
+    <rect class="card" x="1026" y="45" width="158" height="54" rx="8"/>
+  </g>
+  <text class="ct" x="255" y="68">线性代数 LA</text><text class="cs" x="255" y="87">起点</text>
+  <text class="ct" x="425" y="68">特征值 / SVD</text><text class="cs" x="425" y="87">← LA（PY）</text>
+  <text class="ct" x="595" y="68">多元微积分 MVC</text><text class="cs" x="595" y="87">← LA</text>
+  <text class="ct" x="765" y="68">向量微积分 VC</text><text class="cs" x="765" y="87">← MVC</text>
+  <text class="ct" x="935" y="68">概率直觉 PR</text><text class="cs" x="935" y="87">（PY）</text>
+  <text class="ct" x="1105" y="68">Python 数值 PY</text><text class="cs" x="1105" y="87">起点</text>
+
+  <line class="flow" x1="90" y1="114" x2="90" y2="139"/>
+  <text class="lb" x="112" y="131">进入 II：LA · MVC → ODE；VC · ODE → PDE；LA → FA；MVC → CV</text>
+
+  <!-- ===== Phase II (Purple) ===== -->
+  <rect x="20" y="140" width="1180" height="84" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="20" y="140" width="140" height="84" rx="10" fill="#7c3aed"/>
+  <text class="ht" x="90" y="178">Phase II</text><text class="hs" x="90" y="198">微分方程 · 数学物理</text>
+  <g stroke="#7c3aed">
+    <rect class="card" x="176" y="155" width="192" height="54" rx="8"/>
+    <rect class="card" x="380" y="155" width="192" height="54" rx="8"/>
+    <rect class="bn" x="584" y="155" width="192" height="54" rx="8"/>
+    <rect class="card" x="788" y="155" width="192" height="54" rx="8"/>
+    <rect class="bn" x="992" y="155" width="192" height="54" rx="8"/>
+  </g>
+  <text class="ct" x="272" y="178">常微分方程 ODE</text><text class="cs" x="272" y="197">← LA · MVC</text>
+  <text class="ct" x="476" y="178">偏微分方程 PDE</text><text class="cs" x="476" y="197">← VC · ODE（FA）</text>
+  <text class="ct" x="680" y="178">Fourier 分析 FA</text><text class="cs" x="680" y="197">← LA</text>
+  <text class="ct" x="884" y="178">Sturm–Liouville SL</text><text class="cs" x="884" y="197">← PDE · FA</text>
+  <text class="ct" x="1088" y="178">变分法 CV</text><text class="cs" x="1088" y="197">← MVC（ODE）</text>
+
+  <line class="flow" x1="90" y1="224" x2="90" y2="249"/>
+  <text class="lb" x="112" y="241">进入 III：CV · ODE → LM；VC · PDE → EM；VC · LA · PDE → CM；MVC → TH</text>
+
+  <!-- ===== Phase III (Teal) ===== -->
+  <rect x="20" y="250" width="1180" height="84" rx="12" fill="#f0fdfa" stroke="#1f7a7a" stroke-width="1.5"/>
+  <rect x="20" y="250" width="140" height="84" rx="10" fill="#1f7a7a"/>
+  <text class="ht" x="90" y="288">Phase III</text><text class="hs" x="90" y="308">经典物理</text>
+  <g stroke="#1f7a7a">
+    <rect class="card" x="176" y="265" width="192" height="54" rx="8"/>
+    <rect class="card" x="380" y="265" width="192" height="54" rx="8"/>
+    <rect class="card" x="584" y="265" width="192" height="54" rx="8"/>
+    <rect class="card" x="788" y="265" width="192" height="54" rx="8"/>
+    <rect class="card" x="992" y="265" width="192" height="54" rx="8"/>
+  </g>
+  <text class="ct" x="272" y="288">分析力学 LM</text><text class="cs" x="272" y="307">← CV · ODE</text>
+  <text class="ct" x="476" y="288">刚体动力学 RB</text><text class="cs" x="476" y="307">← LM · LA</text>
+  <text class="ct" x="680" y="288">电磁学 EM</text><text class="cs" x="680" y="307">← VC · PDE</text>
+  <text class="ct" x="884" y="288">热力学 TH</text><text class="cs" x="884" y="307">← MVC</text>
+  <text class="ct" x="1088" y="288">连续介质力学 CM</text><text class="cs" x="1088" y="307">← VC · LA · PDE</text>
+
+  <line class="flow" x1="90" y1="334" x2="90" y2="359"/>
+  <text class="lb" x="112" y="351">进入 IV：SVD · SL · FA → QM；PR · TH → SM；QM · SM → SS；SS · CV → DFT</text>
+
+  <!-- ===== Phase IV (Green) ===== -->
+  <rect x="20" y="360" width="1180" height="84" rx="12" fill="#f0fdf4" stroke="#2e7d32" stroke-width="1.5"/>
+  <rect x="20" y="360" width="140" height="84" rx="10" fill="#2e7d32"/>
+  <text class="ht" x="90" y="398">Phase IV</text><text class="hs" x="90" y="418">近代物理与材料</text>
+  <g stroke="#2e7d32">
+    <rect class="card" x="176" y="375" width="243" height="54" rx="8"/>
+    <rect class="card" x="431" y="375" width="243" height="54" rx="8"/>
+    <rect class="card" x="686" y="375" width="243" height="54" rx="8"/>
+    <rect class="card" x="941" y="375" width="243" height="54" rx="8"/>
+  </g>
+  <text class="ct" x="297.5" y="398">量子力学 QM</text><text class="cs" x="297.5" y="417">← SVD · SL · FA（LM）</text>
+  <text class="ct" x="552.5" y="398">统计力学 SM</text><text class="cs" x="552.5" y="417">← PR · TH</text>
+  <text class="ct" x="807.5" y="398">固体与半导体物理 SS</text><text class="cs" x="807.5" y="417">← QM · SM · FA</text>
+  <text class="ct" x="1062.5" y="398">DFT 概要</text><text class="cs" x="1062.5" y="417">← SS · CV</text>
+
+  <line class="flow" x1="90" y1="444" x2="90" y2="469"/>
+  <text class="lb" x="112" y="461">进入 V：SVD · PY → NLA；PDE · NLA → FDM；CV · PDE · NLA → FEM；PR → MC；NLA → HPC</text>
+
+  <!-- ===== Phase V (Amber) ===== -->
+  <rect x="20" y="470" width="1180" height="84" rx="12" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="20" y="470" width="140" height="84" rx="10" fill="#d97706"/>
+  <text class="ht" x="90" y="508">Phase V</text><text class="hs" x="90" y="528">数值与科学计算</text>
+  <g stroke="#d97706">
+    <rect class="card" x="176" y="485" width="158" height="54" rx="8"/>
+    <rect class="card" x="346" y="485" width="158" height="54" rx="8"/>
+    <rect class="card" x="516" y="485" width="158" height="54" rx="8"/>
+    <rect class="card" x="686" y="485" width="158" height="54" rx="8"/>
+    <rect class="card" x="856" y="485" width="158" height="54" rx="8"/>
+    <rect class="card" x="1026" y="485" width="158" height="54" rx="8"/>
+  </g>
+  <text class="ct" x="255" y="508">数值线性代数 NLA</text><text class="cs" x="255" y="527">← SVD · PY</text>
+  <text class="ct" x="425" y="508">ODE 数值解</text><text class="cs" x="425" y="527">← ODE</text>
+  <text class="ct" x="595" y="508">FDM / FVM</text><text class="cs" x="595" y="527">← PDE · NLA</text>
+  <text class="ct" x="765" y="508">有限元 FEM</text><text class="cs" x="765" y="527">← CV · PDE · NLA</text>
+  <text class="ct" x="935" y="508">Monte Carlo MC</text><text class="cs" x="935" y="527">← PR（SM）</text>
+  <text class="ct" x="1105" y="508">HPC 基础</text><text class="cs" x="1105" y="527">← NLA</text>
+
+  <line class="flow" x1="90" y1="554" x2="90" y2="579"/>
+  <text class="lb" x="112" y="571">进入 VI：MVC · SVD → OPT；PR · OPT → BAY；BAY · ODE → KF；DL · FDM → SciML；SVD · FA → INV</text>
+
+  <!-- ===== Phase VI (Slate) ===== -->
+  <rect x="20" y="580" width="1180" height="84" rx="12" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+  <rect x="20" y="580" width="140" height="84" rx="10" fill="#64748b"/>
+  <text class="ht" x="90" y="618">Phase VI</text><text class="hs" x="90" y="638">AI · 控制 · 优化</text>
+  <g stroke="#64748b">
+    <rect class="card" x="176" y="595" width="135" height="54" rx="8"/>
+    <rect class="card" x="321.5" y="595" width="135" height="54" rx="8"/>
+    <rect class="card" x="467" y="595" width="135" height="54" rx="8"/>
+    <rect class="card" x="612.5" y="595" width="135" height="54" rx="8"/>
+    <rect class="card" x="758" y="595" width="135" height="54" rx="8"/>
+    <rect class="card" x="903.5" y="595" width="135" height="54" rx="8"/>
+    <rect class="card" x="1049" y="595" width="135" height="54" rx="8"/>
+  </g>
+  <text class="ct" x="243.5" y="618">优化 OPT</text><text class="cs" x="243.5" y="637">← MVC · SVD</text>
+  <text class="ct" x="389" y="618">贝叶斯 BAY</text><text class="cs" x="389" y="637">← PR · OPT</text>
+  <text class="ct" x="534.5" y="618">Kalman KF</text><text class="cs" x="534.5" y="637">← BAY · ODE</text>
+  <text class="ct" x="680" y="618">最优控制 CTL</text><text class="cs" x="680" y="637">← CV · ODE · OPT</text>
+  <text class="ct" x="825.5" y="618">深度学习 DL</text><text class="cs" x="825.5" y="637">← OPT · PR</text>
+  <text class="ct" x="971" y="618">SciML</text><text class="cs" x="971" y="637">← DL · FDM（FEM）</text>
+  <text class="ct" x="1116.5" y="618">反问题 INV</text><text class="cs" x="1116.5" y="637">← SVD · FA（BAY）</text>
+
+  <line class="flow" x1="90" y1="664" x2="90" y2="689"/>
+  <text class="lb" x="112" y="681">进入 VII：EM · SS · FDM → DEV；FEM · CM · TH → MFG；RB · CTL · KF → ROB；INV → IMG；SM · NODE → MAT</text>
+
+  <!-- ===== Phase VII (Blue) ===== -->
+  <rect x="20" y="690" width="1180" height="84" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="20" y="690" width="140" height="84" rx="10" fill="#2563eb"/>
+  <text class="ht" x="90" y="728">Phase VII</text><text class="hs" x="90" y="748">跨学科工程</text>
+  <g stroke="#2563eb">
+    <rect class="card" x="176" y="705" width="192" height="54" rx="8"/>
+    <rect class="card" x="380" y="705" width="192" height="54" rx="8"/>
+    <rect class="card" x="584" y="705" width="192" height="54" rx="8"/>
+    <rect class="card" x="788" y="705" width="192" height="54" rx="8"/>
+    <rect class="card" x="992" y="705" width="192" height="54" rx="8"/>
+  </g>
+  <text class="ct" x="272" y="728">器件仿真 DEV</text><text class="cs" x="272" y="747">← EM · SS · FDM</text>
+  <text class="ct" x="476" y="728">多物理场制造 MFG</text><text class="cs" x="476" y="747">← FEM · CM · TH（HPC）</text>
+  <text class="ct" x="680" y="728">机器人 ROB</text><text class="cs" x="680" y="747">← RB · CTL · KF</text>
+  <text class="ct" x="884" y="728">医学成像 IMG</text><text class="cs" x="884" y="747">← INV（DL）</text>
+  <text class="ct" x="1088" y="728">材料计算 MAT</text><text class="cs" x="1088" y="747">← SM · NODE（DFT · HPC）</text>
+
+  <!-- ===== Pillar ===== -->
+  <rect x="1220" y="30" width="60" height="744" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <g font-size="20" font-weight="700" fill="#b91c1c" text-anchor="middle">
+    <text x="1250" y="270">数</text>
+    <text x="1250" y="304">值</text>
+    <text x="1250" y="338">实</text>
+    <text x="1250" y="372">验</text>
+    <text x="1250" y="406">贯</text>
+    <text x="1250" y="440">穿</text>
+    <text x="1250" y="474">各</text>
+    <text x="1250" y="508">阶</text>
+    <text x="1250" y="542">段</text>
+  </g>
+  <text x="1250" y="740" font-size="11" fill="#b91c1c" text-anchor="middle">NumPy</text>
+  <text x="1250" y="756" font-size="11" fill="#b91c1c" text-anchor="middle">SciPy</text>
+
+  <!-- ===== Legend ===== -->
+  <rect x="20" y="796" width="30" height="18" rx="5" fill="#ffffff" stroke="#64748b" stroke-width="1.3"/>
+  <text class="lb" x="58" y="810">普通主题</text>
+  <rect x="140" y="796" width="30" height="18" rx="5" fill="#ffffff" stroke="#dc2626" stroke-width="2.2"/>
+  <text class="lb" x="178" y="810">瓶颈先修（详见 §2）</text>
+  <text class="lb" x="340" y="810">← X · Y：硬先修（须达到 Completed）　　（Z）：软先修（In Progress 即可，原图中的虚线依赖）</text>
+</svg>

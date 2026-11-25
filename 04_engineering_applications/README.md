@@ -18,26 +18,7 @@
 
 ## 2. 依赖关系 Dependencies
 
-```mermaid
-flowchart LR
-    CM["Continuum mechanics"] --> ST["Structures: FEM elasticity"]
-    CM --> CFD["CFD: FVM Navier-Stokes"]
-    FEM["03 FEM"] --> ST
-    FVM["03 FVM, solvers"] --> CFD
-    FVM --> DEV["Semiconductor devices: drift-diffusion"]
-    EM["02 EM"] --> DEV
-    SS["02 Solid state, carrier statistics"] --> DEV
-    PM["03 MD, DFT"] --> MAT["Materials simulation"]
-    SS --> MAT
-    PR["01 Probability"] --> EC["Estimation and control"]
-    ODE["01 ODE, linear systems"] --> EC
-    ST --> CAP["Capstone"]
-    CFD --> CAP
-    DEV --> CAP
-    MAT --> CAP
-    EC --> CAP
-    ML["03 SciML"] --> CAP
-```
+![工程应用方向依赖图](../assets/diagrams/engineering_apps_deps.svg)
 
 ## 3. 各方向标志性项目 Signature Projects
 

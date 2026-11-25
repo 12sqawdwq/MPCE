@@ -66,26 +66,7 @@
 
 **Entry:** single-variable calculus (Stewart Ch. 1–11 level, including Taylor series); linear algebra LA-1 to LA-3 (vectors, matrices).
 
-```mermaid
-flowchart LR
-    S["Single-variable calculus, Taylor series"] --> VC1["VC-1 Vectors in space"]
-    LA["LA-1..3 Vectors, matrices"] --> VC1
-    VC1 --> VC2["VC-2 Vector functions"]
-    VC1 --> VC3["VC-3 Partial derivatives, gradient, Hessian"]
-    VC3 --> VC4["VC-4 Multiple integrals, Jacobian"]
-    LA5["LA-5 Determinants"] --> VC4
-    VC4 --> VC5["VC-5 Green, Stokes, Gauss"]
-    VC2 --> VC5
-    VC5 --> VC6["VC-6 Curvilinear coordinates"]
-    VC5 --> VC7["VC-7 Index notation, tensors"]
-    VC3 --> CA2["CA-2 Cauchy-Riemann"]
-    CA1["CA-1 Geometry of C"] --> CA2
-    CA2 --> CA4["CA-4 Cauchy, residues"]
-    VC5 --> CA4
-    CA4 --> CA5["CA-5 Residue technique, Laplace inversion"]
-    CA2 --> CA6["CA-6 Flows, harmonic functions"]
-    VC5 --> CA6
-```
+![多元微积分与复分析章节依赖图](../../assets/diagrams/curr_calculus.svg)
 
 **Cross-module:**
 - VC-3 (Hessian, Lagrange multipliers) → optimization, numerical_analysis (Newton's method), probability (multivariate Gaussian MLE).

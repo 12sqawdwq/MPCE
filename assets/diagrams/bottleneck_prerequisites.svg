@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 600" width="1280" height="600" role="img" aria-label="5 个瓶颈先修及其解锁的下游主题">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <style>
+      text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .ht { font-size: 17px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .hs { font-size: 12px; fill: #ffffff; fill-opacity: 0.9; text-anchor: middle; }
+      .ct { font-size: 13px; font-weight: 700; fill: #111827; text-anchor: middle; }
+      .cs { font-size: 12px; fill: #475569; text-anchor: middle; }
+      .chip { font-size: 13px; font-weight: 600; fill: #111827; text-anchor: middle; }
+      .lb { font-size: 11px; fill: #475569; text-anchor: middle; }
+      .card { fill: #ffffff; stroke-width: 1.3; }
+      .flow { stroke: #475569; stroke-width: 1.8; fill: none; marker-end: url(#arr); }
+    </style>
+  </defs>
+  <rect width="1280" height="600" fill="#ffffff"/>
+
+  <!-- ===== 1. 线性代数 (Blue) ===== -->
+  <rect x="20" y="30" width="1164" height="96" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="20" y="30" width="140" height="96" rx="10" fill="#2563eb"/>
+  <text class="ht" x="90" y="74">线性代数</text><text class="hs" x="90" y="94">瓶颈 1 · I.1–I.4</text>
+  <rect class="card" x="176" y="42" width="230" height="72" rx="8" stroke="#2563eb"/>
+  <text class="ct" x="291" y="63">进入下游前的最低要求</text>
+  <text class="cs" x="291" y="83">能独立证明谱定理</text>
+  <text class="cs" x="291" y="101">能解释 SVD 几何意义与条件数</text>
+  <line class="flow" x1="406" y1="78" x2="450" y2="78"/><text class="lb" x="428" y="70">解锁</text>
+  <g stroke="#2563eb">
+    <rect class="card" x="452" y="44" width="170" height="32" rx="6"/><rect class="card" x="634" y="44" width="170" height="32" rx="6"/>
+    <rect class="card" x="816" y="44" width="170" height="32" rx="6"/><rect class="card" x="998" y="44" width="170" height="32" rx="6"/>
+    <rect class="card" x="452" y="82" width="170" height="32" rx="6"/><rect class="card" x="634" y="82" width="170" height="32" rx="6"/>
+    <rect class="card" x="816" y="82" width="170" height="32" rx="6"/><rect class="card" x="998" y="82" width="170" height="32" rx="6"/>
+  </g>
+  <text class="chip" x="537" y="65">ODE 组</text><text class="chip" x="719" y="65">量子力学 QM</text>
+  <text class="chip" x="901" y="65">数值线性代数 NLA</text><text class="chip" x="1083" y="65">有限元 FEM</text>
+  <text class="chip" x="537" y="103">优化 OPT</text><text class="chip" x="719" y="103">最优控制 CTL</text>
+  <text class="chip" x="901" y="103">反问题 INV</text><text class="chip" x="1083" y="103">深度学习 DL</text>
+
+  <!-- ===== 2. 向量微积分 (Teal) ===== -->
+  <rect x="20" y="142" width="1164" height="96" rx="12" fill="#f0fdfa" stroke="#1f7a7a" stroke-width="1.5"/>
+  <rect x="20" y="142" width="140" height="96" rx="10" fill="#1f7a7a"/>
+  <text class="ht" x="90" y="186">向量微积分</text><text class="hs" x="90" y="206">瓶颈 2 · I.6</text>
+  <rect class="card" x="176" y="154" width="230" height="72" rx="8" stroke="#1f7a7a"/>
+  <text class="ct" x="291" y="175">进入下游前的最低要求</text>
+  <text class="cs" x="291" y="195">用散度定理从积分守恒律</text>
+  <text class="cs" x="291" y="213">推导微分形式的连续性方程</text>
+  <line class="flow" x1="406" y1="190" x2="450" y2="190"/><text class="lb" x="428" y="182">解锁</text>
+  <g stroke="#1f7a7a">
+    <rect class="card" x="452" y="174" width="170" height="32" rx="6"/><rect class="card" x="634" y="174" width="170" height="32" rx="6"/>
+    <rect class="card" x="816" y="174" width="170" height="32" rx="6"/><rect class="card" x="998" y="174" width="170" height="32" rx="6"/>
+  </g>
+  <text class="chip" x="537" y="195">偏微分方程 PDE</text><text class="chip" x="719" y="195">电磁学 EM</text>
+  <text class="chip" x="901" y="195">连续介质力学 CM</text><text class="chip" x="1083" y="195">流体力学</text>
+
+  <!-- ===== 3. 变分法 (Purple) ===== -->
+  <rect x="20" y="254" width="1164" height="96" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="20" y="254" width="140" height="96" rx="10" fill="#7c3aed"/>
+  <text class="ht" x="90" y="298">变分法</text><text class="hs" x="90" y="318">瓶颈 3 · II.7</text>
+  <rect class="card" x="176" y="266" width="230" height="72" rx="8" stroke="#7c3aed"/>
+  <text class="ct" x="291" y="287">进入下游前的最低要求</text>
+  <text class="cs" x="291" y="307">能推导 Euler–Lagrange 方程</text>
+  <text class="cs" x="291" y="325">并能处理带约束的情形</text>
+  <line class="flow" x1="406" y1="302" x2="450" y2="302"/><text class="lb" x="428" y="294">解锁</text>
+  <g stroke="#7c3aed">
+    <rect class="card" x="452" y="268" width="170" height="32" rx="6"/><rect class="card" x="634" y="268" width="170" height="32" rx="6"/>
+    <rect class="card" x="816" y="268" width="170" height="32" rx="6"/><rect class="card" x="998" y="268" width="170" height="32" rx="6"/>
+    <rect class="card" x="452" y="306" width="170" height="32" rx="6"/>
+  </g>
+  <text class="chip" x="537" y="289">Lagrange / Hamilton</text><text class="chip" x="719" y="289">FEM 弱形式</text>
+  <text class="chip" x="901" y="289">最优控制 CTL</text><text class="chip" x="1083" y="289">DFT 能量泛函</text>
+  <text class="chip" x="537" y="327">PINNs 损失设计</text>
+
+  <!-- ===== 4. 概率 (Amber) ===== -->
+  <rect x="20" y="366" width="1164" height="96" rx="12" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="20" y="366" width="140" height="96" rx="10" fill="#d97706"/>
+  <text class="ht" x="90" y="410">概率</text><text class="hs" x="90" y="430">瓶颈 4 · I.7 → VI.3</text>
+  <rect class="card" x="176" y="378" width="230" height="72" rx="8" stroke="#d97706"/>
+  <text class="ct" x="291" y="399">进入下游前的最低要求</text>
+  <text class="cs" x="291" y="419">熟练运用条件概率、贝叶斯公式</text>
+  <text class="cs" x="291" y="437">多元高斯分布及其线性变换</text>
+  <line class="flow" x1="406" y1="414" x2="450" y2="414"/><text class="lb" x="428" y="406">解锁</text>
+  <g stroke="#d97706">
+    <rect class="card" x="452" y="380" width="170" height="32" rx="6"/><rect class="card" x="634" y="380" width="170" height="32" rx="6"/>
+    <rect class="card" x="816" y="380" width="170" height="32" rx="6"/><rect class="card" x="998" y="380" width="170" height="32" rx="6"/>
+    <rect class="card" x="452" y="418" width="170" height="32" rx="6"/>
+  </g>
+  <text class="chip" x="537" y="401">统计力学 SM</text><text class="chip" x="719" y="401">Kalman 滤波</text>
+  <text class="chip" x="901" y="401">Monte Carlo</text><text class="chip" x="1083" y="401">贝叶斯推断</text>
+  <text class="chip" x="537" y="439">AI / 深度学习</text>
+
+  <!-- ===== 5. Fourier 分析 (Green) ===== -->
+  <rect x="20" y="478" width="1164" height="96" rx="12" fill="#f0fdf4" stroke="#2e7d32" stroke-width="1.5"/>
+  <rect x="20" y="478" width="140" height="96" rx="10" fill="#2e7d32"/>
+  <text class="ht" x="90" y="522">Fourier 分析</text><text class="hs" x="90" y="542">瓶颈 5 · II.5</text>
+  <rect class="card" x="176" y="490" width="230" height="72" rx="8" stroke="#2e7d32"/>
+  <text class="ct" x="291" y="511">进入下游前的最低要求</text>
+  <text class="cs" x="291" y="531">能证明卷积定理</text>
+  <text class="cs" x="291" y="549">解释 DFT 的混叠（aliasing）</text>
+  <line class="flow" x1="406" y1="526" x2="450" y2="526"/><text class="lb" x="428" y="518">解锁</text>
+  <g stroke="#2e7d32">
+    <rect class="card" x="452" y="492" width="170" height="32" rx="6"/><rect class="card" x="634" y="492" width="170" height="32" rx="6"/>
+    <rect class="card" x="816" y="492" width="170" height="32" rx="6"/><rect class="card" x="998" y="492" width="170" height="32" rx="6"/>
+    <rect class="card" x="452" y="530" width="170" height="32" rx="6"/>
+  </g>
+  <text class="chip" x="537" y="513">量子力学 QM</text><text class="chip" x="719" y="513">固体物理 · 倒空间</text>
+  <text class="chip" x="901" y="513">谱方法</text><text class="chip" x="1083" y="513">医学成像</text>
+  <text class="chip" x="537" y="551">信号处理</text>
+
+  <!-- ===== Pillar ===== -->
+  <rect x="1200" y="30" width="60" height="544" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <g font-size="20" font-weight="700" fill="#b91c1c" text-anchor="middle">
+    <text x="1230" y="180">先</text>
+    <text x="1230" y="216">过</text>
+    <text x="1230" y="252">瓶</text>
+    <text x="1230" y="288">颈</text>
+    <text x="1230" y="324">再</text>
+    <text x="1230" y="360">进</text>
+    <text x="1230" y="396">下</text>
+    <text x="1230" y="432">游</text>
+  </g>
+  <text x="1230" y="540" font-size="10.5" fill="#b91c1c" text-anchor="middle">须达到</text>
+  <text x="1230" y="556" font-size="10.5" fill="#b91c1c" text-anchor="middle">Completed</text>
+</svg>

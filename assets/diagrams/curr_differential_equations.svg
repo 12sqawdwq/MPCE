@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1404 936" width="1404" height="936" role="img" aria-labelledby="t" style="font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+<title id="t">Differential equations curriculum: ODE, dynamical systems, PDE</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.8 L10,5 L0,9.2 z" fill="#475569"/></marker></defs>
+<rect x="0" y="0" width="1404" height="936" fill="#ffffff"/>
+<rect x="24" y="24.0" width="1356" height="214.0" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<path d="M34,24.0 H164 V238.0 H34 A10,10 0 0 1 24,228.0 V34.0 A10,10 0 0 1 34,24.0 Z" fill="#2563eb"/>
+<text x="94.0" y="126.5" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Ordinary DE</text>
+<text x="94.0" y="148.5" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">DE-1 … DE-7</text>
+<rect x="24" y="278.0" width="1356" height="213.0" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+<path d="M34,278.0 H164 V491.0 H34 A10,10 0 0 1 24,481.0 V288.0 A10,10 0 0 1 34,278.0 Z" fill="#7c3aed"/>
+<text x="94.0" y="369.5" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Dynamical</text>
+<text x="94.0" y="390.5" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Systems</text>
+<text x="94.0" y="412.5" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">DS-1 … DS-5</text>
+<rect x="24" y="531.0" width="1356" height="351.5" rx="12" fill="#f0fdf4" stroke="#2e7d32" stroke-width="1.5"/>
+<path d="M34,531.0 H164 V882.5 H34 A10,10 0 0 1 24,872.5 V541.0 A10,10 0 0 1 34,531.0 Z" fill="#2e7d32"/>
+<text x="94.0" y="702.2" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Partial DE</text>
+<text x="94.0" y="724.2" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">PDE-1 … PDE-12</text>
+<path d="M384.0,76.8 L428.0,76.8" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M494.0,109.5 L494.0,125.5 L284.0,125.5 L284.0,152.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M528.0,109.5 L528.0,152.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M789.0,109.5 L789.0,152.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M562.0,109.5 L562.0,136.5 L755.0,136.5 L755.0,152.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M872.0,185.2 L916.0,185.2" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M772.0,218.0 L772.0,252.5 L528.0,252.5 L528.0,298.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M284.0,109.5 L284.0,136.5 L406.0,136.5 L406.0,252.5 L284.0,252.5 L284.0,298.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M384.0,330.8 L428.0,330.8" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M628.0,330.8 L672.0,330.8" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M872.0,330.8 L916.0,330.8" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M528.0,363.5 L528.0,405.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M384.0,583.8 L428.0,583.8" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M628.0,583.8 L672.0,583.8" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M872.0,583.8 L916.0,583.8" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1050.0,616.5 L1050.0,632.5 L1260.0,632.5 L1260.0,670.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M982.0,616.5 L982.0,643.5 L545.0,643.5 L545.0,670.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M755.0,109.5 L755.0,125.5 L650.0,125.5 L650.0,632.5 L511.0,632.5 L511.0,670.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M284.0,218.0 L284.0,263.5 L416.0,263.5 L416.0,632.5 L284.0,632.5 L284.0,670.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M428.0,703.2 L384.0,703.2" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M528.0,736.0 L528.0,778.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M628.0,820.2 L672.0,820.2" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1016.0,616.5 L1016.0,654.5 L772.0,654.5 L772.0,670.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M916.0,703.2 L872.0,703.2" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M772.0,736.0 L772.0,757.0 L1016.0,757.0 L1016.0,778.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M872.0,820.2 L916.0,820.2" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1260.0,736.0 L1260.0,778.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M528.0,218.0 L528.0,263.5 L660.0,263.5 L660.0,757.0 L284.0,757.0 L284.0,778.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="184.0" y="44.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="284.0" y="71.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">First-Order</text>
+<text x="284.0" y="92.5" font-size="12.5" fill="#475569" text-anchor="middle">DE-1</text>
+<rect x="428.0" y="44.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="528.0" y="71.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Second-Order Linear</text>
+<text x="528.0" y="92.5" font-size="12.5" fill="#475569" text-anchor="middle">DE-2 · resonance</text>
+<rect x="672.0" y="44.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text x="772.0" y="71.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Eigenvalues</text>
+<text x="772.0" y="92.5" font-size="12.5" fill="#475569" text-anchor="middle">LA-6</text>
+<rect x="184.0" y="152.5" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="284.0" y="180.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Series Solutions</text>
+<text x="284.0" y="201.0" font-size="12.5" fill="#475569" text-anchor="middle">DE-4</text>
+<rect x="428.0" y="152.5" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="528.0" y="180.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Laplace Transform</text>
+<text x="528.0" y="201.0" font-size="12.5" fill="#475569" text-anchor="middle">DE-5</text>
+<rect x="672.0" y="152.5" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="772.0" y="180.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Linear Systems</text>
+<text x="772.0" y="201.0" font-size="12.5" fill="#475569" text-anchor="middle">DE-6 · x′ = Ax</text>
+<rect x="916.0" y="152.5" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="1016.0" y="180.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Nonlinear Stability</text>
+<text x="1016.0" y="201.0" font-size="12.5" fill="#475569" text-anchor="middle">DE-7</text>
+<rect x="184.0" y="298.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.3"/>
+<text x="284.0" y="325.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">1-D Flows</text>
+<text x="284.0" y="346.5" font-size="12.5" fill="#475569" text-anchor="middle">DS-1 · bifurcations</text>
+<rect x="428.0" y="298.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.3"/>
+<text x="528.0" y="325.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Phase Plane</text>
+<text x="528.0" y="346.5" font-size="12.5" fill="#475569" text-anchor="middle">DS-2</text>
+<rect x="672.0" y="298.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.3"/>
+<text x="772.0" y="325.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Limit Cycles</text>
+<text x="772.0" y="346.5" font-size="12.5" fill="#475569" text-anchor="middle">DS-3</text>
+<rect x="916.0" y="298.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.3"/>
+<text x="1016.0" y="325.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Hopf Bifurcation</text>
+<text x="1016.0" y="346.5" font-size="12.5" fill="#475569" text-anchor="middle">DS-4</text>
+<rect x="428.0" y="405.5" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.3"/>
+<text x="528.0" y="433.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Lorenz, Chaos</text>
+<text x="528.0" y="454.0" font-size="12.5" fill="#475569" text-anchor="middle">DS-5</text>
+<rect x="184.0" y="551.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text x="284.0" y="578.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Divergence Theorem</text>
+<text x="284.0" y="599.5" font-size="12.5" fill="#475569" text-anchor="middle">VC-5</text>
+<rect x="428.0" y="551.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="528.0" y="578.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Heat Equation</text>
+<text x="528.0" y="599.5" font-size="12.5" fill="#475569" text-anchor="middle">PDE-1 · derivation</text>
+<rect x="672.0" y="551.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="772.0" y="578.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Separation of Variables</text>
+<text x="772.0" y="599.5" font-size="12.5" fill="#475569" text-anchor="middle">PDE-2</text>
+<rect x="916.0" y="551.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="1016.0" y="578.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Fourier Series</text>
+<text x="1016.0" y="599.5" font-size="12.5" fill="#475569" text-anchor="middle">PDE-3</text>
+<rect x="184.0" y="670.5" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="284.0" y="698.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Bessel, Legendre</text>
+<text x="284.0" y="719.0" font-size="12.5" fill="#475569" text-anchor="middle">PDE-6</text>
+<rect x="428.0" y="670.5" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="528.0" y="698.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Sturm–Liouville</text>
+<text x="528.0" y="719.0" font-size="12.5" fill="#475569" text-anchor="middle">PDE-5</text>
+<rect x="672.0" y="670.5" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="772.0" y="698.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Fourier Transform</text>
+<text x="772.0" y="719.0" font-size="12.5" fill="#475569" text-anchor="middle">PDE-9</text>
+<rect x="916.0" y="670.5" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text x="1016.0" y="698.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Residues</text>
+<text x="1016.0" y="719.0" font-size="12.5" fill="#475569" text-anchor="middle">CA-5</text>
+<rect x="1160.0" y="670.5" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="1260.0" y="698.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Wave Equation</text>
+<text x="1260.0" y="719.0" font-size="12.5" fill="#475569" text-anchor="middle">PDE-4</text>
+<rect x="184.0" y="778.0" width="200.0" height="84.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="284.0" y="805.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Laplace Transform for</text>
+<text x="284.0" y="824.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">PDE</text>
+<text x="284.0" y="845.5" font-size="12.5" fill="#475569" text-anchor="middle">PDE-12</text>
+<rect x="428.0" y="778.0" width="200.0" height="84.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="528.0" y="815.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Nonhomogeneous</text>
+<text x="528.0" y="836.0" font-size="12.5" fill="#475569" text-anchor="middle">PDE-7</text>
+<rect x="672.0" y="778.0" width="200.0" height="84.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="772.0" y="815.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Green's Functions</text>
+<text x="772.0" y="836.0" font-size="12.5" fill="#475569" text-anchor="middle">PDE-8 · static</text>
+<rect x="916.0" y="778.0" width="200.0" height="84.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="1016.0" y="815.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Green's Functions</text>
+<text x="1016.0" y="836.0" font-size="12.5" fill="#475569" text-anchor="middle">PDE-10 · heat &amp; wave</text>
+<rect x="1160.0" y="778.0" width="200.0" height="84.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="1260.0" y="815.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Characteristics</text>
+<text x="1260.0" y="836.0" font-size="12.5" fill="#475569" text-anchor="middle">PDE-11</text>
+<rect x="24" y="887.5" width="34" height="16" rx="4" fill="#ffffff" stroke="#64748b" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text x="68.0" y="900.0" font-size="12" fill="#475569" text-anchor="start">Dashed card = prerequisite from another track</text>
+</svg>

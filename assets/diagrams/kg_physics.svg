@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 510" width="1320" height="510" role="img" aria-label="物理层知识图谱（16 个节点）">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <style>
+      text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .ht { font-size: 16px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .hs { font-size: 11px; fill: #ffffff; fill-opacity: 0.9; text-anchor: middle; }
+      .cid { font-size: 11px; font-weight: 700; text-anchor: middle; }
+      .ct { font-size: 13px; font-weight: 700; fill: #111827; text-anchor: middle; }
+      .cs { font-size: 11px; fill: #475569; text-anchor: middle; }
+      .lb { font-size: 11px; fill: #475569; text-anchor: middle; }
+      .card { fill: #ffffff; stroke-width: 1.3; }
+      .flow { stroke: #475569; stroke-width: 1.7; fill: none; marker-end: url(#arr); }
+    </style>
+  </defs>
+  <rect width="1320" height="510" fill="#ffffff"/>
+  <rect x="20" y="22" width="1280" height="100" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="20" y="22" width="165" height="100" rx="10" fill="#2563eb"/>
+  <text class="ht" x="102.5" y="68.0">经典力学</text>
+  <text class="hs" x="102.5" y="88.0">PHYS-CM / CL · 4 节点</text>
+  <rect class="card" x="201.0" y="34" width="260.2" height="76" rx="8" stroke="#2563eb"/>
+  <text class="cid" x="331.1" y="56" fill="#2563eb">PHYS-CM-01</text>
+  <text class="ct" x="331.1" y="78">牛顿力学</text>
+  <text class="cs" x="331.1" y="98">Newtonian Mechanics</text>
+  <rect class="card" x="475.2" y="34" width="260.2" height="76" rx="8" stroke="#2563eb"/>
+  <text class="cid" x="605.4" y="56" fill="#2563eb">PHYS-CM-02</text>
+  <text class="ct" x="605.4" y="78">拉格朗日力学</text>
+  <text class="cs" x="605.4" y="98">Lagrangian · Normal Modes</text>
+  <rect class="card" x="749.5" y="34" width="260.2" height="76" rx="8" stroke="#2563eb"/>
+  <text class="cid" x="879.6" y="56" fill="#2563eb">PHYS-CM-03</text>
+  <text class="ct" x="879.6" y="78">哈密顿力学</text>
+  <text class="cs" x="879.6" y="98">Hamiltonian · Symplectic</text>
+  <rect class="card" x="1023.8" y="34" width="260.2" height="76" rx="8" stroke="#2563eb"/>
+  <text class="cid" x="1153.9" y="56" fill="#2563eb">PHYS-CL-01</text>
+  <text class="ct" x="1153.9" y="78">守恒律与诺特定理</text>
+  <text class="cs" x="1153.9" y="98">Conservation &amp; Noether</text>
+  <line class="flow" x1="726.5" y1="122" x2="726.5" y2="142"/>
+  <rect x="20" y="144" width="1280" height="100" rx="12" fill="#f0fdfa" stroke="#14b8a6" stroke-width="1.5"/>
+  <rect x="20" y="144" width="165" height="100" rx="10" fill="#1f7a7a"/>
+  <text class="ht" x="102.5" y="190.0">场论与连续介质</text>
+  <text class="hs" x="102.5" y="210.0">EM / FL / TR / EL · 4 节点</text>
+  <rect class="card" x="201.0" y="156" width="260.2" height="76" rx="8" stroke="#0d9488"/>
+  <text class="cid" x="331.1" y="178" fill="#1f7a7a">PHYS-EM-01</text>
+  <text class="ct" x="331.1" y="200">麦克斯韦方程组</text>
+  <text class="cs" x="331.1" y="220">Maxwell &amp; EM Waves</text>
+  <rect class="card" x="475.2" y="156" width="260.2" height="76" rx="8" stroke="#0d9488"/>
+  <text class="cid" x="605.4" y="178" fill="#1f7a7a">PHYS-FL-01</text>
+  <text class="ct" x="605.4" y="200">Navier–Stokes 方程</text>
+  <text class="cs" x="605.4" y="220">Fluid Mechanics</text>
+  <rect class="card" x="749.5" y="156" width="260.2" height="76" rx="8" stroke="#0d9488"/>
+  <text class="cid" x="879.6" y="178" fill="#1f7a7a">PHYS-TR-01</text>
+  <text class="ct" x="879.6" y="200">传热与传质</text>
+  <text class="cs" x="879.6" y="220">Heat &amp; Mass Transfer</text>
+  <rect class="card" x="1023.8" y="156" width="260.2" height="76" rx="8" stroke="#0d9488"/>
+  <text class="cid" x="1153.9" y="178" fill="#1f7a7a">PHYS-EL-01</text>
+  <text class="ct" x="1153.9" y="200">线弹性力学</text>
+  <text class="cs" x="1153.9" y="220">Stress · Strain · Elasticity</text>
+  <line class="flow" x1="726.5" y1="244" x2="726.5" y2="264"/>
+  <rect x="20" y="266" width="1280" height="100" rx="12" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="20" y="266" width="165" height="100" rx="10" fill="#d97706"/>
+  <text class="ht" x="102.5" y="312.0">热力学与统计</text>
+  <text class="hs" x="102.5" y="332.0">TD / SM · 3 节点</text>
+  <rect class="card" x="201.0" y="278" width="351.7" height="76" rx="8" stroke="#d97706"/>
+  <text class="cid" x="376.8" y="300" fill="#d97706">PHYS-TD-01</text>
+  <text class="ct" x="376.8" y="322">热力学</text>
+  <text class="cs" x="376.8" y="342">Laws · Potentials · Entropy</text>
+  <rect class="card" x="566.7" y="278" width="351.7" height="76" rx="8" stroke="#d97706"/>
+  <text class="cid" x="742.5" y="300" fill="#d97706">PHYS-SM-01</text>
+  <text class="ct" x="742.5" y="322">统计力学与玻尔兹曼</text>
+  <text class="cs" x="742.5" y="342">Partition Function</text>
+  <rect class="card" x="932.3" y="278" width="351.7" height="76" rx="8" stroke="#d97706"/>
+  <text class="cid" x="1108.2" y="300" fill="#d97706">PHYS-SM-02</text>
+  <text class="ct" x="1108.2" y="322">玻尔兹曼输运方程</text>
+  <text class="cs" x="1108.2" y="342">Boltzmann Transport</text>
+  <line class="flow" x1="726.5" y1="366" x2="726.5" y2="386"/>
+  <rect x="20" y="388" width="1280" height="100" rx="12" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <rect x="20" y="388" width="165" height="100" rx="10" fill="#7c3aed"/>
+  <text class="ht" x="102.5" y="434.0">量子与固体半导体</text>
+  <text class="hs" x="102.5" y="454.0">QM / SS · 5 节点</text>
+  <rect class="card" x="201.0" y="400" width="205.4" height="76" rx="8" stroke="#7c3aed"/>
+  <text class="cid" x="303.7" y="422" fill="#7c3aed">PHYS-QM-01</text>
+  <text class="ct" x="303.7" y="444">薛定谔方程</text>
+  <text class="cs" x="303.7" y="464">Schrödinger Eigenproblem</text>
+  <rect class="card" x="420.4" y="400" width="205.4" height="76" rx="8" stroke="#7c3aed"/>
+  <text class="cid" x="523.1" y="422" fill="#7c3aed">PHYS-QM-02</text>
+  <text class="ct" x="523.1" y="444">密度泛函理论</text>
+  <text class="cs" x="523.1" y="464">Kohn–Sham DFT</text>
+  <rect class="card" x="639.8" y="400" width="205.4" height="76" rx="8" stroke="#7c3aed"/>
+  <text class="cid" x="742.5" y="422" fill="#7c3aed">PHYS-SS-01</text>
+  <text class="ct" x="742.5" y="444">能带理论与布洛赫</text>
+  <text class="cs" x="742.5" y="464">Band Theory &amp; Bloch</text>
+  <rect class="card" x="859.2" y="400" width="205.4" height="76" rx="8" stroke="#7c3aed"/>
+  <text class="cid" x="961.9" y="422" fill="#7c3aed">PHYS-SS-02</text>
+  <text class="ct" x="961.9" y="444">费米–狄拉克统计</text>
+  <text class="cs" x="961.9" y="464">Carrier Statistics</text>
+  <rect class="card" x="1078.6" y="400" width="205.4" height="76" rx="8" stroke="#7c3aed"/>
+  <text class="cid" x="1181.3" y="422" fill="#7c3aed">PHYS-SS-03</text>
+  <text class="ct" x="1181.3" y="444">泊松–漂移–扩散</text>
+  <text class="cs" x="1181.3" y="464">Poisson–Drift–Diffusion</text>
+</svg>

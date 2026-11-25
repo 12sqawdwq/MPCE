@@ -3,6 +3,10 @@
 > 本仓库是一个需要维持 2 年以上的个人知识基础设施。以下规则的目的只有一个：**防止它退化为一堆无序、未经验证、无法复用的笔记。**
 > 适用于所有贡献者，包括学习者本人、Claude 与 Gemini。
 
+![双智能体协作流程：任务 → Claude 研究与实现 → Gemini 审查与润色 → 学习者验证 → Git 提交](assets/diagrams/dual_agent_workflow.svg)
+
+各阶段的输入、产出与出口标准见 [`study_workflow.md`](00_getting_started/study_workflow.md) §4。
+
 ---
 
 ## 1. 新增主题/论文前的 7 个必答问题（The 7 Mandatory Questions）
@@ -60,6 +64,10 @@
 5. **严禁以通俗换严谨**：可以在严格陈述**之后**给出直观解释，但不能用直观解释**替代**严格陈述。
    - ✅ "若 $A$ 实对称，则存在正交矩阵 $Q$ 使 $Q^\top A Q$ 为对角阵。直观上，对称矩阵只沿一组互相垂直的方向做拉伸。"
    - ❌ "对称矩阵就是只做拉伸的矩阵。"
+6. **保持平实工程文风，杜绝 AI 腔**：
+   - 禁用“智识愿景、四维闭环、赋能、体系化沉淀、核心承诺、最终裁决”等空泛词；
+   - 不要给普通中文标题机械套上英文翻译（如 `学习流程（Study Flow）`），**只对真正的数学/物理/工程专有名词保留英文**；
+   - 直接陈述事实、假设、结论和失效条件，不写宣传式或总结式套话。
 
 ### 3.2 数学排版
 
@@ -78,7 +86,7 @@
 - 中文段落使用全角标点；公式与英文术语内部使用半角符号。
 - 中文与英文/数字之间加一个半角空格：`使用 Python 3.11 进行计算`。
 - 列表与表格优先于长段落；每个表格必须有表头。
-- Mermaid 图中含括号、方括号、斜杠或其他特殊字符的节点标签必须加引号：`A["Lagrange 力学 (L = T - V)"]`。
+- 示意图一律使用 `assets/diagrams/` 中的分层矢量 SVG，**不再使用 Mermaid**（规范见 §7）。
 
 ---
 
@@ -138,13 +146,7 @@
 
 ### 5.3 生命周期
 
-```mermaid
-graph LR
-    A["添加标记<br/>NEEDS VERIFICATION"] --> B{"核实结果"}
-    B -->|"确认正确"| C["删除标记<br/>补充来源引用"]
-    B -->|"发现错误"| D["修正内容<br/>记录到 CHANGELOG"]
-    B -->|"暂时无法核实"| E["保留标记<br/>说明原因与核实路径"]
-```
+![NEEDS VERIFICATION 标记生命周期](assets/diagrams/verification_lifecycle.svg)
 
 - 含有该标记的文档在 ROADMAP 中的内容状态须包含 `V?`。
 - 可通过 `grep -rn "NEEDS VERIFICATION" .` 列出所有待核实项；每个 Phase 结束时集中清理一次。
@@ -158,3 +160,48 @@ graph LR
 2. **不删除错误历史**：修正推导错误时，在 CHANGELOG 中说明错在哪里、为何出错。
 3. **定期修剪**：每个 Phase 结束时检查是否有偏离 ROADMAP 的主题；对无法回答七问的内容进行归档或删除。
 4. **敏感信息**：不提交任何凭据、个人信息或大型二进制文件（见 `.gitignore`）。
+
+---
+
+## 7. 图示规范（Diagram Standard）
+
+MPCE 的结构图、流程图与路线图一律使用**手写的分层矢量 SVG**，存放于 [`assets/diagrams/`](assets/diagrams/)，在 Markdown 中以相对路径图片链接嵌入：
+
+```markdown
+![替代文字（中文描述图意）](../assets/diagrams/learning_loop.svg)
+```
+
+**不再使用 Mermaid**：GitHub 渲染 Mermaid 时会截断中文标签，且自动布局在节点较多时难以阅读。
+
+### 7.1 版式
+
+| 要素 | 规范 |
+|---|---|
+| 画布 | 纯白 `#ffffff`；显式 `viewBox="0 0 W H"`；四周留足边距 |
+| 字体 | `'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif` |
+| 分层带（band） | 水平圆角矩形 `rx="12"`，浅色填充，1.5px 同色描边 |
+| 带头（header） | 带左侧实色块 `rx="10"`，宽 130–150px；白色粗体标题 + 较小副标题 |
+| 卡片（card） | `fill="#ffffff"`、`rx="8"`、1.3px 同色描边；标题粗体 `#111827`，副标题 `#475569`；文字 `text-anchor="middle"` |
+| 贯穿柱（pillar） | 可选，位于右侧：`fill="#fef2f2"`、`stroke="#dc2626"`，竖排中文 `#b91c1c` |
+| 箭头 | 直线或正交折线，`#475569`、`stroke-width="1.8"`，使用 `<marker>` 箭头；标签不得与线或卡片重叠 |
+
+### 7.2 调色板（描边 / 填充）
+
+| 名称 | 主色（header、描边） | 浅色（band 填充） |
+|---|---|---|
+| Slate | `#64748b` | `#f8fafc` |
+| Blue | `#2563eb` | `#eff6ff` |
+| Purple | `#7c3aed` | `#f5f3ff` |
+| Green | `#2e7d32` | `#f0fdf4` |
+| Teal | `#1f7a7a` | `#f0fdfa` |
+| Amber | `#d97706` | `#fffbeb` |
+| Crimson | `#dc2626` | `#fef2f2` |
+
+Crimson 保留给贯穿柱与需要强调的项（瓶颈、审查回退等）。
+
+### 7.3 检查清单
+
+- [ ] **XML 转义**：文本中的 `&` 写作 `&amp;`，`<` 写作 `&lt;`，`>` 写作 `&gt;`；否则整张 SVG 无法渲染。
+- [ ] **零截断、零重叠**：按"中文约 1 个字号宽、英文约 0.6 个字号宽"估算，卡片宽度须留有余量。
+- [ ] 文件名遵循 §2.1（`snake_case`，英文），图片链接使用相对路径。
+- [ ] 提交前在浏览器中打开 SVG 目视检查一次。

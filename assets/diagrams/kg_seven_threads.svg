@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 812" width="1320" height="812" role="img" aria-label="MPCE 七条跨学科统一主线">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <style>
+      text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .ht { font-size: 16px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .hs { font-size: 11px; fill: #ffffff; fill-opacity: 0.9; text-anchor: middle; }
+      .cid { font-size: 11px; font-weight: 700; text-anchor: middle; }
+      .ct { font-size: 13px; font-weight: 700; fill: #111827; text-anchor: middle; }
+      .cs { font-size: 11px; fill: #475569; text-anchor: middle; }
+      .lb { font-size: 11px; fill: #475569; text-anchor: middle; }
+      .card { fill: #ffffff; stroke-width: 1.3; }
+      .flow { stroke: #475569; stroke-width: 1.7; fill: none; marker-end: url(#arr); }
+    </style>
+  </defs>
+  <rect width="1320" height="812" fill="#ffffff"/>
+  <rect x="20" y="22" width="1206" height="96" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="20" y="22" width="160" height="96" rx="10" fill="#2563eb"/>
+  <text class="ht" x="100.0" y="66.0">主线 1 · 特征值</text>
+  <text class="hs" x="100.0" y="86.0">Linear Algebra</text>
+  <rect class="card" x="196.0" y="34" width="234.0" height="72" rx="8" stroke="#2563eb"/>
+  <text class="cid" x="313.0" y="56" fill="#2563eb">MATH-LA-02</text>
+  <text class="ct" x="313.0" y="78">谱定理与特征值</text>
+  <text class="cs" x="313.0" y="98">Spectral Theorem</text>
+  <line class="flow" x1="432.0" y1="70.0" x2="453.0" y2="70.0"/>
+  <rect class="card" x="456.0" y="34" width="234.0" height="72" rx="8" stroke="#2563eb"/>
+  <text class="cid" x="573.0" y="56" fill="#2563eb">PHYS-QM-01 / CM-02</text>
+  <text class="ct" x="573.0" y="78">薛定谔与简正模态</text>
+  <text class="cs" x="573.0" y="98">Hψ=Eψ · Kx=λMx</text>
+  <line class="flow" x1="692.0" y1="70.0" x2="713.0" y2="70.0"/>
+  <rect class="card" x="716.0" y="34" width="234.0" height="72" rx="8" stroke="#2563eb"/>
+  <text class="cid" x="833.0" y="56" fill="#2563eb">COMP-03</text>
+  <text class="ct" x="833.0" y="78">数值特征值求解</text>
+  <text class="cs" x="833.0" y="98">Lanczos / LOBPCG</text>
+  <line class="flow" x1="952.0" y1="70.0" x2="973.0" y2="70.0"/>
+  <rect class="card" x="976.0" y="34" width="234.0" height="72" rx="8" stroke="#2563eb"/>
+  <text class="cid" x="1093.0" y="56" fill="#2563eb">ENG-MAT-02 / AI-02</text>
+  <text class="ct" x="1093.0" y="78">DFT 与 PCA 降维</text>
+  <text class="cs" x="1093.0" y="98">前沿: 随机特征分解</text>
+  <rect x="20" y="134" width="1206" height="96" rx="12" fill="#f0fdfa" stroke="#14b8a6" stroke-width="1.5"/>
+  <rect x="20" y="134" width="160" height="96" rx="10" fill="#1f7a7a"/>
+  <text class="ht" x="100.0" y="178.0">主线 2 · 守恒律</text>
+  <text class="hs" x="100.0" y="198.0">Vector Calculus</text>
+  <rect class="card" x="196.0" y="146" width="234.0" height="72" rx="8" stroke="#0d9488"/>
+  <text class="cid" x="313.0" y="168" fill="#1f7a7a">MATH-VC-02</text>
+  <text class="ct" x="313.0" y="190">散度与积分定理</text>
+  <text class="cs" x="313.0" y="210">Gauss / Stokes</text>
+  <line class="flow" x1="432.0" y1="182.0" x2="453.0" y2="182.0"/>
+  <rect class="card" x="456.0" y="146" width="234.0" height="72" rx="8" stroke="#0d9488"/>
+  <text class="cid" x="573.0" y="168" fill="#1f7a7a">PHYS-CL-01 / SS-03</text>
+  <text class="ct" x="573.0" y="190">守恒律与输运</text>
+  <text class="cs" x="573.0" y="210">∂ₜu + ∇·F = s</text>
+  <line class="flow" x1="692.0" y1="182.0" x2="713.0" y2="182.0"/>
+  <rect class="card" x="716.0" y="146" width="234.0" height="72" rx="8" stroke="#0d9488"/>
+  <text class="cid" x="833.0" y="168" fill="#1f7a7a">COMP-08</text>
+  <text class="ct" x="833.0" y="190">有限体积离散</text>
+  <text class="cs" x="833.0" y="210">FVM / SG 通量</text>
+  <line class="flow" x1="952.0" y1="182.0" x2="973.0" y2="182.0"/>
+  <rect class="card" x="976.0" y="146" width="234.0" height="72" rx="8" stroke="#0d9488"/>
+  <text class="cid" x="1093.0" y="168" fill="#1f7a7a">ENG-SEMI-02 / HPC-02</text>
+  <text class="ct" x="1093.0" y="190">TCAD 与 CFD</text>
+  <text class="cs" x="1093.0" y="210">前沿: 保结构离散</text>
+  <rect x="20" y="246" width="1206" height="96" rx="12" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="1.5"/>
+  <rect x="20" y="246" width="160" height="96" rx="10" fill="#7c3aed"/>
+  <text class="ht" x="100.0" y="290.0">主线 3 · 傅里叶</text>
+  <text class="hs" x="100.0" y="310.0">Spectral Analysis</text>
+  <rect class="card" x="196.0" y="258" width="234.0" height="72" rx="8" stroke="#7c3aed"/>
+  <text class="cid" x="313.0" y="280" fill="#7c3aed">MATH-FA-01</text>
+  <text class="ct" x="313.0" y="302">傅里叶变换</text>
+  <text class="cs" x="313.0" y="322">卷积与 Parseval</text>
+  <line class="flow" x1="432.0" y1="294.0" x2="453.0" y2="294.0"/>
+  <rect class="card" x="456.0" y="258" width="234.0" height="72" rx="8" stroke="#7c3aed"/>
+  <text class="cid" x="573.0" y="280" fill="#7c3aed">PHYS-SS-01 / EM-01</text>
+  <text class="ct" x="573.0" y="302">布洛赫波与电磁场</text>
+  <text class="cs" x="573.0" y="322">k 空间采样模型</text>
+  <line class="flow" x1="692.0" y1="294.0" x2="713.0" y2="294.0"/>
+  <rect class="card" x="716.0" y="258" width="234.0" height="72" rx="8" stroke="#7c3aed"/>
+  <text class="cid" x="833.0" y="280" fill="#7c3aed">COMP-04 / 13</text>
+  <text class="ct" x="833.0" y="302">FFT 与神经算子</text>
+  <text class="cs" x="833.0" y="322">FFT / FNO</text>
+  <line class="flow" x1="952.0" y1="294.0" x2="973.0" y2="294.0"/>
+  <rect class="card" x="976.0" y="258" width="234.0" height="72" rx="8" stroke="#7c3aed"/>
+  <text class="cid" x="1093.0" y="280" fill="#7c3aed">ENG-MED-02 / MAT-02</text>
+  <text class="ct" x="1093.0" y="302">MRI/CT 与平面波</text>
+  <text class="cs" x="1093.0" y="322">前沿: 频域算子学习</text>
+  <rect x="20" y="358" width="1206" height="96" rx="12" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+  <rect x="20" y="358" width="160" height="96" rx="10" fill="#2e7d32"/>
+  <text class="ht" x="100.0" y="402.0">主线 4 · 动力系统</text>
+  <text class="hs" x="100.0" y="422.0">Differential Eq.</text>
+  <rect class="card" x="196.0" y="370" width="234.0" height="72" rx="8" stroke="#16a34a"/>
+  <text class="cid" x="313.0" y="392" fill="#2e7d32">MATH-DE-01 / 02</text>
+  <text class="ct" x="313.0" y="414">ODE 与稳定性</text>
+  <text class="cs" x="313.0" y="434">Lyapunov 理论</text>
+  <line class="flow" x1="432.0" y1="406.0" x2="453.0" y2="406.0"/>
+  <rect class="card" x="456.0" y="370" width="234.0" height="72" rx="8" stroke="#16a34a"/>
+  <text class="cid" x="573.0" y="392" fill="#2e7d32">PHYS-CM-02 / 03</text>
+  <text class="ct" x="573.0" y="414">拉格朗日动力学</text>
+  <text class="cs" x="573.0" y="434">Mq̈ + Cq̇ + g = τ</text>
+  <line class="flow" x1="692.0" y1="406.0" x2="713.0" y2="406.0"/>
+  <rect class="card" x="716.0" y="370" width="234.0" height="72" rx="8" stroke="#16a34a"/>
+  <text class="cid" x="833.0" y="392" fill="#2e7d32">COMP-05 / 10</text>
+  <text class="ct" x="833.0" y="414">时间积分与滤波</text>
+  <text class="cs" x="833.0" y="434">辛积分 / Kalman</text>
+  <line class="flow" x1="952.0" y1="406.0" x2="973.0" y2="406.0"/>
+  <rect class="card" x="976.0" y="370" width="234.0" height="72" rx="8" stroke="#16a34a"/>
+  <text class="cid" x="1093.0" y="392" fill="#2e7d32">ENG-ROB-02 / 03</text>
+  <text class="ct" x="1093.0" y="414">机械臂控制与 SLAM</text>
+  <text class="cs" x="1093.0" y="434">前沿: 稳定证书学习控制</text>
+  <rect x="20" y="470" width="1206" height="96" rx="12" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="20" y="470" width="160" height="96" rx="10" fill="#d97706"/>
+  <text class="ht" x="100.0" y="514.0">主线 5 · 变分优化</text>
+  <text class="hs" x="100.0" y="534.0">Variational</text>
+  <rect class="card" x="196.0" y="482" width="234.0" height="72" rx="8" stroke="#d97706"/>
+  <text class="cid" x="313.0" y="504" fill="#d97706">MATH-VAR-01 / FA-04</text>
+  <text class="ct" x="313.0" y="526">变分法与弱形式</text>
+  <text class="cs" x="313.0" y="546">Euler–Lagrange</text>
+  <line class="flow" x1="432.0" y1="518.0" x2="453.0" y2="518.0"/>
+  <rect class="card" x="456.0" y="482" width="234.0" height="72" rx="8" stroke="#d97706"/>
+  <text class="cid" x="573.0" y="504" fill="#d97706">PHYS-EL-01 / QM-02</text>
+  <text class="ct" x="573.0" y="526">最小势能与泛函</text>
+  <text class="cs" x="573.0" y="546">a(u,v)=ℓ(v) · E[n]</text>
+  <line class="flow" x1="692.0" y1="518.0" x2="713.0" y2="518.0"/>
+  <rect class="card" x="716.0" y="482" width="234.0" height="72" rx="8" stroke="#d97706"/>
+  <text class="cid" x="833.0" y="504" fill="#d97706">COMP-07 / 15</text>
+  <text class="ct" x="833.0" y="526">有限元与优化器</text>
+  <text class="cs" x="833.0" y="546">FEM / Newton / BFGS</text>
+  <line class="flow" x1="952.0" y1="518.0" x2="973.0" y2="518.0"/>
+  <rect class="card" x="976.0" y="482" width="234.0" height="72" rx="8" stroke="#d97706"/>
+  <text class="cid" x="1093.0" y="504" fill="#d97706">ENG-MFG-01 / 02</text>
+  <text class="ct" x="1093.0" y="526">热力耦合与拓扑优化</text>
+  <text class="cs" x="1093.0" y="546">前沿: 变分 SciML</text>
+  <rect x="20" y="582" width="1206" height="96" rx="12" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="20" y="582" width="160" height="96" rx="10" fill="#64748b"/>
+  <text class="ht" x="100.0" y="626.0">主线 6 · 概率统计</text>
+  <text class="hs" x="100.0" y="646.0">Stochastic</text>
+  <rect class="card" x="196.0" y="594" width="234.0" height="72" rx="8" stroke="#475569"/>
+  <text class="cid" x="313.0" y="616" fill="#64748b">MATH-PR-02 / 03</text>
+  <text class="ct" x="313.0" y="638">贝叶斯与 SDE</text>
+  <text class="cs" x="313.0" y="658">后验推断与随机过程</text>
+  <line class="flow" x1="432.0" y1="630.0" x2="453.0" y2="630.0"/>
+  <rect class="card" x="456.0" y="594" width="234.0" height="72" rx="8" stroke="#475569"/>
+  <text class="cid" x="573.0" y="616" fill="#64748b">PHYS-SM-01 / SS-02</text>
+  <text class="ct" x="573.0" y="638">玻尔兹曼与费米统计</text>
+  <text class="cs" x="573.0" y="658">p ∝ exp(-E/kT)</text>
+  <line class="flow" x1="692.0" y1="630.0" x2="713.0" y2="630.0"/>
+  <rect class="card" x="716.0" y="594" width="234.0" height="72" rx="8" stroke="#475569"/>
+  <text class="cid" x="833.0" y="616" fill="#64748b">COMP-09 / 11</text>
+  <text class="ct" x="833.0" y="638">MCMC 与反问题</text>
+  <text class="cs" x="833.0" y="658">采样与正则化</text>
+  <line class="flow" x1="952.0" y1="630.0" x2="973.0" y2="630.0"/>
+  <rect class="card" x="976.0" y="594" width="234.0" height="72" rx="8" stroke="#475569"/>
+  <text class="cid" x="1093.0" y="616" fill="#64748b">ENG-AI-01 / MAT-02</text>
+  <text class="ct" x="1093.0" y="638">生成模型与分子模拟</text>
+  <text class="cs" x="1093.0" y="658">前沿: 扩散模型与 UQ</text>
+  <rect x="20" y="694" width="1206" height="96" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="20" y="694" width="160" height="96" rx="10" fill="#2563eb"/>
+  <text class="ht" x="100.0" y="738.0">主线 7 · 科学计算</text>
+  <text class="hs" x="100.0" y="758.0">Numerical LA</text>
+  <rect class="card" x="196.0" y="706" width="234.0" height="72" rx="8" stroke="#2563eb"/>
+  <text class="cid" x="313.0" y="728" fill="#2563eb">MATH-NA-01 / 03</text>
+  <text class="ct" x="313.0" y="750">条件数与 Lax 等价</text>
+  <text class="cs" x="313.0" y="770">稳定性与收敛性</text>
+  <line class="flow" x1="432.0" y1="742.0" x2="453.0" y2="742.0"/>
+  <rect class="card" x="456.0" y="706" width="234.0" height="72" rx="8" stroke="#2563eb"/>
+  <text class="cid" x="573.0" y="728" fill="#2563eb">PHYS-EL / FL 离散</text>
+  <text class="ct" x="573.0" y="750">亿级稀疏线性系统</text>
+  <text class="cs" x="573.0" y="770">Ku = f</text>
+  <line class="flow" x1="692.0" y1="742.0" x2="713.0" y2="742.0"/>
+  <rect class="card" x="716.0" y="706" width="234.0" height="72" rx="8" stroke="#2563eb"/>
+  <text class="cid" x="833.0" y="728" fill="#2563eb">COMP-02 / 14</text>
+  <text class="ct" x="833.0" y="750">多重网格与 GPU</text>
+  <text class="cs" x="833.0" y="770">Krylov / CUDA</text>
+  <line class="flow" x1="952.0" y1="742.0" x2="973.0" y2="742.0"/>
+  <rect class="card" x="976.0" y="706" width="234.0" height="72" rx="8" stroke="#2563eb"/>
+  <text class="cid" x="1093.0" y="728" fill="#2563eb">ENG-HPC-01 / 02</text>
+  <text class="ct" x="1093.0" y="750">体系结构与超算</text>
+  <text class="cs" x="1093.0" y="770">前沿: 混合精度求解</text>
+  <rect x="1244" y="22" width="56" height="768" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <text x="1272.0" y="259.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">原</text>
+  <text x="1272.0" y="293.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">理</text>
+  <text x="1272.0" y="327.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">到</text>
+  <text x="1272.0" y="361.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">前</text>
+  <text x="1272.0" y="395.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">沿</text>
+  <text x="1272.0" y="429.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">的</text>
+  <text x="1272.0" y="463.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">统</text>
+  <text x="1272.0" y="497.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">一</text>
+  <text x="1272.0" y="531.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">主</text>
+  <text x="1272.0" y="565.0" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">线</text>
+</svg>

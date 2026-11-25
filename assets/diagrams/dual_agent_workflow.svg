@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1360 570" width="1360" height="570" role="img" aria-label="双智能体协作流程：任务 → Claude 研究与实现 → Gemini 技术审查与润色 → 学习者验证 → Git 提交">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+    <marker id="arr-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#dc2626"/>
+    </marker>
+    <style>
+      text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .ht { font-size: 18px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .hs { font-size: 12px; fill: #ffffff; fill-opacity: 0.9; text-anchor: middle; }
+      .ct { font-size: 14px; font-weight: 700; fill: #111827; text-anchor: middle; }
+      .cs { font-size: 12px; fill: #475569; text-anchor: middle; }
+      .lb { font-size: 12px; fill: #475569; }
+      .card { fill: #ffffff; stroke-width: 1.3; }
+      .flow { stroke: #475569; stroke-width: 1.8; fill: none; marker-end: url(#arr); }
+      .back { stroke: #dc2626; stroke-width: 1.8; fill: none; stroke-dasharray: 6 4; marker-end: url(#arr-red); }
+    </style>
+  </defs>
+  <rect width="1360" height="570" fill="#ffffff"/>
+
+  <!-- ===== Lanes ===== -->
+  <rect x="20" y="30" width="1230" height="90" rx="12" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+  <rect x="20" y="30" width="140" height="90" rx="10" fill="#64748b"/>
+  <text class="ht" x="90" y="72">学习者</text><text class="hs" x="90" y="92">Learner · 最终裁决</text>
+
+  <rect x="20" y="134" width="1230" height="90" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="20" y="134" width="140" height="90" rx="10" fill="#2563eb"/>
+  <text class="ht" x="90" y="176">Gemini</text><text class="hs" x="90" y="196">编排 Orchestration</text>
+
+  <rect x="20" y="238" width="1230" height="90" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="20" y="238" width="140" height="90" rx="10" fill="#7c3aed"/>
+  <text class="ht" x="90" y="280">Claude</text><text class="hs" x="90" y="300">研究 · 推导 · 实现</text>
+
+  <rect x="20" y="342" width="1230" height="90" rx="12" fill="#f0fdfa" stroke="#1f7a7a" stroke-width="1.5"/>
+  <rect x="20" y="342" width="140" height="90" rx="10" fill="#1f7a7a"/>
+  <text class="ht" x="90" y="384">Gemini</text><text class="hs" x="90" y="404">审查 · 润色 Review</text>
+
+  <rect x="20" y="446" width="1230" height="90" rx="12" fill="#f0fdf4" stroke="#2e7d32" stroke-width="1.5"/>
+  <rect x="20" y="446" width="140" height="90" rx="10" fill="#2e7d32"/>
+  <text class="ht" x="90" y="488">Git</text><text class="hs" x="90" y="508">版本仓库 Repository</text>
+
+  <!-- ===== Step cards ===== -->
+  <rect class="card" x="180" y="46" width="150" height="58" rx="8" stroke="#64748b"/>
+  <text class="ct" x="255" y="70">① 任务定义</text><text class="cs" x="255" y="90">主题 · 实验 · 修订</text>
+
+  <rect class="card" x="360" y="150" width="150" height="58" rx="8" stroke="#2563eb"/>
+  <text class="ct" x="435" y="174">② 任务拆解</text><text class="cs" x="435" y="194">CONTRIBUTING 七问</text>
+
+  <rect class="card" x="540" y="254" width="150" height="58" rx="8" stroke="#7c3aed"/>
+  <text class="ct" x="615" y="278">③ 研究与实现</text><text class="cs" x="615" y="298">文献 · 推导 · 代码</text>
+
+  <rect class="card" x="720" y="358" width="150" height="58" rx="8" stroke="#1f7a7a"/>
+  <text class="ct" x="795" y="382">④ 技术审查</text><text class="cs" x="795" y="402">推导正确性 · 可复现性</text>
+
+  <rect class="card" x="900" y="358" width="150" height="58" rx="8" stroke="#1f7a7a"/>
+  <text class="ct" x="975" y="382">⑤ 编辑润色</text><text class="cs" x="975" y="402">术语 · 双语 · 排版</text>
+
+  <rect class="card" x="1080" y="46" width="150" height="58" rx="8" stroke="#64748b"/>
+  <text class="ct" x="1155" y="70">⑥ 学习者验证</text><text class="cs" x="1155" y="90">运行实验 · 抽查推导</text>
+
+  <rect class="card" x="1080" y="462" width="150" height="58" rx="8" stroke="#2e7d32"/>
+  <text class="ct" x="1155" y="486">⑦ Git Commit</text><text class="cs" x="1155" y="506">内容状态 + CHANGELOG</text>
+
+  <!-- ===== Flows ===== -->
+  <path class="flow" d="M330,75 H435 V149"/>
+  <text class="lb" x="342" y="67">学习需求</text>
+
+  <path class="flow" d="M510,179 H615 V253"/>
+  <text class="lb" x="522" y="171">任务说明</text>
+
+  <path class="flow" d="M690,283 H795 V357"/>
+  <text class="lb" x="702" y="275">提交草稿</text>
+
+  <line class="flow" x1="870" y1="387" x2="899" y2="387"/>
+
+  <!-- review feedback loop -->
+  <path class="back" d="M720,400 H615 V313"/>
+  <text class="lb" x="664" y="426" text-anchor="middle" style="fill:#b91c1c; font-weight:700">发现问题 · 返回修订</text>
+
+  <path class="flow" d="M1050,387 H1120 V105"/>
+  <text class="lb" x="1112" y="290" text-anchor="end">交付审查后版本</text>
+
+  <line class="flow" x1="1190" y1="104" x2="1190" y2="461"/>
+  <text class="lb" x="1198" y="290">批准</text>
+  <text class="lb" x="1198" y="306">提交</text>
+
+  <!-- ===== Pillar ===== -->
+  <rect x="1270" y="30" width="64" height="506" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>
+  <g font-size="19" font-weight="700" fill="#b91c1c" text-anchor="middle">
+    <text x="1302" y="128">智</text>
+    <text x="1302" y="158">能</text>
+    <text x="1302" y="188">体</text>
+    <text x="1302" y="218">只</text>
+    <text x="1302" y="248">改</text>
+    <text x="1302" y="278">内</text>
+    <text x="1302" y="308">容</text>
+    <text x="1302" y="338">状</text>
+    <text x="1302" y="368">态</text>
+  </g>
+  <text x="1302" y="490" font-size="11" fill="#b91c1c" text-anchor="middle">掌握状态</text>
+  <text x="1302" y="506" font-size="11" fill="#b91c1c" text-anchor="middle">仅学习者</text>
+  <text x="1302" y="522" font-size="11" fill="#b91c1c" text-anchor="middle">可更新</text>
+</svg>

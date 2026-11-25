@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 620" width="1300" height="620" role="img" aria-label="MPCE 24 个月路线图：Phase I–VII 时间轴">
+  <defs>
+    <style>
+      text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+      .ht { font-size: 18px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+      .hs { font-size: 12px; fill: #ffffff; fill-opacity: 0.9; text-anchor: middle; }
+      .ct { font-size: 14px; font-weight: 700; fill: #111827; text-anchor: middle; }
+      .cs { font-size: 12px; fill: #475569; text-anchor: middle; }
+      .xs { font-size: 11px; fill: #475569; text-anchor: middle; }
+      .hr { font-size: 11px; font-weight: 700; text-anchor: middle; }
+      .mo { font-size: 11px; fill: #475569; text-anchor: middle; }
+      .yr { font-size: 12px; font-weight: 700; fill: #334155; text-anchor: middle; }
+      .card { fill: #ffffff; stroke-width: 1.3; }
+      .grid { stroke: #cbd5e1; stroke-width: 1; stroke-dasharray: 3 4; }
+    </style>
+  </defs>
+  <rect width="1300" height="620" fill="#ffffff"/>
+
+  <!-- ===== Axis band ===== -->
+  <rect x="20" y="30" width="1260" height="56" rx="12" fill="#f8fafc" stroke="#64748b" stroke-width="1.5"/>
+  <rect x="20" y="30" width="140" height="56" rx="10" fill="#64748b"/>
+  <text class="ht" x="90" y="56" style="font-size:16px">时间轴</text>
+  <text class="hs" x="90" y="74">Timeline</text>
+  <text class="yr" x="460" y="53">第 1 年 · M1–M12</text>
+  <line x1="730" y1="36" x2="730" y2="82" stroke="#94a3b8" stroke-width="1.2"/>
+  <text class="yr" x="842" y="53">第 2 年 · M13–M24</text>
+  <rect x="955" y="38" width="315" height="22" rx="6" fill="#fffbeb" stroke="#d97706" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text class="yr" x="1112.5" y="54" style="fill:#b45309">M18–M24 弹性区间</text>
+  <g class="mo">
+    <text x="212.5" y="78">M1</text><text x="257.5" y="78">M2</text><text x="302.5" y="78">M3</text><text x="347.5" y="78">M4</text>
+    <text x="392.5" y="78">M5</text><text x="437.5" y="78">M6</text><text x="482.5" y="78">M7</text><text x="527.5" y="78">M8</text>
+    <text x="572.5" y="78">M9</text><text x="617.5" y="78">M10</text><text x="662.5" y="78">M11</text><text x="707.5" y="78">M12</text>
+    <text x="752.5" y="78">M13</text><text x="797.5" y="78">M14</text><text x="842.5" y="78">M15</text><text x="887.5" y="78">M16</text>
+    <text x="932.5" y="78">M17</text><text x="977.5" y="78">M18</text><text x="1022.5" y="78">M19</text><text x="1067.5" y="78">M20</text>
+    <text x="1112.5" y="78">M21</text><text x="1157.5" y="78">M22</text><text x="1202.5" y="78">M23</text><text x="1247.5" y="78">M24</text>
+  </g>
+
+  <!-- ===== Section bands ===== -->
+  <rect x="20" y="104" width="1260" height="112" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="20" y="104" width="140" height="112" rx="10" fill="#2563eb"/>
+  <text class="ht" x="90" y="158">基础</text><text class="hs" x="90" y="178">Foundations</text>
+
+  <rect x="20" y="234" width="1260" height="112" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="20" y="234" width="140" height="112" rx="10" fill="#7c3aed"/>
+  <text class="ht" x="90" y="288">物理</text><text class="hs" x="90" y="308">Physics</text>
+
+  <rect x="20" y="364" width="1260" height="204" rx="12" fill="#f0fdfa" stroke="#1f7a7a" stroke-width="1.5"/>
+  <rect x="20" y="364" width="140" height="204" rx="10" fill="#1f7a7a"/>
+  <text class="ht" x="90" y="464">计算与应用</text><text class="hs" x="90" y="484">Compute &amp; Apply</text>
+
+  <!-- quarter grid -->
+  <g class="grid">
+    <line x1="190" y1="90" x2="190" y2="568"/><line x1="325" y1="90" x2="325" y2="568"/>
+    <line x1="460" y1="90" x2="460" y2="568"/><line x1="595" y1="90" x2="595" y2="568"/>
+    <line x1="730" y1="90" x2="730" y2="568"/><line x1="865" y1="90" x2="865" y2="568"/>
+    <line x1="1000" y1="90" x2="1000" y2="568"/><line x1="1135" y1="90" x2="1135" y2="568"/>
+    <line x1="1270" y1="90" x2="1270" y2="568"/>
+  </g>
+
+  <!-- ===== Phase cards ===== -->
+  <!-- Phase I  M1–M2 -->
+  <rect class="card" x="193" y="120" width="84" height="80" rx="8" stroke="#2563eb"/>
+  <text class="ct" x="235" y="142">Phase I</text>
+  <text class="cs" x="235" y="161">数学基础</text>
+  <text class="xs" x="235" y="177">Python · 概率</text>
+  <text class="hr" x="235" y="193" fill="#2563eb">100–130 h</text>
+
+  <!-- Phase II  M3–M4 -->
+  <rect class="card" x="283" y="120" width="84" height="80" rx="8" stroke="#2563eb"/>
+  <text class="ct" x="325" y="142">Phase II</text>
+  <text class="cs" x="325" y="161">微分方程</text>
+  <text class="xs" x="325" y="177">数学物理方法</text>
+  <text class="hr" x="325" y="193" fill="#2563eb">100–130 h</text>
+
+  <!-- Phase III  M5–M8 -->
+  <rect class="card" x="373" y="250" width="174" height="80" rx="8" stroke="#7c3aed"/>
+  <text class="ct" x="460" y="272">Phase III · M5–M8</text>
+  <text class="cs" x="460" y="291">经典物理</text>
+  <text class="xs" x="460" y="307">力学 · 电磁 · 热 · 连续介质</text>
+  <text class="hr" x="460" y="322" fill="#7c3aed">200–260 h</text>
+
+  <!-- Phase IV  M9–M12 -->
+  <rect class="card" x="553" y="250" width="174" height="80" rx="8" stroke="#7c3aed"/>
+  <text class="ct" x="640" y="272">Phase IV · M9–M12</text>
+  <text class="cs" x="640" y="291">近代物理与材料</text>
+  <text class="xs" x="640" y="307">量子 · 统计 · 固体</text>
+  <text class="hr" x="640" y="322" fill="#7c3aed">200–260 h</text>
+
+  <!-- Phase V  M13–M15 -->
+  <rect class="card" x="733" y="380" width="129" height="80" rx="8" stroke="#1f7a7a"/>
+  <text class="ct" x="797.5" y="402">Phase V</text>
+  <text class="cs" x="797.5" y="421">数值与科学计算</text>
+  <text class="xs" x="797.5" y="437">FDM · FEM · HPC</text>
+  <text class="hr" x="797.5" y="452" fill="#1f7a7a">150–190 h</text>
+
+  <!-- Phase VI  M15–M18 (row 2, overlaps V at M15) -->
+  <rect class="card" x="823" y="472" width="174" height="80" rx="8" stroke="#1f7a7a"/>
+  <text class="ct" x="910" y="494">Phase VI · M15–M18</text>
+  <text class="cs" x="910" y="513">AI、控制与优化</text>
+  <text class="xs" x="910" y="529">Kalman · LQR · PINN</text>
+  <text class="hr" x="910" y="544" fill="#1f7a7a">180–230 h</text>
+
+  <!-- Phase VII  M18–M24 -->
+  <rect class="card" x="958" y="380" width="309" height="80" rx="8" stroke="#2e7d32"/>
+  <text class="ct" x="1112.5" y="402">Phase VII · M18–M24</text>
+  <text class="cs" x="1112.5" y="421">跨学科工程综合</text>
+  <text class="xs" x="1112.5" y="437">3–5 个跨领域综合项目（器件 · 制造 · 机器人 · 成像 …）</text>
+  <text class="hr" x="1112.5" y="452" fill="#2e7d32">250–350 h</text>
+
+  <text x="20" y="600" font-size="12" fill="#475569">注：月份为相对编号（以实际开始月为 M1）；Phase V/VI 在 M15、Phase VI/VII 在 M18 有意重叠，用于收尾与预热交替。合计约 1000–1400 h。</text>
+</svg>

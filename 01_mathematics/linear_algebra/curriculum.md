@@ -54,19 +54,7 @@ Matrix-factorization viewpoint, A = LU, QR, SΛS⁻¹, QΛQᵀ, UΣVᵀ, which i
 
 **Intra-module order 章内顺序:**
 
-```mermaid
-flowchart LR
-    A["LA-1 Vectors"] --> B["LA-2 Elimination, LU"]
-    B --> C["LA-3 Four subspaces"]
-    C --> D["LA-4 Orthogonality, least squares, QR"]
-    B --> E["LA-5 Determinants"]
-    D --> F["LA-6 Eigenvalues, spectral theorem"]
-    E --> F
-    F --> G["LA-7 SVD"]
-    C --> H["LA-8 Linear transformations"]
-    G --> I["LA-9 Norms, conditioning (P-II)"]
-    F --> J["LA-10 Complex and Fourier matrices"]
-```
+![线性代数章节依赖图](../../assets/diagrams/curr_linear_algebra.svg)
 
 **Cross-module 跨模块:**
 - LA-5 → calculus (Jacobian determinant in change of variables).

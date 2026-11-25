@@ -43,64 +43,7 @@ ID-valued fields contain only IDs that exist in one of the four layer files; "�
 Each thread is one concrete instance of the full chain. Nodes are labelled with their registry IDs; the "Model" box states the equation that links physics to computation.
 每条主线是完整链条的一个具体实例；"模型"框给出连接物理与计算的方程。
 
-```mermaid
-flowchart LR
-    subgraph TH1 ["1 Linear Algebra and Eigenvalue Problems 线性代数与特征值"]
-        T1M["MATH-LA-02 Spectral Theorem"] --> T1P["PHYS-QM-01 Schrodinger, PHYS-CM-02 Normal Modes"]
-        T1P --> T1D["Model: H psi = E psi, K x = lambda M x"]
-        T1D --> T1C["COMP-03 Lanczos, LOBPCG"]
-        T1C --> T1E["ENG-MAT-02 Kohn-Sham DFT, ENG-AI-02 PCA"]
-        T1E --> T1F["Frontier: linear-scaling and randomized eigensolvers"]
-    end
-    subgraph TH2 ["2 Vector Calculus and Conservation Laws 向量微积分与守恒律"]
-        T2M["MATH-VC-02 Divergence Theorem"] --> T2P["PHYS-CL-01 Conservation Laws"]
-        T2P --> T2D["Model: du/dt + div F = s, Poisson-Drift-Diffusion"]
-        T2D --> T2C["COMP-08 Finite Volume, Scharfetter-Gummel"]
-        T2C --> T2E["ENG-SEMI-02 TCAD, ENG-HPC-02 CFD"]
-        T2E --> T2F["Frontier: structure-preserving discretizations"]
-    end
-    subgraph TH3 ["3 Fourier Analysis and Spectral Methods 傅里叶分析与谱方法"]
-        T3M["MATH-FA-01 Fourier Transform"] --> T3P["PHYS-SS-01 Bloch Waves, PHYS-EM-01 Fields"]
-        T3P --> T3D["Model: k-space sampling y = F x + noise"]
-        T3D --> T3C["COMP-04 FFT, COMP-13 Fourier Neural Operator"]
-        T3C --> T3E["ENG-MED-02 MRI and CT Reconstruction"]
-        T3E --> T3F["Frontier: learned operators in Fourier space"]
-    end
-    subgraph TH4 ["4 Differential Equations and Dynamical Systems 微分方程与动力系统"]
-        T4M["MATH-DE-02 Lyapunov Stability"] --> T4P["PHYS-CM-02 Lagrangian Dynamics"]
-        T4P --> T4D["Model: M q'' + C q' + g = tau"]
-        T4D --> T4C["COMP-05 ODE Integrators, COMP-10 Kalman Filter"]
-        T4C --> T4E["ENG-ROB-02 Manipulator Control, ENG-ROB-03 SLAM"]
-        T4E --> T4F["Frontier: learning-based control with stability certificates"]
-    end
-    subgraph TH5 ["5 Variational Principles and Optimization 变分原理与优化"]
-        T5M["MATH-VAR-01 Euler-Lagrange, MATH-FA-04 Weak Form"] --> T5P["PHYS-EL-01 Minimum Potential Energy"]
-        T5P --> T5D["Model: a of u,v = l of v, thermoelastic coupling"]
-        T5D --> T5C["COMP-07 FEM, COMP-15 Newton and Optimizers"]
-        T5C --> T5E["ENG-MFG-02 Thermal-Mechanical, ENG-MFG-01 Topology Optimization"]
-        T5E --> T5F["Frontier: Deep Ritz and variational scientific ML"]
-    end
-    subgraph TH6 ["6 Probability, Statistics and Statistical Mechanics 概率统计与统计力学"]
-        T6M["MATH-PR-02 Bayes, MATH-PR-03 SDEs"] --> T6P["PHYS-SM-01 Boltzmann, PHYS-SS-02 Fermi-Dirac"]
-        T6P --> T6D["Model: p proportional to exp of -E over kT, posterior"]
-        T6D --> T6C["COMP-09 MCMC, COMP-11 Inverse Problems"]
-        T6C --> T6E["ENG-AI-01 Generative Models, ENG-MAT-02 Molecular Simulation"]
-        T6E --> T6F["Frontier: score-based diffusion and Bayesian UQ"]
-    end
-    subgraph TH7 ["7 Numerical Linear Algebra and Scientific Computing 数值线性代数与科学计算"]
-        T7M["MATH-NA-01 Conditioning, MATH-NA-03 Lax Equivalence"] --> T7P["PHYS-EL-01 and PHYS-FL-01 discretized"]
-        T7P --> T7D["Model: sparse K u = f with 10^9 unknowns"]
-        T7D --> T7C["COMP-02 Multigrid-Krylov, COMP-14 GPU"]
-        T7C --> T7E["ENG-HPC-01 Architecture, ENG-HPC-02 Exascale PDE"]
-        T7E --> T7F["Frontier: mixed-precision, communication-avoiding solvers"]
-    end
-
-    T1C -.->|shared Krylov machinery| T7C
-    T3C -.->|FFT inside DFT codes| T1E
-    T5C -.->|PINN and operator training| T6E
-    T6C -.->|Bayesian filtering| T4C
-    T2C -.->|large sparse systems| T7D
-```
+![MPCE 七条跨学科统一主线](assets/diagrams/kg_seven_threads.svg)
 
 ### Thread summary table｜主线摘要
 
@@ -175,5 +118,5 @@ grep -ohE '\b((MATH|PHYS|ENG)-[A-Z]+-[0-9]{2}|COMP-[0-9]{2})\b' *.md ../KNOWLEDG
 comm -13 /tmp/kg_defined.txt /tmp/kg_used.txt
 ```
 
-Also render each Mermaid block (GitHub preview or <https://mermaid.live>) after editing: quote every label, avoid HTML tags, and use `_` instead of `-` in Mermaid node identifiers (e.g. `MATH_LA_01["MATH-LA-01 ..."]`).
-修改后渲染检查 Mermaid：所有标签加引号、不用 HTML 标签、Mermaid 节点标识符用下划线。
+After updating nodes, regenerate the SVG diagrams via `python scripts/render_kg_svgs.py` and verify valid XML.
+修改节点后运行 `python scripts/render_kg_svgs.py` 重新生成分层 SVG 图并校验 XML 合法性。

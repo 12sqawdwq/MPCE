@@ -35,19 +35,7 @@
 
 ## 3. 引入顺序与理由 Introduction Order & Rationale
 
-```mermaid
-flowchart LR
-    A["M1: Python, NumPy, Matplotlib"] --> B["M2-3: SymPy, SciPy"]
-    B --> C["M10-12: scipy.sparse, Numba"]
-    C --> D["M14: ParaView / PyVista"]
-    C --> E["M16: PyTorch"]
-    E --> F["M18: JAX"]
-    D --> G["M17: FEniCSx + Gmsh"]
-    G --> H["M20: OpenFOAM"]
-    D --> I["M19: LAMMPS"]
-    I --> J["M20: Quantum ESPRESSO"]
-    C --> K["M21: CuPy / CUDA"]
-```
+![科学计算软件栈引入时间线](../assets/diagrams/software_stack_timeline.svg)
 
 - **Write it yourself first, then use the library.** Implement each algorithm (LU, RK4, FDM Laplacian, CG) by hand in NumPy, then validate against SciPy and switch to the library.
 - **Physics before solver.** LAMMPS comes after statistical mechanics, QE after QM and solid state, OpenFOAM after continuum mechanics and FVM.

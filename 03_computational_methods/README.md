@@ -19,30 +19,7 @@
 
 ## 2. 依赖关系 Dependencies
 
-```mermaid
-flowchart TD
-    NA["01 Numerical analysis: stability, NLA, FDM intro"] --> FDM["FDM: multi-D, time stepping"]
-    NA --> SP["Spectral methods"]
-    FDM --> FVM["FVM: conservation laws, Riemann solvers"]
-    PDEc["01 PDE: characteristics, shocks"] --> FVM
-    VAR["Weak forms, calculus of variations"] --> FEM["FEM: Galerkin, isoparametric elements"]
-    FDM --> FEM
-    NA --> SOL["Sparse solvers, preconditioning, optimization"]
-    FEM --> SOL
-    SOL --> FVM
-    STAT["02 Statistical physics"] --> PM["MD and Monte Carlo"]
-    QM["02 QM and solid state"] --> ES["Electronic structure: DFT"]
-    SOL --> ES
-    SP --> ES
-    FDM --> ML["SciML: PINNs, operators, DMD"]
-    SOL --> ML
-    FDM --> HPC["HPC and GPU"]
-    PM --> HPC
-    FVM --> ENG["04 CFD, devices"]
-    FEM --> ENG2["04 Structures, heat"]
-    PM --> ENG3["04 Materials"]
-    ES --> ENG3
-```
+![计算方法模块依赖图](../assets/diagrams/computational_methods_deps.svg)
 
 ## 3. 方法核心与验证 Core Ideas & Verification
 

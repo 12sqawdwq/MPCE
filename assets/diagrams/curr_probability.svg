@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1404 882" width="1404" height="882" role="img" aria-labelledby="t" style="font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+<title id="t">Probability and statistics curriculum: PR-1 to PR-19</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0.8 L10,5 L0,9.2 z" fill="#475569"/></marker></defs>
+<rect x="0" y="0" width="1404" height="882" fill="#ffffff"/>
+<rect x="24" y="24.0" width="1356" height="105.5" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<path d="M34,24.0 H164 V129.5 H34 A10,10 0 0 1 24,119.5 V34.0 A10,10 0 0 1 34,24.0 Z" fill="#2563eb"/>
+<text x="94.0" y="72.2" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Probability</text>
+<text x="94.0" y="94.2" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">PR-1 … PR-5</text>
+<rect x="24" y="188.5" width="1356" height="233.0" rx="12" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+<path d="M34,188.5 H164 V421.5 H34 A10,10 0 0 1 24,411.5 V198.5 A10,10 0 0 1 34,188.5 Z" fill="#7c3aed"/>
+<text x="94.0" y="290.0" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Distributions &amp;</text>
+<text x="94.0" y="311.0" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Limits</text>
+<text x="94.0" y="333.0" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">PR-6 … PR-10</text>
+<rect x="24" y="461.5" width="1356" height="213.0" rx="12" fill="#f0fdf4" stroke="#2e7d32" stroke-width="1.5"/>
+<path d="M34,461.5 H164 V674.5 H34 A10,10 0 0 1 24,664.5 V471.5 A10,10 0 0 1 34,461.5 Z" fill="#2e7d32"/>
+<text x="94.0" y="563.5" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Statistics</text>
+<text x="94.0" y="585.5" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">PR-11 … PR-15</text>
+<rect x="24" y="722.5" width="1356" height="105.5" rx="12" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+<path d="M34,722.5 H164 V828.0 H34 A10,10 0 0 1 24,818.0 V732.5 A10,10 0 0 1 34,722.5 Z" fill="#d97706"/>
+<text x="94.0" y="760.2" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Stochastic</text>
+<text x="94.0" y="781.2" font-size="16" fill="#ffffff" font-weight="700" text-anchor="middle">Processes</text>
+<text x="94.0" y="803.2" font-size="12" fill="#ffffff" text-anchor="middle" fill-opacity="0.88">PR-16 … PR-19</text>
+<path d="M384.0,76.8 L428.0,76.8" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M628.0,76.8 L672.0,76.8" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M872.0,76.8 L916.0,76.8" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1116.0,76.8 L1160.0,76.8" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1226.0,109.5 L1226.0,153.5 L772.0,153.5 L772.0,208.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1260.0,109.5 L1260.0,164.5 L1016.0,164.5 L1016.0,208.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1160.0,250.8 L1116.0,250.8" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M872.0,368.8 L916.0,368.8" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M999.0,293.0 L999.0,336.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M772.0,293.0 L772.0,309.0 L528.0,309.0 L528.0,336.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1033.0,293.0 L1033.0,320.0 L1260.0,320.0 L1260.0,336.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M511.0,401.5 L511.0,481.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M428.0,514.2 L384.0,514.2" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M628.0,514.2 L672.0,514.2" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M511.0,547.0 L511.0,568.0 L284.0,568.0 L284.0,589.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M672.0,621.8 L628.0,621.8" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M545.0,547.0 L545.0,589.0" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M772.0,109.5 L772.0,142.5 L406.0,142.5 L406.0,687.5 L511.0,687.5 L511.0,742.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1260.0,293.0 L1260.0,309.0 L1148.0,309.0 L1148.0,698.5 L545.0,698.5 L545.0,742.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M428.0,775.2 L384.0,775.2" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M284.0,654.5 L284.0,742.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M1294.0,109.5 L1294.0,175.5 L1138.0,175.5 L1138.0,709.5 L1260.0,709.5 L1260.0,742.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<path d="M545.0,401.5 L545.0,441.5 L894.0,441.5 L894.0,687.5 L772.0,687.5 L772.0,742.5" fill="none" stroke="#475569" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#ah)"/>
+<rect x="184.0" y="44.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="284.0" y="71.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Counting</text>
+<text x="284.0" y="92.5" font-size="12.5" fill="#475569" text-anchor="middle">PR-1</text>
+<rect x="428.0" y="44.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="528.0" y="71.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Conditional, Bayes</text>
+<text x="528.0" y="92.5" font-size="12.5" fill="#475569" text-anchor="middle">PR-2</text>
+<rect x="672.0" y="44.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="772.0" y="71.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Discrete RVs</text>
+<text x="772.0" y="92.5" font-size="12.5" fill="#475569" text-anchor="middle">PR-3</text>
+<rect x="916.0" y="44.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="1016.0" y="71.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Expectation</text>
+<text x="1016.0" y="92.5" font-size="12.5" fill="#475569" text-anchor="middle">PR-4</text>
+<rect x="1160.0" y="44.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"/>
+<text x="1260.0" y="71.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Continuous RVs</text>
+<text x="1260.0" y="92.5" font-size="12.5" fill="#475569" text-anchor="middle">PR-5</text>
+<rect x="672.0" y="208.5" width="200.0" height="84.5" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.3"/>
+<text x="772.0" y="245.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Moments, MGF</text>
+<text x="772.0" y="266.5" font-size="12.5" fill="#475569" text-anchor="middle">PR-6</text>
+<rect x="916.0" y="208.5" width="200.0" height="84.5" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.3"/>
+<text x="1016.0" y="236.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Joint, Multivariate</text>
+<text x="1016.0" y="255.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Normal</text>
+<text x="1016.0" y="276.0" font-size="12.5" fill="#475569" text-anchor="middle">PR-7</text>
+<rect x="1160.0" y="208.5" width="200.0" height="84.5" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text x="1260.0" y="245.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Eigen, PD Matrices</text>
+<text x="1260.0" y="266.5" font-size="12.5" fill="#475569" text-anchor="middle">LA-6</text>
+<rect x="428.0" y="336.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.3"/>
+<text x="528.0" y="363.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">LLN, CLT</text>
+<text x="528.0" y="384.5" font-size="12.5" fill="#475569" text-anchor="middle">PR-9</text>
+<rect x="672.0" y="336.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text x="772.0" y="363.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Jacobian</text>
+<text x="772.0" y="384.5" font-size="12.5" fill="#475569" text-anchor="middle">VC-4</text>
+<rect x="916.0" y="336.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.3"/>
+<text x="1016.0" y="363.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Transformations</text>
+<text x="1016.0" y="384.5" font-size="12.5" fill="#475569" text-anchor="middle">PR-8</text>
+<rect x="1160.0" y="336.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#7c3aed" stroke-width="1.3"/>
+<text x="1260.0" y="363.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Conditional Expectation</text>
+<text x="1260.0" y="384.5" font-size="12.5" fill="#475569" text-anchor="middle">PR-10</text>
+<rect x="184.0" y="481.5" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="284.0" y="509.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Bootstrap</text>
+<text x="284.0" y="530.0" font-size="12.5" fill="#475569" text-anchor="middle">PR-12</text>
+<rect x="428.0" y="481.5" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="528.0" y="509.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Maximum Likelihood</text>
+<text x="528.0" y="530.0" font-size="12.5" fill="#475569" text-anchor="middle">PR-11</text>
+<rect x="672.0" y="481.5" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="772.0" y="509.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Hypothesis Testing</text>
+<text x="772.0" y="530.0" font-size="12.5" fill="#475569" text-anchor="middle">PR-13</text>
+<rect x="184.0" y="589.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="284.0" y="616.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Bayesian Inference</text>
+<text x="284.0" y="637.5" font-size="12.5" fill="#475569" text-anchor="middle">PR-14</text>
+<rect x="428.0" y="589.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#2e7d32" stroke-width="1.3"/>
+<text x="528.0" y="616.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Regression</text>
+<text x="528.0" y="637.5" font-size="12.5" fill="#475569" text-anchor="middle">PR-15</text>
+<rect x="672.0" y="589.0" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text x="772.0" y="616.5" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Least Squares</text>
+<text x="772.0" y="637.5" font-size="12.5" fill="#475569" text-anchor="middle">LA-4</text>
+<rect x="184.0" y="742.5" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="1.3"/>
+<text x="284.0" y="770.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">MCMC</text>
+<text x="284.0" y="791.0" font-size="12.5" fill="#475569" text-anchor="middle">PR-17</text>
+<rect x="428.0" y="742.5" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="1.3"/>
+<text x="528.0" y="770.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Markov Chains</text>
+<text x="528.0" y="791.0" font-size="12.5" fill="#475569" text-anchor="middle">PR-16</text>
+<rect x="672.0" y="742.5" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="1.3"/>
+<text x="772.0" y="770.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Random Walk</text>
+<text x="772.0" y="791.0" font-size="12.5" fill="#475569" text-anchor="middle">PR-19 · Brownian motion</text>
+<rect x="1160.0" y="742.5" width="200.0" height="65.5" rx="8" fill="#ffffff" stroke="#d97706" stroke-width="1.3"/>
+<text x="1260.0" y="770.0" font-size="14.5" fill="#111827" font-weight="700" text-anchor="middle">Poisson Process</text>
+<text x="1260.0" y="791.0" font-size="12.5" fill="#475569" text-anchor="middle">PR-18</text>
+<rect x="24" y="833.0" width="34" height="16" rx="4" fill="#ffffff" stroke="#64748b" stroke-width="1.3" stroke-dasharray="5 3"/>
+<text x="68.0" y="845.5" font-size="12" fill="#475569" text-anchor="start">Dashed card = prerequisite from another track</text>
+</svg>

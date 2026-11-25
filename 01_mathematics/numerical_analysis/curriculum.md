@@ -84,36 +84,7 @@
 
 **Entry:** Python basics; LA-1/LA-2 for NA-2; calculus (Taylor's theorem) for NA-1/NA-6.
 
-```mermaid
-flowchart TD
-    N1["NA-1 Floating point, conditioning"] --> N2["NA-2 Direct linear solvers"]
-    LA2["LA-2 Elimination"] --> N2
-    N2 --> N3["NA-3 Least squares"]
-    LA4["LA-4 Orthogonality, QR"] --> N3
-    N1 --> N4["NA-4 Root finding, Newton"]
-    N1 --> N5["NA-5 Interpolation"]
-    N5 --> N6["NA-6 Quadrature, FD derivatives"]
-    N4 --> N7["NA-7 Optimization intro"]
-    LA7["LA-7 SVD"] --> N8["NA-8 Norms, SVD"]
-    N8 --> N9["NA-9 QR algorithms"]
-    N9 --> N10["NA-10 Backward stability"]
-    N10 --> N11["NA-11 GE stability, Cholesky"]
-    N10 --> N12["NA-12 Eigenvalue algorithms"]
-    N12 --> N13["NA-13 Krylov: GMRES, CG"]
-    DE6["DE-6 Linear ODE systems"] --> N14["NA-14 IVP methods"]
-    N6 --> N14
-    N14 --> N15["NA-15 Zero-stability"]
-    N15 --> N16["NA-16 Absolute stability, stiffness"]
-    N6 --> N17["NA-17 FD approximations, BVP"]
-    N17 --> N18["NA-18 Elliptic, 5-point Laplacian"]
-    N18 --> N19["NA-19 Sparse iterative solvers"]
-    N13 --> N19
-    N16 --> N20["NA-20 Parabolic, von Neumann"]
-    N18 --> N20
-    PDE["PDE-1..4 Heat, wave equations"] --> N20
-    N20 --> N21["NA-21 Hyperbolic, CFL"]
-    PDE3["PDE-3 Fourier series"] --> N22["NA-22 FFT"]
-```
+![数值分析章节依赖图](../../assets/diagrams/curr_numerical_analysis.svg)
 
 **Cross-module:**
 - Every NA-17…NA-21 experiment must be validated against an analytic solution from differential_equations.
