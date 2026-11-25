@@ -337,6 +337,123 @@ def main() -> None:
         pillar_chars=list("共享底层数学与物理"),
     )
 
+    # 6. Main README panoramic math-driven chain diagram
+    render_readme_panorama()
+
+
+def render_readme_panorama() -> None:
+    """Render the panoramic Math -> Physics -> Computation -> Engineering map for README.md."""
+    width = 1380
+    pad_x = 20
+    top_y = 56
+    left_w = 165
+    pillar_w = 56
+    band_w = width - 2 * pad_x - pillar_w - 18
+    band_h = 98
+    gap_y = 16
+
+    chains = [
+        ("blue", "线性代数与谱", "Linear Algebra", [
+            ("特征值 · 谱定理 · SVD", "Ax = λx · A = UΣVᵀ"),
+            ("定态薛定谔 · 结构模态", "Ĥψ = Eψ · Kx = ω²Mx"),
+            ("Lanczos / LOBPCG · 截断 SVD", "稀疏特征求解 · 低秩逼近"),
+            ("DFT 能带 · 结构振动 · PCA", "材料 · 制造 · AI"),
+        ]),
+        ("teal", "向量微积分", "Vector Calculus", [
+            ("散度 · 旋度 · Gauss / Stokes", "∇·F · ∇×F · 积分定理"),
+            ("Navier–Stokes · 传热 · 漂移-扩散", "∂ₜu + ∇·F = s · Maxwell"),
+            ("有限体积 FVM · SG 通量", "守恒离散 · 迎风 / 隐式格式"),
+            ("TCAD 半导体器件 · CFD 仿真", "半导体 · 先进制造 · HPC"),
+        ]),
+        ("purple", "傅里叶与谱分析", "Fourier Analysis", [
+            ("Fourier 变换 · 卷积 · 采样", "k 空间 · Parseval 定理"),
+            ("电磁波传播 · 晶体布洛赫波", "色散关系 · 倒格子空间"),
+            ("FFT · 谱方法 · 神经算子 FNO", "O(N log N) · 频域算子"),
+            ("MRI / CT 图像重建 · 光学光刻", "医学成像 · 半导体 · 材料"),
+        ]),
+        ("green", "微分方程与动力", "ODE / Dynamics", [
+            ("ODE 线性组 · Lyapunov 稳定", "ẋ = Ax · 相平面 · 分岔"),
+            ("Lagrange / Hamilton 力学", "M(q)q̈ + Cq̇ + g = τ"),
+            ("RK4 · 辛积分 · Kalman 滤波", "保能量积分 · 状态估计"),
+            ("机械臂控制 · SLAM · 分子动力学", "机器人 · 计算材料"),
+        ]),
+        ("amber", "变分原理与优化", "Variational & Opt.", [
+            ("变分法 · 弱形式 · 凸优化", "δS = 0 · KKT · 对偶理论"),
+            ("最小势能 · 线弹性 · 能量泛函", "a(u,v) = ℓ(v) · E[n] → min"),
+            ("有限元 FEM · LQR/MPC · PINNs", "Galerkin 组装 · 自动微分"),
+            ("热-力耦合制造 · 轨迹/拓扑优化", "先进制造 · 机器人 · AI"),
+        ]),
+        ("slate", "概率统计与反演", "Probability & UQ", [
+            ("概率论 · 贝叶斯推断 · SDE", "后验分布 · 马尔可夫过程"),
+            ("玻尔兹曼 · 费米–狄拉克统计", "配分函数 · 载流子与噪声"),
+            ("MCMC · Tikhonov 正则 · GPU 求解", "采样 · 反演 · 预条件 CG"),
+            ("生成模型 · 医学反演 · 良率 UQ", "AI · 医学 · 半导体 · HPC"),
+        ]),
+    ]
+
+    total_h = top_y + len(chains) * band_h + (len(chains) - 1) * gap_y + 24
+    lines = _svg_header(width, total_h, "MPCE 全景图：数学链路驱动的物理方法、计算求解与工程实践场景")
+
+    # Top column headers aligned with the 4 cards
+    inner_x = pad_x + left_w + 16
+    inner_w = band_w - left_w - 32
+    card_gap = 26
+    card_w = (inner_w - card_gap * 3) / 4
+
+    col_headers = [
+        ("1. 数学原理", "#2563eb", "#eff6ff"),
+        ("2. 物理机制与控制方程", "#7c3aed", "#f5f3ff"),
+        ("3. 数值与计算方法", "#1f7a7a", "#f0fdfa"),
+        ("4. 工程实践场景", "#2e7d32", "#f0fdf4"),
+    ]
+    # Left header tag
+    lines.append(f'  <rect x="{pad_x}" y="14" width="{left_w}" height="30" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>')
+    lines.append(f'  <text x="{pad_x + left_w / 2:.1f}" y="34" font-size="13" font-weight="700" fill="#334155" text-anchor="middle">核心数学主线</text>')
+    for j, (label, fg, bg) in enumerate(col_headers):
+        cx = inner_x + j * (card_w + card_gap)
+        lines.append(f'  <rect x="{cx:.1f}" y="14" width="{card_w:.1f}" height="30" rx="6" fill="{bg}" stroke="{fg}" stroke-width="1.2"/>')
+        lines.append(f'  <text x="{cx + card_w / 2:.1f}" y="34" font-size="13" font-weight="700" fill="{fg}" text-anchor="middle">{escape(label)}</text>')
+
+    # Horizontal swimlane chains
+    for idx, (color_key, title, sub, steps) in enumerate(chains):
+        hdr, fill, bdr, card_bdr = PALETTE[color_key]
+        y = top_y + idx * (band_h + gap_y)
+        lines.append(f'  <rect x="{pad_x}" y="{y}" width="{band_w}" height="{band_h}" rx="12" fill="{fill}" stroke="{bdr}" stroke-width="1.5"/>')
+        lines.append(f'  <rect x="{pad_x}" y="{y}" width="{left_w}" height="{band_h}" rx="10" fill="{hdr}"/>')
+        lines.append(f'  <text class="ht" x="{pad_x + left_w / 2:.1f}" y="{y + band_h / 2 - 4:.1f}">{escape(title)}</text>')
+        lines.append(f'  <text class="hs" x="{pad_x + left_w / 2:.1f}" y="{y + band_h / 2 + 16:.1f}">{escape(sub)}</text>')
+
+        card_h = band_h - 24
+        card_y = y + 12
+        for j, (ctitle, csub) in enumerate(steps):
+            cx = inner_x + j * (card_w + card_gap)
+            mx = cx + card_w / 2
+            lines.append(f'  <rect class="card" x="{cx:.1f}" y="{card_y}" width="{card_w:.1f}" height="{card_h}" rx="8" stroke="{card_bdr}"/>')
+            lines.append(f'  <text class="ct" x="{mx:.1f}" y="{card_y + 32}">{escape(ctitle)}</text>')
+            lines.append(f'  <text class="cs" x="{mx:.1f}" y="{card_y + 54}">{escape(csub)}</text>')
+            if j < 3:
+                ax1 = cx + card_w + 2
+                ax2 = cx + card_w + card_gap - 3
+                ay = card_y + card_h / 2
+                lines.append(f'  <line class="flow" x1="{ax1:.1f}" y1="{ay:.1f}" x2="{ax2:.1f}" y2="{ay:.1f}"/>')
+
+    # Right cross-cutting vertical pillar
+    px = width - pad_x - pillar_w
+    ph = total_h - top_y - 24
+    pillar_chars = list("数学驱动物理与工程实践")
+    lines.append(f'  <rect x="{px}" y="{top_y}" width="{pillar_w}" height="{ph}" rx="10" fill="#fef2f2" stroke="#dc2626" stroke-width="1.5"/>')
+    step = min(38, (ph - 44) / max(len(pillar_chars), 1))
+    start_y = top_y + (ph - step * (len(pillar_chars) - 1)) / 2 + 6
+    for k, ch in enumerate(pillar_chars):
+        lines.append(f'  <text x="{px + pillar_w / 2:.1f}" y="{start_y + k * step:.1f}" font-size="18" font-weight="700" fill="#b91c1c" text-anchor="middle">{escape(ch)}</text>')
+
+    lines.append("</svg>")
+    out_path = OUT_DIR / "mpce_math_physics_engineering_map.svg"
+    svg_text = "\n".join(lines) + "\n"
+    ET.fromstring(svg_text)
+    out_path.write_text(svg_text, encoding="utf-8")
+    print(f"Wrote mpce_math_physics_engineering_map.svg ({width}x{total_h}) OK")
+
 
 if __name__ == "__main__":
     main()
