@@ -35,3 +35,9 @@ Thumbs.db
 *.pem
 *.key
 secrets/
+
+# Web site build artifacts
+site/node_modules/
+site/dist/
+site/public/assets/
+site/src/data/wiki-data.json
