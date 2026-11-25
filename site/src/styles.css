@@ -546,7 +546,17 @@ html.mpce-embed, html.mpce-embed body { background: #ffffff; overflow-y: hidden;
 }
 .trace-status { min-height: 32px; }
 .trace-status.idle { color: #64748b; }
-.board-page.is-embedded .panorama-frame { min-width: 1120px; }
-.board-page.is-embedded .layer-band { grid-template-columns: 138px minmax(0, 1fr); }
-.board-page.is-embedded .layer-title { font-size: 13px; }
-.board-page.is-embedded .layer-cards { gap: 10px; padding: 10px 12px; }
+.board-page.is-embedded .panorama-frame {
+  min-width: 860px;
+  grid-template-columns: minmax(0, 1fr) 36px;
+  gap: 10px;
+}
+.board-page.is-embedded .layer-band { grid-template-columns: 118px minmax(0, 1fr); }
+.board-page.is-embedded .layer-label { padding: 8px 6px; }
+.board-page.is-embedded .layer-title { font-size: 12px; }
+.board-page.is-embedded .layer-sub { font-size: 10px; }
+.board-page.is-embedded .layer-cards { gap: 8px; padding: 8px 10px; }
+.board-page.is-embedded .board-card { padding: 8px 10px; min-height: 82px; }
+.board-page.is-embedded .card-title { font-size: 12.5px; }
+.board-page.is-embedded .card-sub { font-size: 10.5px; }
+.board-page.is-embedded .right-pillar { font-size: 12px; letter-spacing: 3px; }
