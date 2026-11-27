@@ -50,8 +50,29 @@ $$
 
 **第 1 步**：分部积分。取 $u=f'(t)$，$v=-(x-t)$，其中 $x$ 视为常数，$t$ 为积分变量：
 
+**分部积分法则**：由乘积法则 $(uv)'=u'v+uv'$，两边在 $[a,x]$ 上积分，并用牛顿–莱布尼茨公式得 $\int_a^x (uv)'\,\mathrm{d}t=\big[uv\big]_a^x$，移项即得
+
 $$
-\int_a^x f'(t)\,\mathrm{d}t=\Big[-f'(t)(x-t)\Big]_a^x+\int_a^x f''(t)(x-t)\,\mathrm{d}t=f'(a)(x-a)+\int_a^x f''(t)(x-t)\,\mathrm{d}t
+\int_a^x u\,v'\,\mathrm{d}t=\Big[u\,v\Big]_a^x-\int_a^x u'\,v\,\mathrm{d}t
+$$
+
+- **含义**：把导数从 $v$ 挪到 $u$ 上，代价是一个边界项 $[uv]_a^x$ 和一个负号。
+- **本步的对应关系**：被积函数 $f'(t)=f'(t)\cdot 1$，取 $u=f'(t)$、$v'=1$，于是 $u'=f''(t)$。
+- **为什么取 $v=-(x-t)$ 而不是 $v=t$**：$v'=1$ 时，$v$ 可以是 $t+C$ 中的任何一个。取 $C=-x$，得到 $v=t-x=-(x-t)$。它在上限 $t=x$ 处为 0，边界项只剩下 $t=a$ 一端，并且自然出现 $(x-a)$ 这个泰勒展开需要的因子。
+- **边界项逐步计算**：
+  - $t=x$ 处：$-f'(x)(x-x)=0$；
+  - $t=a$ 处：$-f'(a)(x-a)$；
+  - 相减：$0-\big(-f'(a)(x-a)\big)=f'(a)(x-a)$。
+- **剩余积分**：$-\int_a^x u'v\,\mathrm{d}t=-\int_a^x f''(t)\cdot\big(-(x-t)\big)\,\mathrm{d}t=\int_a^x f''(t)(x-t)\,\mathrm{d}t$，两个负号抵消。
+
+合起来：
+
+$$
+\begin{aligned}
+\int_a^x f'(t)\,\mathrm{d}t
+&=\Big[-f'(t)(x-t)\Big]_a^x+\int_a^x f''(t)(x-t)\,\mathrm{d}t\\
+&=f'(a)(x-a)+\int_a^x f''(t)(x-t)\,\mathrm{d}t
+\end{aligned}
 $$
 
 **第 2 步**：再分部积分。取 $u=f''(t)$，$v=-\frac{(x-t)^2}{2}$：
