@@ -4,6 +4,45 @@
 > Interleaved: **foundations M3–M6 (P-I)**, **inference & stochastic M9–M12 (P-II)**. Budget **~140 h**.
 > Chapter numbering: Blitzstein & Hwang **2e (2019)**; Wasserman *All of Statistics* (2004).
 
+| 字段 | 内容 |
+|---|---|
+| Knowledge Graph Node ID | `MATH-PR-01`（概率论与随机变量）· `MATH-PR-02`（贝叶斯推断与估计）· `MATH-PR-03`（随机过程与 SDE） |
+| Phase | Phase I（I.7，M3–M6 基础）；推断与随机过程在 Phase II（M9–M12） |
+| Prerequisites | [一元微积分](../single_variable_calculus/curriculum.md)；多元积分与换元；线性代数（特征向量、投影） |
+| Primary References | Blitzstein & Hwang, *Introduction to Probability* 2e；Wasserman, *All of Statistics*；MIT 18.05 |
+
+## 0. 必须掌握的知识点 Knowledge Checklist
+
+学完本模块应能逐条勾选。每条对应的教材章节见 §4。
+
+### 概率基础 `MATH-PR-01`
+
+- [ ] 样本空间、概率公理、计数、容斥原理
+- [ ] 条件概率、全概率公式、贝叶斯公式、独立性
+- [ ] 离散分布：Bernoulli、二项、几何、Poisson
+- [ ] 期望的线性性、指示变量、方差
+- [ ] 连续分布：均匀、正态、指数（无记忆性）
+- [ ] 矩母函数、独立随机变量之和
+- [ ] 联合分布、协方差、相关系数、多元正态分布
+- [ ] 随机变量变换（Jacobian）、卷积、Beta 与 Gamma 分布
+- [ ] Markov、Chebyshev、Jensen 不等式；大数定律与中心极限定理
+
+### 统计推断 `MATH-PR-02`
+
+- [ ] 条件期望作为投影
+- [ ] 点估计：偏差、方差、MSE、一致性、MLE、Fisher 信息
+- [ ] Bootstrap 与置信区间
+- [ ] 假设检验与 p 值（了解）
+- [ ] 贝叶斯推断：先验、似然、后验、共轭、MAP、可信区间
+- [ ] 线性回归即高斯噪声下的 MLE
+
+### 随机过程 `MATH-PR-03`
+
+- [ ] Markov 链：转移矩阵、平稳分布、细致平衡
+- [ ] MCMC：Metropolis–Hastings、Gibbs 采样、收敛诊断
+- [ ] Poisson 过程
+- [ ] 随机游走 → 布朗运动 → 扩散方程，Langevin 方程（入门）
+
 ## 1. 主教材 Primary Textbook
 
 **Joseph K. Blitzstein & Jessica Hwang, *Introduction to Probability*, 2nd ed., CRC Press, 2019.**

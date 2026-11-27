@@ -4,6 +4,53 @@
 > Interleaved: **foundations M1–M6 (P-I)**, **NLA + discretization M7–M12 (P-II)**. Budget **~170 h**.
 > Chapter numbering: Heath **2e (2002 / SIAM Classics 2018 reprint; same content)**; Trefethen & Bau cited by **Lecture** number (stable across the 1997 and 2022 editions); LeVeque *FDM* (SIAM 2007).
 
+| 字段 | 内容 |
+|---|---|
+| Knowledge Graph Node ID | `MATH-NA-01`（浮点、条件数与稳定性）· `MATH-NA-02`（插值、逼近与求积）· `MATH-NA-03`（离散格式的相容性、稳定性与收敛性） |
+| Phase | Phase I（M1–M6 基础，与 I.8 Python 数值计算交织）；数值线性代数与离散化在 Phase II–V |
+| Prerequisites | [一元微积分](../single_variable_calculus/curriculum.md)（泰勒公式）；线性代数；Python/NumPy |
+| Primary References | Heath, *Scientific Computing* 2e；Trefethen & Bau, *Numerical Linear Algebra*；LeVeque, *FDM for ODEs and PDEs* |
+
+## 0. 必须掌握的知识点 Knowledge Checklist
+
+学完本模块应能逐条勾选。每条对应的教材章节见 §4。
+
+### 误差与浮点 `MATH-NA-01`
+
+- [ ] 绝对误差与相对误差、截断误差与舍入误差
+- [ ] IEEE 754 浮点数、机器精度、相消误差
+- [ ] 问题的条件数与算法的稳定性、向后稳定性
+
+### 线性方程组与最小二乘
+
+- [ ] 带部分主元的 LU、Cholesky、带状矩阵
+- [ ] 最小二乘：正规方程、QR、SVD 的稳定性比较
+- [ ] Householder QR、经典与修正 Gram–Schmidt
+- [ ] 特征值算法：Hessenberg 约化、带位移 QR 算法
+- [ ] Krylov 迭代：Arnoldi、GMRES、Lanczos、CG 与预条件
+
+### 非线性方程与优化
+
+- [ ] 二分法、不动点迭代、Newton 法（二次收敛）、割线法
+- [ ] 方程组的 Newton 法；黄金分割、梯度下降、BFGS 概念
+
+### 插值、求积与数值微分 `MATH-NA-02`
+
+- [ ] 多项式插值、Runge 现象、Chebyshev 点、样条
+- [ ] Newton–Cotes、复合求积、Gauss 求积
+- [ ] Richardson 外推、有限差分步长的最优选择
+- [ ] DFT 与 FFT、谱微分
+
+### ODE/PDE 离散化 `MATH-NA-03`
+
+- [ ] Euler、RK2/RK4、线性多步法；局部误差与全局误差
+- [ ] 零稳定性与 Dahlquist 等价定理
+- [ ] 绝对稳定区域、刚性问题、A 稳定、BDF
+- [ ] 二阶差分矩阵与 $-u''=f$ 的收敛性证明
+- [ ] 五点 Laplace 格式、Jacobi/Gauss–Seidel/SOR、多重网格思想
+- [ ] 抛物型问题：FTCS、BTCS、Crank–Nicolson、von Neumann 稳定性、Lax 等价定理
+- [ ] 双曲型问题：迎风、Lax–Wendroff、CFL 条件、数值耗散与色散
+
 ## 1. 主教材 Primary Textbook
 
 | Part | Book |

@@ -4,6 +4,54 @@
 > ODE intro **P-I (M5–M6)**, main body **P-II (M7–M12)**. Budget **~230 h**.
 > Chapter numbering: Boyce–DiPrima **11e (2017)**, Strogatz **2e (2015)**, Haberman **5e (2013)**, RHB **3e (2006)**. Adjacent editions keep the same chapter *titles*, but numbering can shift. Match by title.
 
+| 字段 | 内容 |
+|---|---|
+| Knowledge Graph Node ID | `MATH-DE-01`（ODE 与线性系统）· `MATH-DE-02`（动力系统与稳定性）· `MATH-DE-03`（PDE）· `MATH-FA-01`（傅里叶分析）· `MATH-FA-02`（Green 函数）· `MATH-FA-03`（Sturm–Liouville） |
+| Phase | Phase II（II.1–II.6，M7–M12）；ODE 入门在 Phase I 末（M5–M6） |
+| Prerequisites | [一元微积分](../single_variable_calculus/curriculum.md)；[多元/向量微积分](../calculus/curriculum.md)；线性代数（特征值、矩阵指数） |
+| Primary References | Boyce & DiPrima 11e；Strogatz, *Nonlinear Dynamics and Chaos* 2e；Haberman, *Applied PDE* 5e |
+
+## 0. 必须掌握的知识点 Knowledge Checklist
+
+学完本模块应能逐条勾选。每条对应的教材章节见 §4。
+
+### 常微分方程 `MATH-DE-01`
+
+- [ ] 一阶方程：线性、可分离、恰当方程；存在唯一性定理
+- [ ] 二阶线性方程：特征方程、待定系数、常数变易
+- [ ] 受迫与阻尼振动、共振
+- [ ] 级数解法、Frobenius 方法，Bessel 与 Legendre 方程的来源
+- [ ] Laplace 变换：阶跃与冲激、卷积、传递函数
+- [ ] 线性方程组 $\mathbf x'=A\mathbf x$：特征值法、矩阵指数、相图
+
+### 动力系统与稳定性 `MATH-DE-02`
+
+- [ ] 平衡点线性化与 Lyapunov 第二方法
+- [ ] 一维流与分岔（鞍结、跨临界、叉式）
+- [ ] 相平面分类（迹–行列式图）、零倾线
+- [ ] 极限环、Poincaré–Bendixson 定理、Hopf 分岔
+- [ ] 混沌：Lorenz 方程、Lyapunov 指数、logistic 映射
+
+### 傅里叶分析 `MATH-FA-01`
+
+- [ ] 傅里叶级数：收敛性、Gibbs 现象、Parseval 等式
+- [ ] 傅里叶变换与卷积定理
+
+### 偏微分方程 `MATH-DE-03`
+
+- [ ] 热方程与波动方程的推导、边界条件类型
+- [ ] 分离变量法：杆、矩形、圆盘
+- [ ] d'Alembert 解与特征线方法、Burgers 方程与激波
+- [ ] 高维问题：Bessel 函数、Legendre 多项式
+- [ ] 非齐次问题：本征函数展开、Duhamel 原理
+- [ ] 无限区域：傅里叶变换解法、热核
+
+### Sturm–Liouville 与 Green 函数 `MATH-FA-02`、`MATH-FA-03`
+
+- [ ] Sturm–Liouville 问题：自伴性、实特征值、正交性、完备性、Rayleigh 商
+- [ ] δ 函数、边值问题的 Green 函数、Fredholm 二择一
+- [ ] 热方程与波动方程的 Green 函数、因果性
+
 ## 1. 主教材 Primary Textbook (three-book spine, one per sub-area)
 
 | Sub-area | Book | Why |

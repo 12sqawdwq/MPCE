@@ -3,6 +3,58 @@
 > Phase **P-I (M1–M4)**, revisited in **P-II (M8–M10)** alongside numerical linear algebra. Budget **~180 h**.
 > Chapter numbering: Strang chapter numbers refer to the **6th edition (2023)**. If your copy is the 5th edition, match chapters by title; Ch. 1–8 titles are close but not identical. Axler numbering refers to the **4th edition (2024)**.
 
+| 字段 | 内容 |
+|---|---|
+| Knowledge Graph Node ID | `MATH-LA-01`（向量空间、线性映射与内积）· `MATH-LA-02`（特征值与谱定理）· `MATH-LA-03`（矩阵分解与 SVD） |
+| Phase | Phase I（I.1–I.4，M1–M4），Phase II 与数值线性代数一起复习 |
+| Prerequisites | 高中代数；[一元微积分](../single_variable_calculus/curriculum.md)；Python 基础 |
+| Primary References | Strang, *Introduction to Linear Algebra* 6e；Axler, *Linear Algebra Done Right* 4e；MIT 18.06 |
+
+## 0. 必须掌握的知识点 Knowledge Checklist
+
+学完本模块应能逐条勾选。每条对应的教材章节见 §4。
+
+### 向量、矩阵与消元
+
+- [ ] 线性组合、点积、矩阵乘法的列视角与行视角
+- [ ] 高斯消元即 LU 分解，$PA=LU$，逆矩阵，$O(n^3)$ 代价
+
+### 向量空间与四个基本子空间 `MATH-LA-01`
+
+- [ ] 向量空间、子空间、基、维数
+- [ ] 四个基本子空间 $C(A)$、$N(A)$、$C(A^\top)$、$N(A^\top)$
+- [ ] 秩–零化度定理，$A\mathbf x=\mathbf b$ 的完整解
+- [ ] 线性变换的矩阵表示、基变换、相似
+
+### 正交性与最小二乘
+
+- [ ] 内积、正交投影
+- [ ] 最小二乘与正规方程 $A^\top A\hat{\mathbf x}=A^\top\mathbf b$
+- [ ] Gram–Schmidt 与 $A=QR$
+
+### 行列式
+
+- [ ] 行列式的性质、余子式展开
+- [ ] 行列式作为体积，与 Jacobian 的联系
+
+### 特征值与谱定理 `MATH-LA-02`
+
+- [ ] 特征值、特征向量、对角化，$A^k$ 与 $e^{At}$
+- [ ] 实对称矩阵谱定理：实特征值、正交特征向量
+- [ ] 二次型与正定性判别
+- [ ] Rayleigh 商、Courant–Fischer 极小极大原理、Gershgorin 圆盘
+
+### SVD `MATH-LA-03`
+
+- [ ] $A=U\Sigma V^\top$ 的存在性与几何意义
+- [ ] 低秩逼近（Eckart–Young）、伪逆、PCA
+
+### 矩阵分析
+
+- [ ] 向量范数与矩阵范数
+- [ ] 条件数 $\kappa(A)$ 与扰动分析
+- [ ] 复矩阵：Hermite 矩阵、酉矩阵、DFT 矩阵
+
 ## 1. 主教材 Primary Textbook
 
 **Gilbert Strang, *Introduction to Linear Algebra*, 6th ed., Wellesley-Cambridge Press, 2023.**

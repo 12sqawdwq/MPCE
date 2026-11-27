@@ -3,6 +3,51 @@
 > Vector calculus: **P-I (M2–M6)**. Complex analysis: **P-II (M8–M9)**. Budget **~160 h** (vector ~105 h, complex ~55 h).
 > Chapter numbering: Stewart chapters refer to the **8e/9e *Early Transcendentals*** numbering (Ch. 12–16). Other editions and the non-ET version shift chapter numbers, so match by title against your local copy. Needham chapters refer to *Visual Complex Analysis* (1997 and 25th Anniversary Ed. share the chapter structure). RHB refers to the 3e (2006).
 
+| 字段 | 内容 |
+|---|---|
+| Knowledge Graph Node ID | `MATH-VC-01`（梯度、散度、旋度）· `MATH-VC-02`（高斯、斯托克斯、格林定理） |
+| Phase | Phase I（I.5–I.6，M2–M6 向量微积分）；复分析在 Phase II（M8–M9） |
+| Prerequisites | [一元微积分](../single_variable_calculus/curriculum.md)；线性代数（向量、矩阵、行列式） |
+| Primary References | Stewart, *Calculus* ET 8e/9e, Ch. 12–16；Needham, *Visual Complex Analysis*；Schey, *Div, Grad, Curl, and All That*；MIT 18.02 |
+
+## 0. 必须掌握的知识点 Knowledge Checklist
+
+学完本模块应能逐条勾选。每条对应的教材章节见 §4。
+
+### 多元微分
+
+- [ ] 空间向量、点积与叉积、直线与平面
+- [ ] 向量值函数、弧长、曲率
+- [ ] 偏导数、链式法则、梯度、方向导数
+- [ ] 二阶多元泰勒展开与 Hessian，极值判别
+- [ ] Lagrange 乘子法
+
+### 重积分
+
+- [ ] 二重、三重积分
+- [ ] 极坐标、柱坐标、球坐标
+- [ ] 一般换元公式与 Jacobian 行列式
+
+### 向量微积分 `MATH-VC-01`、`MATH-VC-02`
+
+- [ ] 线积分、保守场与势函数
+- [ ] 格林定理
+- [ ] 散度、旋度的定义与物理意义
+- [ ] 曲面积分
+- [ ] 斯托克斯定理与散度定理
+- [ ] 曲线坐标中的 $\nabla$、$\nabla\cdot$、$\nabla\times$、$\nabla^2$
+- [ ] 向量恒等式、Helmholtz 分解（陈述）
+- [ ] 指标记号：爱因斯坦求和、$\delta_{ij}$、$\varepsilon_{ijk}$
+
+### 复分析
+
+- [ ] 欧拉公式、单位根、$e^z$、$\log z$ 与分支
+- [ ] Cauchy–Riemann 方程、共形映射、调和函数
+- [ ] Cauchy 定理与 Cauchy 积分公式
+- [ ] Taylor 级数与 Laurent 级数
+- [ ] 留数定理与实积分计算、Jordan 引理
+- [ ] 用共形映射解二维静电与理想流问题
+
 ## 1. 主教材 Primary Textbook
 
 | Part | Book |
