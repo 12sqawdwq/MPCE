@@ -7,9 +7,10 @@
 ## [Unreleased]
 
 ### Added — Prerequisite Notes
-- `01_mathematics/calculus/taylor_formula.md`（泰勒公式：系数匹配与分部积分两种推导、拉格朗日余项、常用展开、数值方法中的应用与练习）
-- `01_mathematics/calculus/fundamental_theorem_and_integration.md`（微积分基本定理的严格推导、高维推广、换元与分部积分及部分分式、在 FEM 弱形式与 Euler–Lagrange 方程中的应用与练习）
+- `01_mathematics/single_variable_calculus/taylor_formula.md`（泰勒公式：系数匹配与分部积分两种推导、拉格朗日余项、常用展开、数值方法中的应用与练习）
+- `01_mathematics/single_variable_calculus/fundamental_theorem_and_integration.md`（微积分基本定理的严格推导、高维推广、换元与分部积分及部分分式、在 FEM 弱形式与 Euler–Lagrange 方程中的应用与练习）
 - `02_physics/university_physics/`（大学物理基础文件树：总览大纲与按学习顺序编号的力学、振动与波、热学、电磁学、光学、近代物理 6 篇知识清单与自测）
+- 补齐 01/02 全部模块目录与导论文件：`01_mathematics/` 新增 `single_variable_calculus/`（并迁入泰勒公式与微积分基本定理笔记）、`optimization/`、`functional_analysis/`；`02_physics/` 新增 `classical_mechanics/`、`electromagnetism/`、`thermodynamics/`、`continuum_mechanics/`、`quantum_mechanics/`、`solid_state_physics/`；两份 README 增加"学完需要掌握的知识"清单
 - Wiki 侧边栏按学科目录嵌套显示，并按 `Phase` 字段显示层级标签
 
 ---

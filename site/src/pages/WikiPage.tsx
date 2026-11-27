@@ -52,16 +52,27 @@ const SECTION_LABELS: Record<string, string> = {
   '07_references': '07 参考资料',
 }
 
+/** Subject folder labels, listed in learning order; the sidebar sorts folders by this order. */
 const FOLDER_LABELS: Record<string, string> = {
-  calculus: '微积分 Calculus',
+  single_variable_calculus: '一元微积分 Single-Variable Calculus',
   linear_algebra: '线性代数 Linear Algebra',
-  differential_equations: '微分方程 Differential Equations',
-  numerical_analysis: '数值分析 Numerical Analysis',
+  calculus: '多元/向量微积分 Calculus',
   probability_statistics: '概率统计 Probability & Statistics',
+  differential_equations: '微分方程 Differential Equations',
+  optimization: '变分法与最优化 Optimization',
+  functional_analysis: '泛函分析 Functional Analysis',
+  numerical_analysis: '数值分析 Numerical Analysis',
+  university_physics: '大学物理基础 University Physics',
+  classical_mechanics: '分析力学 Classical Mechanics',
+  electromagnetism: '电动力学 Electromagnetism',
+  thermodynamics: '热力学与统计物理 Thermodynamics',
+  continuum_mechanics: '连续介质力学 Continuum Mechanics',
+  quantum_mechanics: '量子力学 Quantum Mechanics',
+  solid_state_physics: '固体与半导体物理 Solid State Physics',
   dynamics: '动力学 Dynamics',
   heat_transfer: '传热 Heat Transfer',
-  university_physics: '大学物理基础 University Physics',
 }
+const FOLDER_ORDER = Object.keys(FOLDER_LABELS)
 
 const FILE_RANK: Record<string, number> = { 'README.md': 0, 'curriculum.md': 1 }
 
@@ -72,7 +83,7 @@ interface TreeFolder {
   folders: TreeFolder[]
 }
 
-/** Builds folder → doc nesting from paths below the section; single-doc folders collapse to the doc. */
+/** Builds folder → doc nesting from paths below the section; single-doc folders collapse to the doc unless it is a module introduction. */
 function buildTree(docs: WikiDoc[], section: string): TreeFolder {
   const root: TreeFolder = { key: section, name: section, docs: [], folders: [] }
   for (const d of docs) {
@@ -90,12 +101,17 @@ function buildTree(docs: WikiDoc[], section: string): TreeFolder {
   }
   const collapse = (f: TreeFolder): TreeFolder => {
     f.folders = f.folders.map(collapse).filter((sub) => {
-      if (sub.folders.length === 0 && sub.docs.length === 1) {
+      if (sub.folders.length === 0 && sub.docs.length === 1 && !sub.docs[0].path.endsWith('/curriculum.md')) {
         f.docs.push(sub.docs[0])
         return false
       }
       return true
     })
+    const rank = (name: string) => {
+      const i = FOLDER_ORDER.indexOf(name)
+      return i < 0 ? FOLDER_ORDER.length : i
+    }
+    f.folders.sort((a, b) => rank(a.name) - rank(b.name) || a.name.localeCompare(b.name))
     const fileName = (d: WikiDoc) => d.path.split('/').pop() ?? ''
     f.docs.sort((a, b) => {
       const ra = FILE_RANK[fileName(a)] ?? 2
@@ -185,7 +201,7 @@ export const WikiPage: React.FC<Props> = ({ getStatus, setStatus, setCurrentCard
     const active = item.path === docPath
     const fileName = item.path.split('/').pop() ?? ''
     const shortName =
-      inFolder && fileName === 'curriculum.md' ? '课程大纲' : item.title.split(/[|｜]/)[0].trim()
+      inFolder && fileName === 'curriculum.md' ? '导论' : item.title.split(/[|｜]/)[0].trim()
     return (
       <li key={item.path}>
         <button
