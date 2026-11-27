@@ -560,3 +560,15 @@ html.mpce-embed, html.mpce-embed body { background: #ffffff; overflow-y: hidden;
 .board-page.is-embedded .card-title { font-size: 12.5px; }
 .board-page.is-embedded .card-sub { font-size: 10.5px; }
 .board-page.is-embedded .right-pillar { font-size: 12px; letter-spacing: 3px; }
+.tree-folder-btn {
+  display: flex; align-items: center; gap: 6px; width: 100%; padding: 5px 8px;
+  border: none; background: none; border-radius: 6px; cursor: pointer;
+  font-size: 13px; font-weight: 600; color: #334155; text-align: left;
+}
+.tree-folder-btn span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tree-folder-btn:hover { background: #f1f5f9; }
+.tree-phase {
+  margin-left: auto; flex-shrink: 0; padding: 0 6px; border-radius: 999px;
+  font-size: 10px; font-style: normal; font-weight: 600; color: #7c3aed; background: #f5f3ff;
+}
+.tree-item svg, .tree-folder-btn svg { flex-shrink: 0; }

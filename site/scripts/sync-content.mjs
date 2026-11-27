@@ -49,6 +49,14 @@ function extractTitle(content, rel) {
   return rel.replace(/\.md$/, '')
 }
 
+function extractPhase(content) {
+  const m = content.match(/^\|\s*Phase\s*\|\s*(.+?)\s*\|\s*$/m)
+  if (!m) return null
+  if (m[1].includes('前置')) return '前置'
+  const p = m[1].match(/Phase\s+([IVX]+)/)
+  return p ? `Phase ${p[1]}` : null
+}
+
 function extractHeadings(content) {
   const headings = []
   let inCode = false
@@ -143,6 +151,7 @@ function main() {
       path: rel,
       section: topSection,
       title: extractTitle(content, rel),
+      phase: extractPhase(content),
       headings: extractHeadings(content),
       content,
       experimentCode: code,

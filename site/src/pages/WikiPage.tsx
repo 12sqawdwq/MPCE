@@ -17,6 +17,7 @@ interface WikiDoc {
   path: string
   section: string
   title: string
+  phase: string | null
   headings: { level: number; text: string; id: string }[]
   content: string
   experimentCode: string | null
@@ -49,6 +50,60 @@ const SECTION_LABELS: Record<string, string> = {
   '05_experiments': '05 计算实验',
   '06_knowledge_graph': '06 知识图谱',
   '07_references': '07 参考资料',
+}
+
+const FOLDER_LABELS: Record<string, string> = {
+  calculus: '微积分 Calculus',
+  linear_algebra: '线性代数 Linear Algebra',
+  differential_equations: '微分方程 Differential Equations',
+  numerical_analysis: '数值分析 Numerical Analysis',
+  probability_statistics: '概率统计 Probability & Statistics',
+  dynamics: '动力学 Dynamics',
+  heat_transfer: '传热 Heat Transfer',
+}
+
+const FILE_RANK: Record<string, number> = { 'README.md': 0, 'curriculum.md': 1 }
+
+interface TreeFolder {
+  key: string
+  name: string
+  docs: WikiDoc[]
+  folders: TreeFolder[]
+}
+
+/** Builds folder → doc nesting from paths below the section; single-doc folders collapse to the doc. */
+function buildTree(docs: WikiDoc[], section: string): TreeFolder {
+  const root: TreeFolder = { key: section, name: section, docs: [], folders: [] }
+  for (const d of docs) {
+    const parts = section === '_root' ? [d.path] : d.path.split('/').slice(1)
+    let cur = root
+    for (const seg of parts.slice(0, -1)) {
+      let next = cur.folders.find((f) => f.name === seg)
+      if (!next) {
+        next = { key: `${cur.key}/${seg}`, name: seg, docs: [], folders: [] }
+        cur.folders.push(next)
+      }
+      cur = next
+    }
+    cur.docs.push(d)
+  }
+  const collapse = (f: TreeFolder): TreeFolder => {
+    f.folders = f.folders.map(collapse).filter((sub) => {
+      if (sub.folders.length === 0 && sub.docs.length === 1) {
+        f.docs.push(sub.docs[0])
+        return false
+      }
+      return true
+    })
+    const fileName = (d: WikiDoc) => d.path.split('/').pop() ?? ''
+    f.docs.sort((a, b) => {
+      const ra = FILE_RANK[fileName(a)] ?? 2
+      const rb = FILE_RANK[fileName(b)] ?? 2
+      return ra - rb || a.path.localeCompare(b.path)
+    })
+    return f
+  }
+  return collapse(root)
 }
 
 interface Props {
@@ -124,6 +179,49 @@ export const WikiPage: React.FC<Props> = ({ getStatus, setStatus, setCurrentCard
     setOpenSections((prev) => ({ ...prev, [sec]: !prev[sec] }))
   }
 
+  const renderDoc = (item: WikiDoc, inFolder: boolean) => {
+    const active = item.path === docPath
+    const fileName = item.path.split('/').pop() ?? ''
+    const shortName =
+      inFolder && fileName === 'curriculum.md' ? '课程大纲' : item.title.split(/[|｜]/)[0].trim()
+    return (
+      <li key={item.path}>
+        <button
+          className={`tree-item ${active ? 'active' : ''}`}
+          onClick={() => {
+            setShowCode(false)
+            navigate(`/wiki/${encodeURI(item.path)}`)
+          }}
+          title={item.path}
+        >
+          <FileText size={13} />
+          <span>{shortName}</span>
+          {item.phase && <em className="tree-phase">{item.phase}</em>}
+        </button>
+      </li>
+    )
+  }
+
+  const renderFolder = (folder: TreeFolder) => {
+    const forced = query.trim().length > 0 || docPath.startsWith(`${folder.key}/`)
+    const isOpen = forced || (openSections[folder.key] ?? true)
+    return (
+      <li key={folder.key}>
+        <button className="tree-folder-btn" onClick={() => toggleSection(folder.key)}>
+          {isOpen ? <ChevronDown size={13} /> : <ChevronRight size={13} />}
+          <FolderOpen size={13} />
+          <span>{FOLDER_LABELS[folder.name] ?? folder.name}</span>
+        </button>
+        {isOpen && (
+          <ul className="tree-list">
+            {folder.docs.map((d) => renderDoc(d, true))}
+            {folder.folders.map(renderFolder)}
+          </ul>
+        )}
+      </li>
+    )
+  }
+
   return (
     <div className="wiki-layout">
       {/* Left nested tree sidebar */}
@@ -151,29 +249,15 @@ export const WikiPage: React.FC<Props> = ({ getStatus, setStatus, setCurrentCard
                   <span>{SECTION_LABELS[sec]}</span>
                   <span className="tree-count">{items.length}</span>
                 </button>
-                {isOpen && (
-                  <ul className="tree-list">
-                    {items.map((item) => {
-                      const active = item.path === docPath
-                      const shortName = item.title.split(/[|｜]/)[0].trim()
-                      return (
-                        <li key={item.path}>
-                          <button
-                            className={`tree-item ${active ? 'active' : ''}`}
-                            onClick={() => {
-                              setShowCode(false)
-                              navigate(`/wiki/${encodeURI(item.path)}`)
-                            }}
-                            title={item.path}
-                          >
-                            <FileText size={13} />
-                            <span>{shortName}</span>
-                          </button>
-                        </li>
-                      )
-                    })}
-                  </ul>
-                )}
+                {isOpen && (() => {
+                  const tree = buildTree(items, sec)
+                  return (
+                    <ul className="tree-list">
+                      {tree.docs.map((d) => renderDoc(d, false))}
+                      {tree.folders.map(renderFolder)}
+                    </ul>
+                  )
+                })()}
               </div>
             )
           })}
