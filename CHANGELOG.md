@@ -8,6 +8,7 @@
 
 ### Added — Prerequisite Notes
 - `01_mathematics/calculus/taylor_formula.md`（泰勒公式：系数匹配与分部积分两种推导、拉格朗日余项、常用展开、数值方法中的应用与练习）
+- `01_mathematics/calculus/fundamental_theorem_and_integration.md`（微积分基本定理的严格推导、高维推广、换元与分部积分及部分分式、在 FEM 弱形式与 Euler–Lagrange 方程中的应用与练习）
 
 ---
 
