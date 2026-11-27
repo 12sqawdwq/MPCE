@@ -60,6 +60,7 @@ const FOLDER_LABELS: Record<string, string> = {
   probability_statistics: '概率统计 Probability & Statistics',
   dynamics: '动力学 Dynamics',
   heat_transfer: '传热 Heat Transfer',
+  university_physics: '大学物理基础 University Physics',
 }
 
 const FILE_RANK: Record<string, number> = { 'README.md': 0, 'curriculum.md': 1 }
@@ -122,6 +123,7 @@ export const WikiPage: React.FC<Props> = ({ getStatus, setStatus, setCurrentCard
     _root: true,
     '00_getting_started': true,
     '01_mathematics': true,
+    '02_physics': true,
     '05_experiments': true,
     '06_knowledge_graph': true,
   })
