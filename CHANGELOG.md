@@ -4,6 +4,13 @@
 
 ---
 
+## [Unreleased]
+
+### Added — Prerequisite Notes
+- `01_mathematics/calculus/taylor_formula.md`（泰勒公式：系数匹配与分部积分两种推导、拉格朗日余项、常用展开、数值方法中的应用与练习）
+
+---
+
 ## [0.2.0] — 2026-11-25（Milestone 1 完整交付 + Milestone 2 数学核心首批内容）
 
 ### Added — Architecture, References & Knowledge Graph (Claude + Gemini Review)
